@@ -1,24 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Projects | N Liu P</title>
-    <link>/project/</link>
-      <atom:link href="/project/index.xml" rel="self" type="application/rss+xml" />
-    <description>Projects</description>
+    <title>Machine Learning | N Liu P</title>
+    <link>/tags/machine-learning/</link>
+      <atom:link href="/tags/machine-learning/index.xml" rel="self" type="application/rss+xml" />
+    <description>Machine Learning</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>Xingyu LIU©2021</copyright><lastBuildDate>Wed, 27 Apr 2016 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/img/icon-192.png</url>
-      <title>Projects</title>
-      <link>/project/</link>
+      <title>Machine Learning</title>
+      <link>/tags/machine-learning/</link>
     </image>
-    
-    <item>
-      <title>document structuré</title>
-      <link>/project/projetxml/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>/project/projetxml/</guid>
-      <description></description>
-    </item>
     
     <item>
       <title>Internal Project</title>
@@ -43,14 +35,6 @@
 
 &lt;p&gt;&lt;img src=&#34;img/index/2021-06-21-01-05-23.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>Projet - Guerre Commerciale</title>
-      <link>/project/projetguerre/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>/project/projetguerre/</guid>
-      <description></description>
     </item>
     
   </channel>
