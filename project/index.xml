@@ -13,15 +13,7 @@
     </image>
     
     <item>
-      <title>document structuré</title>
-      <link>/project/projetxml/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>/project/projetxml/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Internal Project</title>
+      <title>Classification Multi-label</title>
       <link>/project/internal-project/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
       <guid>/project/internal-project/</guid>
@@ -43,6 +35,14 @@
 
 &lt;p&gt;&lt;img src=&#34;img/index/2021-06-21-01-05-23.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 </description>
+    </item>
+    
+    <item>
+      <title>document structuré</title>
+      <link>/project/projetxml/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>/project/projetxml/</guid>
+      <description></description>
     </item>
     
     <item>
