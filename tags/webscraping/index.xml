@@ -1,0 +1,744 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>webscraping | N Liu P</title>
+    <link>/tags/webscraping/</link>
+      <atom:link href="/tags/webscraping/index.xml" rel="self" type="application/rss+xml" />
+    <description>webscraping</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>Xingyu LIU©2020</copyright><lastBuildDate>Wed, 04 Mar 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/icon-192.png</url>
+      <title>webscraping</title>
+      <link>/tags/webscraping/</link>
+    </image>
+    
+    <item>
+      <title>Web scraping sous Python (1/10) | Parsing avancé</title>
+      <link>/post/webscraping2/</link>
+      <pubDate>Wed, 04 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>/post/webscraping2/</guid>
+      <description>
+
+&lt;p&gt;Find all the span tags with the following attributes (class equal to green) = person names
+from urllib.request import urlopen
+from bs4 import BeautifulSoup&lt;/p&gt;
+
+&lt;p&gt;html = urlopen(&amp;lsquo;&lt;a href=&#34;http://www.pythonscraping.com/pages/warandpeace.html&#39;&#34;&gt;http://www.pythonscraping.com/pages/warandpeace.html&#39;&lt;/a&gt;)
+bs = BeautifulSoup(html, &amp;ldquo;html.parser&amp;rdquo;)&lt;/p&gt;
+
+&lt;h1 id=&#34;all-the-names-are-in-span-tag-of-class-green-in-order-of-appearance-in-the-text&#34;&gt;all the names are in span tag of class green, in order of appearance in the text&lt;/h1&gt;
+
+&lt;h1 id=&#34;bs-find-all-tagname-tagattributes&#34;&gt;bs.find_all(tagName, tagAttributes)&lt;/h1&gt;
+
+&lt;h1 id=&#34;attributes-are-dictionary&#34;&gt;attributes are dictionary&lt;/h1&gt;
+
+&lt;p&gt;nameList = bs.findAll(&amp;lsquo;span&amp;rsquo;, {&amp;lsquo;class&amp;rsquo;: &amp;lsquo;green&amp;rsquo;})
+for name in nameList:
+    print(name.get_text())
+Anna
+Pavlovna Scherer
+Empress Marya
+Fedorovna
+Prince Vasili Kuragin
+Anna Pavlovna
+St. Petersburg
+the prince
+Anna Pavlovna
+Anna Pavlovna
+the prince
+the prince
+the prince
+Prince Vasili
+Anna Pavlovna
+Anna Pavlovna
+the prince
+Wintzingerode
+King of Prussia
+le Vicomte de Mortemart
+Montmorencys
+Rohans
+Abbe Morio
+the Emperor
+the prince
+Prince Vasili
+Dowager Empress Marya Fedorovna
+the baron
+Anna Pavlovna
+the Empress
+the Empress
+Anna Pavlovna&amp;rsquo;s
+Her Majesty
+Baron
+Funke
+The prince
+Anna
+Pavlovna
+the Empress
+The prince
+Anatole
+the prince
+The prince
+Anna
+Pavlovna
+Anna Pavlovna&lt;/p&gt;
+
+&lt;h1 id=&#34;find-tags-in-a-list-war-and-peace-is-h1&#34;&gt;find tags in a list War and Peace is h1&lt;/h1&gt;
+
+&lt;p&gt;titles = bs.find_all([&amp;lsquo;h1&amp;rsquo;, &amp;lsquo;h2&amp;rsquo;,&amp;lsquo;h3&amp;rsquo;,&amp;lsquo;h4&amp;rsquo;,&amp;lsquo;h5&amp;rsquo;,&amp;lsquo;h6&amp;rsquo;])
+print([title.get_text() for title in titles])
+[&amp;lsquo;War and Peace&amp;rsquo;, &amp;lsquo;Chapter 1&amp;rsquo;]&lt;/p&gt;
+
+&lt;h1 id=&#34;red-texts-are-dialogues&#34;&gt;red texts are dialogues&lt;/h1&gt;
+
+&lt;p&gt;allText = bs.find_all(&amp;lsquo;span&amp;rsquo;, {&amp;lsquo;class&amp;rsquo;:{&amp;lsquo;green&amp;rsquo;, &amp;lsquo;red&amp;rsquo;}})
+print([text for text in allText])
+[&lt;span class=&#34;red&#34;&gt;Well, Prince, so Genoa and Lucca are now just family estates of the
+Buonapartes. But I warn you, if you don&amp;rsquo;t tell me that this means war,
+if you still try to defend the infamies and horrors perpetrated by
+that Antichrist- I really believe he is Antichrist- I will have
+nothing more to do with you and you are no longer my friend, no longer
+my &amp;lsquo;faithful slave,&amp;rsquo; as you call yourself! But how do you do? I see
+I have frightened you- sit down and tell me all the news.&lt;/span&gt;, &lt;span class=&#34;green&#34;&gt;Anna
+Pavlovna Scherer&lt;/span&gt;, &lt;span class=&#34;green&#34;&gt;Empress Marya
+Fedorovna&lt;/span&gt;, &lt;span class=&#34;green&#34;&gt;Prince Vasili Kuragin&lt;/span&gt;, &lt;span class=&#34;green&#34;&gt;Anna Pavlovna&lt;/span&gt;, &lt;span class=&#34;green&#34;&gt;St. Petersburg&lt;/span&gt;, &lt;span class=&#34;red&#34;&gt;If you have nothing better to do, Count [or Prince], and if the
+prospect of spending an evening with a poor invalid is not too
+terrible, I shall be very charmed to see you tonight between 7 and 10-
+Annette Scherer.&lt;/span&gt;, &lt;span class=&#34;red&#34;&gt;Heavens! what a virulent attack!&lt;/span&gt;, &lt;span class=&#34;green&#34;&gt;the prince&lt;/span&gt;, &lt;span class=&#34;green&#34;&gt;Anna Pavlovna&lt;/span&gt;, &lt;span class=&#34;red&#34;&gt;First of all, dear friend, tell me how you are. Set your friend&amp;rsquo;s
+mind at rest,&lt;/span&gt;, &lt;span class=&#34;red&#34;&gt;Can one be well while suffering morally? Can one be calm in times
+like these if one has any feeling?&lt;/span&gt;, &lt;span class=&#34;green&#34;&gt;Anna Pavlovna&lt;/span&gt;, &lt;span class=&#34;red&#34;&gt;You are
+staying the whole evening, I hope?&lt;/span&gt;, &lt;span class=&#34;red&#34;&gt;And the fete at the English ambassador&amp;rsquo;s? Today is Wednesday. I
+must put in an appearance there,&lt;/span&gt;, &lt;span class=&#34;green&#34;&gt;the prince&lt;/span&gt;, &lt;span class=&#34;red&#34;&gt;My daughter is
+coming for me to take me there.&lt;/span&gt;, &lt;span class=&#34;red&#34;&gt;I thought today&amp;rsquo;s fete had been canceled. I confess all these
+festivities and fireworks are becoming wearisome.&lt;/span&gt;, &lt;span class=&#34;red&#34;&gt;If they had known that you wished it, the entertainment would
+have been put off,&lt;/span&gt;, &lt;span class=&#34;green&#34;&gt;the prince&lt;/span&gt;, &lt;span class=&#34;red&#34;&gt;Don&amp;rsquo;t tease! Well, and what has been decided about Novosiltsev&amp;rsquo;s
+dispatch? You know everything.&lt;/span&gt;, &lt;span class=&#34;red&#34;&gt;What can one say about it?&lt;/span&gt;, &lt;span class=&#34;green&#34;&gt;the prince&lt;/span&gt;, &lt;span class=&#34;red&#34;&gt;What has been decided? They have decided that
+Buonaparte has burnt his boats, and I believe that we are ready to
+burn ours.&lt;/span&gt;, &lt;span class=&#34;green&#34;&gt;Prince Vasili&lt;/span&gt;, &lt;span class=&#34;green&#34;&gt;Anna Pavlovna&lt;/span&gt;, &lt;span class=&#34;green&#34;&gt;Anna Pavlovna&lt;/span&gt;, &lt;span class=&#34;red&#34;&gt;Oh, don&amp;rsquo;t speak to me of Austria. Perhaps I don&amp;rsquo;t understand
+things, but Austria never has wished, and does not wish, for war.
+She is betraying us! Russia alone must save Europe. Our gracious
+sovereign recognizes his high vocation and will be true to it. That is
+the one thing I have faith in! Our good and wonderful sovereign has to
+perform the noblest role on earth, and he is so virtuous and noble
+that God will not forsake him. He will fulfill his vocation and
+crush the hydra of revolution, which has become more terrible than
+ever in the person of this murderer and villain! We alone must
+avenge the blood of the just one&amp;hellip;. Whom, I ask you, can we rely
+on?&amp;hellip; England with her commercial spirit will not and cannot
+understand the Emperor Alexander&amp;rsquo;s loftiness of soul. She has
+refused to evacuate Malta. She wanted to find, and still seeks, some
+secret motive in our actions. What answer did Novosiltsev get? None.
+The English have not understood and cannot understand the
+self-abnegation of our Emperor who wants nothing for himself, but only
+desires the good of mankind. And what have they promised? Nothing! And
+what little they have promised they will not perform! Prussia has
+always declared that Buonaparte is invincible, and that all Europe
+is powerless before him&amp;hellip;. And I don&amp;rsquo;t believe a word that Hardenburg
+says, or Haugwitz either. This famous Prussian neutrality is just a
+trap. I have faith only in God and the lofty destiny of our adored
+monarch. He will save Europe!&lt;/span&gt;, &lt;span class=&#34;red&#34;&gt;I think,&lt;/span&gt;, &lt;span class=&#34;green&#34;&gt;the prince&lt;/span&gt;, &lt;span class=&#34;red&#34;&gt;that if you had been
+sent instead of our dear &lt;span class=&#34;green&#34;&gt;Wintzingerode&lt;/span&gt; you would have captured the
+&lt;span class=&#34;green&#34;&gt;King of Prussia&lt;/span&gt;&amp;rsquo;s consent by assault. You are so eloquent. Will you
+give me a cup of tea?&lt;/span&gt;, &lt;span class=&#34;green&#34;&gt;Wintzingerode&lt;/span&gt;, &lt;span class=&#34;green&#34;&gt;King of Prussia&lt;/span&gt;, &lt;span class=&#34;red&#34;&gt;In a moment. A propos,&lt;/span&gt;, &lt;span class=&#34;red&#34;&gt;I am
+expecting two very interesting men tonight, &lt;span class=&#34;green&#34;&gt;le Vicomte de Mortemart&lt;/span&gt;,
+who is connected with the &lt;span class=&#34;green&#34;&gt;Montmorencys&lt;/span&gt; through the &lt;span class=&#34;green&#34;&gt;Rohans&lt;/span&gt;, one of
+the best French families. He is one of the genuine emigres, the good
+ones. And also the &lt;span class=&#34;green&#34;&gt;Abbe Morio&lt;/span&gt;. Do you know that profound thinker? He
+has been received by &lt;span class=&#34;green&#34;&gt;the Emperor&lt;/span&gt;. Had you heard?&lt;/span&gt;, &lt;span class=&#34;green&#34;&gt;le Vicomte de Mortemart&lt;/span&gt;, &lt;span class=&#34;green&#34;&gt;Montmorencys&lt;/span&gt;, &lt;span class=&#34;green&#34;&gt;Rohans&lt;/span&gt;, &lt;span class=&#34;green&#34;&gt;Abbe Morio&lt;/span&gt;, &lt;span class=&#34;green&#34;&gt;the Emperor&lt;/span&gt;, &lt;span class=&#34;red&#34;&gt;I shall be delighted to meet them,&lt;/span&gt;, &lt;span class=&#34;green&#34;&gt;the prince&lt;/span&gt;, &lt;span class=&#34;red&#34;&gt;But tell me,&lt;/span&gt;, &lt;span class=&#34;red&#34;&gt;is it true that the Dowager Empress wants Baron Funke
+to be appointed first secretary at Vienna? The baron by all accounts
+is a poor creature.&lt;/span&gt;, &lt;span class=&#34;green&#34;&gt;Prince Vasili&lt;/span&gt;, &lt;span class=&#34;green&#34;&gt;Dowager Empress Marya Fedorovna&lt;/span&gt;, &lt;span class=&#34;green&#34;&gt;the baron&lt;/span&gt;, &lt;span class=&#34;green&#34;&gt;Anna Pavlovna&lt;/span&gt;, &lt;span class=&#34;green&#34;&gt;the Empress&lt;/span&gt;, &lt;span class=&#34;red&#34;&gt;Baron Funke has been recommended to the Dowager Empress by her
+sister,&lt;/span&gt;, &lt;span class=&#34;green&#34;&gt;the Empress&lt;/span&gt;, &lt;span class=&#34;green&#34;&gt;Anna Pavlovna&amp;rsquo;s&lt;/span&gt;, &lt;span class=&#34;green&#34;&gt;Her Majesty&lt;/span&gt;, &lt;span class=&#34;green&#34;&gt;Baron
+Funke&lt;/span&gt;, &lt;span class=&#34;green&#34;&gt;The prince&lt;/span&gt;, &lt;span class=&#34;green&#34;&gt;Anna
+Pavlovna&lt;/span&gt;, &lt;span class=&#34;green&#34;&gt;the Empress&lt;/span&gt;, &lt;span class=&#34;red&#34;&gt;Now about your family. Do you know that since your daughter came
+out everyone has been enraptured by her? They say she is amazingly
+beautiful.&lt;/span&gt;, &lt;span class=&#34;green&#34;&gt;The prince&lt;/span&gt;, &lt;span class=&#34;red&#34;&gt;I often think,&lt;/span&gt;, &lt;span class=&#34;red&#34;&gt;I often think how unfairly sometimes the
+joys of life are distributed. Why has fate given you two such splendid
+children? I don&amp;rsquo;t speak of &lt;span class=&#34;green&#34;&gt;Anatole&lt;/span&gt;, your youngest. I don&amp;rsquo;t like
+him,&lt;/span&gt;, &lt;span class=&#34;green&#34;&gt;Anatole&lt;/span&gt;, &lt;span class=&#34;red&#34;&gt;Two such charming children. And really you appreciate
+them less than anyone, and so you don&amp;rsquo;t deserve to have them.&lt;/span&gt;, &lt;span class=&#34;red&#34;&gt;I can&amp;rsquo;t help it,&lt;/span&gt;, &lt;span class=&#34;green&#34;&gt;the prince&lt;/span&gt;, &lt;span class=&#34;red&#34;&gt;Lavater would have said I
+lack the bump of paternity.&lt;/span&gt;, &lt;span class=&#34;red&#34;&gt;Don&amp;rsquo;t joke; I mean to have a serious talk with you. Do you know I
+am dissatisfied with your younger son? Between ourselves&lt;/span&gt;, &lt;span class=&#34;red&#34;&gt;he was mentioned at Her
+Majesty&amp;rsquo;s and you were pitied&amp;hellip;.&lt;/span&gt;, &lt;span class=&#34;green&#34;&gt;The prince&lt;/span&gt;, &lt;span class=&#34;red&#34;&gt;What would you have me do?&lt;/span&gt;, &lt;span class=&#34;red&#34;&gt;You know I did all
+a father could for their education, and they have both turned out
+fools. Hippolyte is at least a quiet fool, but Anatole is an active
+one. That is the only difference between them.&lt;/span&gt;, &lt;span class=&#34;red&#34;&gt;And why are children born to such men as you? If you were not a
+father there would be nothing I could reproach you with,&lt;/span&gt;, &lt;span class=&#34;green&#34;&gt;Anna
+Pavlovna&lt;/span&gt;, &lt;span class=&#34;red&#34;&gt;I am your faithful slave and to you alone I can confess that my
+children are the bane of my life. It is the cross I have to bear. That
+is how I explain it to myself. It can&amp;rsquo;t be helped!&lt;/span&gt;, &lt;span class=&#34;green&#34;&gt;Anna Pavlovna&lt;/span&gt;]&lt;/p&gt;
+
+&lt;h1 id=&#34;if-you-want-to-find-the-number-of-times-the-prince-is-surrounded-by-tags-on-the-example-page-textcontet-the-prince&#34;&gt;if you want to find the number of times “the prince” is surrounded by tags on the example page, textcontet= the prince&lt;/h1&gt;
+
+&lt;p&gt;nameList = bs.find_all(text=&amp;lsquo;the prince&amp;rsquo;)
+print(len(nameList))
+7&lt;/p&gt;
+
+&lt;h1 id=&#34;this-returns-the-first-tag-with-the-word-text-in-the-class-attribute-and-title-in-the-id-attribute&#34;&gt;This returns the first tag with the word “text” in the class_ attribute and “title” in the id attribute&lt;/h1&gt;
+
+&lt;p&gt;title = bs.find&lt;em&gt;all(id=&amp;lsquo;title&amp;rsquo;, class&lt;/em&gt;=&amp;lsquo;text&amp;rsquo;)
+print([text for text in title])&lt;/p&gt;
+
+&lt;h1 id=&#34;these-two-lines-are-identical&#34;&gt;these two lines are identical&lt;/h1&gt;
+
+&lt;p&gt;bs.find_all(id=&amp;lsquo;text&amp;rsquo;)
+bs.find_all(&amp;ldquo;, {&amp;lsquo;id&amp;rsquo;:&amp;lsquo;text&amp;rsquo;})
+[]&lt;/p&gt;
+
+&lt;p&gt;[&lt;div id=&#34;text&#34;&gt;
+ &amp;ldquo;&lt;span class=&#34;red&#34;&gt;Well, Prince, so Genoa and Lucca are now just family estates of the
+ Buonapartes. But I warn you, if you don&amp;rsquo;t tell me that this means war,
+ if you still try to defend the infamies and horrors perpetrated by
+ that Antichrist- I really believe he is Antichrist- I will have
+ nothing more to do with you and you are no longer my friend, no longer
+ my &amp;lsquo;faithful slave,&amp;rsquo; as you call yourself! But how do you do? I see
+ I have frightened you- sit down and tell me all the news.&lt;/span&gt;&amp;ldquo;
+ &lt;p&gt;&lt;/p&gt;
+ It was in July, 1805, and the speaker was the well-known &lt;span class=&#34;green&#34;&gt;Anna
+ Pavlovna Scherer&lt;/span&gt;, maid of honor and favorite of the &lt;span class=&#34;green&#34;&gt;Empress Marya
+ Fedorovna&lt;/span&gt;. With these words she greeted &lt;span class=&#34;green&#34;&gt;Prince Vasili Kuragin&lt;/span&gt;, a man
+ of high rank and importance, who was the first to arrive at her
+ reception. &lt;span class=&#34;green&#34;&gt;Anna Pavlovna&lt;/span&gt; had had a cough for some days. She was, as
+ she said, suffering from la grippe; grippe being then a new word in
+ &lt;span class=&#34;green&#34;&gt;St. Petersburg&lt;/span&gt;, used only by the elite.
+ &lt;p&gt;&lt;/p&gt;
+ All her invitations without exception, written in French, and
+ delivered by a scarlet-liveried footman that morning, ran as follows:
+ &lt;p&gt;&lt;/p&gt;
+ &amp;ldquo;&lt;span class=&#34;red&#34;&gt;If you have nothing better to do, Count [or Prince], and if the
+ prospect of spending an evening with a poor invalid is not too
+ terrible, I shall be very charmed to see you tonight between 7 and 10-
+ Annette Scherer.&lt;/span&gt;&amp;ldquo;
+ &lt;p&gt;&lt;/p&gt;
+ &amp;ldquo;&lt;span class=&#34;red&#34;&gt;Heavens! what a virulent attack!&lt;/span&gt;&amp;rdquo; replied &lt;span class=&#34;green&#34;&gt;the prince&lt;/span&gt;, not in the
+ least disconcerted by this reception. He had just entered, wearing
+ an embroidered court uniform, knee breeches, and shoes, and had
+ stars on his breast and a serene expression on his flat face. He spoke
+ in that refined French in which our grandfathers not only spoke but
+ thought, and with the gentle, patronizing intonation natural to a
+ man of importance who had grown old in society and at court. He went
+ up to &lt;span class=&#34;green&#34;&gt;Anna Pavlovna&lt;/span&gt;, kissed her hand, presenting to her his bald,
+ scented, and shining head, and complacently seated himself on the
+ sofa.
+ &lt;p&gt;&lt;/p&gt;
+ &amp;ldquo;&lt;span class=&#34;red&#34;&gt;First of all, dear friend, tell me how you are. Set your friend&amp;rsquo;s
+ mind at rest,&lt;/span&gt;&amp;rdquo; said he without altering his tone, beneath the
+ politeness and affected sympathy of which indifference and even
+ irony could be discerned.
+ &lt;p&gt;&lt;/p&gt;
+ &amp;ldquo;&lt;span class=&#34;red&#34;&gt;Can one be well while suffering morally? Can one be calm in times
+ like these if one has any feeling?&lt;/span&gt;&amp;rdquo; said &lt;span class=&#34;green&#34;&gt;Anna Pavlovna&lt;/span&gt;. &amp;ldquo;&lt;span class=&#34;red&#34;&gt;You are
+ staying the whole evening, I hope?&lt;/span&gt;&amp;ldquo;
+ &lt;p&gt;&lt;/p&gt;
+ &amp;ldquo;&lt;span class=&#34;red&#34;&gt;And the fete at the English ambassador&amp;rsquo;s? Today is Wednesday. I
+ must put in an appearance there,&lt;/span&gt;&amp;rdquo; said &lt;span class=&#34;green&#34;&gt;the prince&lt;/span&gt;. &amp;ldquo;&lt;span class=&#34;red&#34;&gt;My daughter is
+ coming for me to take me there.&lt;/span&gt;&amp;ldquo;
+ &lt;p&gt;&lt;/p&gt;
+ &amp;ldquo;&lt;span class=&#34;red&#34;&gt;I thought today&amp;rsquo;s fete had been canceled. I confess all these
+ festivities and fireworks are becoming wearisome.&lt;/span&gt;&amp;ldquo;
+ &lt;p&gt;&lt;/p&gt;
+ &amp;ldquo;&lt;span class=&#34;red&#34;&gt;If they had known that you wished it, the entertainment would
+ have been put off,&lt;/span&gt;&amp;rdquo; said &lt;span class=&#34;green&#34;&gt;the prince&lt;/span&gt;, who, like a wound-up clock, by
+ force of habit said things he did not even wish to be believed.
+ &lt;p&gt;&lt;/p&gt;
+ &amp;ldquo;&lt;span class=&#34;red&#34;&gt;Don&amp;rsquo;t tease! Well, and what has been decided about Novosiltsev&amp;rsquo;s
+ dispatch? You know everything.&lt;/span&gt;&amp;ldquo;
+ &lt;p&gt;&lt;/p&gt;
+ &amp;ldquo;&lt;span class=&#34;red&#34;&gt;What can one say about it?&lt;/span&gt;&amp;rdquo; replied &lt;span class=&#34;green&#34;&gt;the prince&lt;/span&gt; in a cold,
+ listless tone. &amp;ldquo;&lt;span class=&#34;red&#34;&gt;What has been decided? They have decided that
+ Buonaparte has burnt his boats, and I believe that we are ready to
+ burn ours.&lt;/span&gt;&amp;ldquo;
+ &lt;p&gt;&lt;/p&gt;
+ &lt;span class=&#34;green&#34;&gt;Prince Vasili&lt;/span&gt; always spoke languidly, like an actor repeating a
+ stale part. &lt;span class=&#34;green&#34;&gt;Anna Pavlovna&lt;/span&gt; Scherer on the contrary, despite her forty
+ years, overflowed with animation and impulsiveness. To be an
+ enthusiast had become her social vocation and, sometimes even when she
+ did not feel like it, she became enthusiastic in order not to
+ disappoint the expectations of those who knew her. The subdued smile
+ which, though it did not suit her faded features, always played
+ round her lips expressed, as in a spoiled child, a continual
+ consciousness of her charming defect, which she neither wished, nor
+ could, nor considered it necessary, to correct.
+ &lt;p&gt;&lt;/p&gt;
+ In the midst of a conversation on political matters &lt;span class=&#34;green&#34;&gt;Anna Pavlovna&lt;/span&gt;
+ burst out:
+ &lt;p&gt;&lt;/p&gt;
+ &amp;ldquo;&lt;span class=&#34;red&#34;&gt;Oh, don&amp;rsquo;t speak to me of Austria. Perhaps I don&amp;rsquo;t understand
+ things, but Austria never has wished, and does not wish, for war.
+ She is betraying us! Russia alone must save Europe. Our gracious
+ sovereign recognizes his high vocation and will be true to it. That is
+ the one thing I have faith in! Our good and wonderful sovereign has to
+ perform the noblest role on earth, and he is so virtuous and noble
+ that God will not forsake him. He will fulfill his vocation and
+ crush the hydra of revolution, which has become more terrible than
+ ever in the person of this murderer and villain! We alone must
+ avenge the blood of the just one&amp;hellip;. Whom, I ask you, can we rely
+ on?&amp;hellip; England with her commercial spirit will not and cannot
+ understand the Emperor Alexander&amp;rsquo;s loftiness of soul. She has
+ refused to evacuate Malta. She wanted to find, and still seeks, some
+ secret motive in our actions. What answer did Novosiltsev get? None.
+ The English have not understood and cannot understand the
+ self-abnegation of our Emperor who wants nothing for himself, but only
+ desires the good of mankind. And what have they promised? Nothing! And
+ what little they have promised they will not perform! Prussia has
+ always declared that Buonaparte is invincible, and that all Europe
+ is powerless before him&amp;hellip;. And I don&amp;rsquo;t believe a word that Hardenburg
+ says, or Haugwitz either. This famous Prussian neutrality is just a
+ trap. I have faith only in God and the lofty destiny of our adored
+ monarch. He will save Europe!&lt;/span&gt;&amp;ldquo;
+ &lt;p&gt;&lt;/p&gt;
+ She suddenly paused, smiling at her own impetuosity.
+ &lt;p&gt;&lt;/p&gt;
+ &amp;ldquo;&lt;span class=&#34;red&#34;&gt;I think,&lt;/span&gt;&amp;rdquo; said &lt;span class=&#34;green&#34;&gt;the prince&lt;/span&gt; with a smile, &amp;ldquo;&lt;span class=&#34;red&#34;&gt;that if you had been
+ sent instead of our dear &lt;span class=&#34;green&#34;&gt;Wintzingerode&lt;/span&gt; you would have captured the
+ &lt;span class=&#34;green&#34;&gt;King of Prussia&lt;/span&gt;&amp;rsquo;s consent by assault. You are so eloquent. Will you
+ give me a cup of tea?&lt;/span&gt;&amp;ldquo;
+ &lt;p&gt;&lt;/p&gt;
+ &amp;ldquo;&lt;span class=&#34;red&#34;&gt;In a moment. A propos,&lt;/span&gt;&amp;rdquo; she added, becoming calm again, &amp;ldquo;&lt;span class=&#34;red&#34;&gt;I am
+ expecting two very interesting men tonight, &lt;span class=&#34;green&#34;&gt;le Vicomte de Mortemart&lt;/span&gt;,
+ who is connected with the &lt;span class=&#34;green&#34;&gt;Montmorencys&lt;/span&gt; through the &lt;span class=&#34;green&#34;&gt;Rohans&lt;/span&gt;, one of
+ the best French families. He is one of the genuine emigres, the good
+ ones. And also the &lt;span class=&#34;green&#34;&gt;Abbe Morio&lt;/span&gt;. Do you know that profound thinker? He
+ has been received by &lt;span class=&#34;green&#34;&gt;the Emperor&lt;/span&gt;. Had you heard?&lt;/span&gt;&amp;ldquo;
+ &lt;p&gt;&lt;/p&gt;
+ &amp;ldquo;&lt;span class=&#34;red&#34;&gt;I shall be delighted to meet them,&lt;/span&gt;&amp;rdquo; said &lt;span class=&#34;green&#34;&gt;the prince&lt;/span&gt;. &amp;ldquo;&lt;span class=&#34;red&#34;&gt;But tell me,&lt;/span&gt;&amp;ldquo;
+ he added with studied carelessness as if it had only just occurred
+ to him, though the question he was about to ask was the chief motive
+ of his visit, &amp;ldquo;&lt;span class=&#34;red&#34;&gt;is it true that the Dowager Empress wants Baron Funke
+ to be appointed first secretary at Vienna? The baron by all accounts
+ is a poor creature.&lt;/span&gt;&amp;ldquo;
+ &lt;p&gt;&lt;/p&gt;
+ &lt;span class=&#34;green&#34;&gt;Prince Vasili&lt;/span&gt; wished to obtain this post for his son, but others
+ were trying through the &lt;span class=&#34;green&#34;&gt;Dowager Empress Marya Fedorovna&lt;/span&gt; to secure it
+ for &lt;span class=&#34;green&#34;&gt;the baron&lt;/span&gt;.
+ &lt;p&gt;&lt;/p&gt;
+ &lt;span class=&#34;green&#34;&gt;Anna Pavlovna&lt;/span&gt; almost closed her eyes to indicate that neither she
+ nor anyone else had a right to criticize what &lt;span class=&#34;green&#34;&gt;the Empress&lt;/span&gt; desired or
+ was pleased with.
+ &lt;p&gt;&lt;/p&gt;
+ &amp;ldquo;&lt;span class=&#34;red&#34;&gt;Baron Funke has been recommended to the Dowager Empress by her
+ sister,&lt;/span&gt;&amp;rdquo; was all she said, in a dry and mournful tone.
+ &lt;p&gt;&lt;/p&gt;
+ As she named &lt;span class=&#34;green&#34;&gt;the Empress&lt;/span&gt;, &lt;span class=&#34;green&#34;&gt;Anna Pavlovna&amp;rsquo;s&lt;/span&gt; face suddenly assumed an
+ expression of profound and sincere devotion and respect mingled with
+ sadness, and this occurred every time she mentioned her illustrious
+ patroness. She added that &lt;span class=&#34;green&#34;&gt;Her Majesty&lt;/span&gt; had deigned to show &lt;span class=&#34;green&#34;&gt;Baron
+ Funke&lt;/span&gt;, and again her face clouded over with sadness.
+ &lt;p&gt;&lt;/p&gt;
+ &lt;span class=&#34;green&#34;&gt;The prince&lt;/span&gt; was silent and looked indifferent. But, with the
+ womanly and courtierlike quickness and tact habitual to her, &lt;span class=&#34;green&#34;&gt;Anna
+ Pavlovna&lt;/span&gt; wished both to rebuke him (for daring to speak he had done of
+ a man recommended to &lt;span class=&#34;green&#34;&gt;the Empress&lt;/span&gt;) and at the same time to console him,
+ so she said:
+ &lt;p&gt;&lt;/p&gt;
+ &amp;ldquo;&lt;span class=&#34;red&#34;&gt;Now about your family. Do you know that since your daughter came
+ out everyone has been enraptured by her? They say she is amazingly
+ beautiful.&lt;/span&gt;&amp;ldquo;
+ &lt;p&gt;&lt;/p&gt;
+ &lt;span class=&#34;green&#34;&gt;The prince&lt;/span&gt; bowed to signify his respect and gratitude.
+ &lt;p&gt;&lt;/p&gt;
+ &amp;ldquo;&lt;span class=&#34;red&#34;&gt;I often think,&lt;/span&gt;&amp;rdquo; she continued after a short pause, drawing nearer
+ to the prince and smiling amiably at him as if to show that
+ political and social topics were ended and the time had come for
+ intimate conversation- &amp;ldquo;&lt;span class=&#34;red&#34;&gt;I often think how unfairly sometimes the
+ joys of life are distributed. Why has fate given you two such splendid
+ children? I don&amp;rsquo;t speak of &lt;span class=&#34;green&#34;&gt;Anatole&lt;/span&gt;, your youngest. I don&amp;rsquo;t like
+ him,&lt;/span&gt;&amp;rdquo; she added in a tone admitting of no rejoinder and raising her
+ eyebrows. &amp;ldquo;&lt;span class=&#34;red&#34;&gt;Two such charming children. And really you appreciate
+ them less than anyone, and so you don&amp;rsquo;t deserve to have them.&lt;/span&gt;&amp;ldquo;
+ &lt;p&gt;&lt;/p&gt;
+ And she smiled her ecstatic smile.
+ &lt;p&gt;&lt;/p&gt;
+ &amp;ldquo;&lt;span class=&#34;red&#34;&gt;I can&amp;rsquo;t help it,&lt;/span&gt;&amp;rdquo; said &lt;span class=&#34;green&#34;&gt;the prince&lt;/span&gt;. &amp;ldquo;&lt;span class=&#34;red&#34;&gt;Lavater would have said I
+ lack the bump of paternity.&lt;/span&gt;&amp;ldquo;
+ &lt;p&gt;&lt;/p&gt;
+ &amp;ldquo;&lt;span class=&#34;red&#34;&gt;Don&amp;rsquo;t joke; I mean to have a serious talk with you. Do you know I
+ am dissatisfied with your younger son? Between ourselves&lt;/span&gt;&amp;rdquo; (and her
+ face assumed its melancholy expression), &amp;ldquo;&lt;span class=&#34;red&#34;&gt;he was mentioned at Her
+ Majesty&amp;rsquo;s and you were pitied&amp;hellip;.&lt;/span&gt;&amp;ldquo;
+ &lt;p&gt;&lt;/p&gt;
+ &lt;span class=&#34;green&#34;&gt;The prince&lt;/span&gt; answered nothing, but she looked at him significantly,
+ awaiting a reply. He frowned.
+ &lt;p&gt;&lt;/p&gt;
+ &amp;ldquo;&lt;span class=&#34;red&#34;&gt;What would you have me do?&lt;/span&gt;&amp;rdquo; he said at last. &amp;ldquo;&lt;span class=&#34;red&#34;&gt;You know I did all
+ a father could for their education, and they have both turned out
+ fools. Hippolyte is at least a quiet fool, but Anatole is an active
+ one. That is the only difference between them.&lt;/span&gt;&amp;rdquo; He said this smiling
+ in a way more natural and animated than usual, so that the wrinkles
+ round his mouth very clearly revealed something unexpectedly coarse
+ and unpleasant.
+ &lt;p&gt;&lt;/p&gt;
+ &amp;ldquo;&lt;span class=&#34;red&#34;&gt;And why are children born to such men as you? If you were not a
+ father there would be nothing I could reproach you with,&lt;/span&gt;&amp;rdquo; said &lt;span class=&#34;green&#34;&gt;Anna
+ Pavlovna&lt;/span&gt;, looking up pensively.
+ &lt;p&gt;&lt;/p&gt;
+ &amp;ldquo;&lt;span class=&#34;red&#34;&gt;I am your faithful slave and to you alone I can confess that my
+ children are the bane of my life. It is the cross I have to bear. That
+ is how I explain it to myself. It can&amp;rsquo;t be helped!&lt;/span&gt;&amp;ldquo;
+ &lt;p&gt;&lt;/p&gt;
+ He said no more, but expressed his resignation to cruel fate by a
+ gesture. &lt;span class=&#34;green&#34;&gt;Anna Pavlovna&lt;/span&gt; meditated.
+ &lt;/div&gt;]
+Difference between children and descendants&lt;/p&gt;
+
+&lt;h1 id=&#34;see-the-source-code-of-the-website-to-understand-the-structure&#34;&gt;see the source code of the website to understand the structure&lt;/h1&gt;
+
+&lt;p&gt;html = urlopen(&amp;lsquo;&lt;a href=&#34;http://www.pythonscraping.com/pages/page3.html&#39;&#34;&gt;http://www.pythonscraping.com/pages/page3.html&#39;&lt;/a&gt;)
+bs = BeautifulSoup(html, &amp;lsquo;html.parser&amp;rsquo;)&lt;/p&gt;
+
+&lt;h1 id=&#34;this-code-prints-the-list-of-product-rows-in-the-giftlist-table-including-the-initial-row-of-column-labels&#34;&gt;This code prints the list of product rows in the giftList table, including the initial row of column labels.&lt;/h1&gt;
+
+&lt;h1 id=&#34;children-are-always-exactly-one-tag-below-a-parent-whereas-descendants-can-be-at-any-level-in-the-tree-below-a-parent&#34;&gt;children are always exactly one tag below a parent, whereas descendants can be at any level in the tree below a parent.&lt;/h1&gt;
+
+&lt;p&gt;for child in bs.find(&amp;lsquo;table&amp;rsquo;,{&amp;lsquo;id&amp;rsquo;:&amp;lsquo;giftList&amp;rsquo;}).children:
+    print(child)
+&lt;tr&gt;&lt;th&gt;
+Item Title
+&lt;/th&gt;&lt;th&gt;
+Description
+&lt;/th&gt;&lt;th&gt;
+Cost
+&lt;/th&gt;&lt;th&gt;
+Image
+&lt;/th&gt;&lt;/tr&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;tr class=&#34;gift&#34; id=&#34;gift1&#34;&gt;&lt;td&gt;
+Vegetable Basket
+&lt;/td&gt;&lt;td&gt;
+This vegetable basket is the perfect gift for your health conscious (or overweight) friends!
+&lt;span class=&#34;excitingNote&#34;&gt;Now with super-colorful bell peppers!&lt;/span&gt;
+&lt;/td&gt;&lt;td&gt;
+$15.00
+&lt;/td&gt;&lt;td&gt;
+&lt;img src=&#34;../img/gifts/img1.jpg&#34;/&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;tr class=&#34;gift&#34; id=&#34;gift2&#34;&gt;&lt;td&gt;
+Russian Nesting Dolls
+&lt;/td&gt;&lt;td&gt;
+Hand-painted by trained monkeys, these exquisite dolls are priceless! And by &amp;ldquo;priceless,&amp;rdquo; we mean &amp;ldquo;extremely expensive&amp;rdquo;! &lt;span class=&#34;excitingNote&#34;&gt;8 entire dolls per set! Octuple the presents!&lt;/span&gt;
+&lt;/td&gt;&lt;td&gt;
+$10,000.52
+&lt;/td&gt;&lt;td&gt;
+&lt;img src=&#34;../img/gifts/img2.jpg&#34;/&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;tr class=&#34;gift&#34; id=&#34;gift3&#34;&gt;&lt;td&gt;
+Fish Painting
+&lt;/td&gt;&lt;td&gt;
+If something seems fishy about this painting, it&amp;rsquo;s because it&amp;rsquo;s a fish! &lt;span class=&#34;excitingNote&#34;&gt;Also hand-painted by trained monkeys!&lt;/span&gt;
+&lt;/td&gt;&lt;td&gt;
+$10,005.00
+&lt;/td&gt;&lt;td&gt;
+&lt;img src=&#34;../img/gifts/img3.jpg&#34;/&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;tr class=&#34;gift&#34; id=&#34;gift4&#34;&gt;&lt;td&gt;
+Dead Parrot
+&lt;/td&gt;&lt;td&gt;
+This is an ex-parrot! &lt;span class=&#34;excitingNote&#34;&gt;Or maybe he&amp;rsquo;s only resting?&lt;/span&gt;
+&lt;/td&gt;&lt;td&gt;
+$0.50
+&lt;/td&gt;&lt;td&gt;
+&lt;img src=&#34;../img/gifts/img4.jpg&#34;/&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;tr class=&#34;gift&#34; id=&#34;gift5&#34;&gt;&lt;td&gt;
+Mystery Box
+&lt;/td&gt;&lt;td&gt;
+If you love surprises, this mystery box is for you! Do not place on light-colored surfaces. May cause oil staining. &lt;span class=&#34;excitingNote&#34;&gt;Keep your friends guessing!&lt;/span&gt;
+&lt;/td&gt;&lt;td&gt;
+$1.50
+&lt;/td&gt;&lt;td&gt;
+&lt;img src=&#34;../img/gifts/img6.jpg&#34;/&gt;
+&lt;/td&gt;&lt;/tr&gt;
+Pay attention to NEXT siblings
+html = urlopen(&amp;lsquo;&lt;a href=&#34;http://www.pythonscraping.com/pages/page3.html&#39;&#34;&gt;http://www.pythonscraping.com/pages/page3.html&#39;&lt;/a&gt;)
+bs = BeautifulSoup(html, &amp;lsquo;html.parser&amp;rsquo;)&lt;/p&gt;
+
+&lt;p&gt;for sibling in bs.find(&amp;lsquo;table&amp;rsquo;, {&amp;lsquo;id&amp;rsquo;:&amp;lsquo;giftList&amp;rsquo;}).tr.next_siblings:
+    print(sibling)
+&lt;tr class=&#34;gift&#34; id=&#34;gift1&#34;&gt;&lt;td&gt;
+Vegetable Basket
+&lt;/td&gt;&lt;td&gt;
+This vegetable basket is the perfect gift for your health conscious (or overweight) friends!
+&lt;span class=&#34;excitingNote&#34;&gt;Now with super-colorful bell peppers!&lt;/span&gt;
+&lt;/td&gt;&lt;td&gt;
+$15.00
+&lt;/td&gt;&lt;td&gt;
+&lt;img src=&#34;../img/gifts/img1.jpg&#34;/&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;tr class=&#34;gift&#34; id=&#34;gift2&#34;&gt;&lt;td&gt;
+Russian Nesting Dolls
+&lt;/td&gt;&lt;td&gt;
+Hand-painted by trained monkeys, these exquisite dolls are priceless! And by &amp;ldquo;priceless,&amp;rdquo; we mean &amp;ldquo;extremely expensive&amp;rdquo;! &lt;span class=&#34;excitingNote&#34;&gt;8 entire dolls per set! Octuple the presents!&lt;/span&gt;
+&lt;/td&gt;&lt;td&gt;
+$10,000.52
+&lt;/td&gt;&lt;td&gt;
+&lt;img src=&#34;../img/gifts/img2.jpg&#34;/&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;tr class=&#34;gift&#34; id=&#34;gift3&#34;&gt;&lt;td&gt;
+Fish Painting
+&lt;/td&gt;&lt;td&gt;
+If something seems fishy about this painting, it&amp;rsquo;s because it&amp;rsquo;s a fish! &lt;span class=&#34;excitingNote&#34;&gt;Also hand-painted by trained monkeys!&lt;/span&gt;
+&lt;/td&gt;&lt;td&gt;
+$10,005.00
+&lt;/td&gt;&lt;td&gt;
+&lt;img src=&#34;../img/gifts/img3.jpg&#34;/&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;tr class=&#34;gift&#34; id=&#34;gift4&#34;&gt;&lt;td&gt;
+Dead Parrot
+&lt;/td&gt;&lt;td&gt;
+This is an ex-parrot! &lt;span class=&#34;excitingNote&#34;&gt;Or maybe he&amp;rsquo;s only resting?&lt;/span&gt;
+&lt;/td&gt;&lt;td&gt;
+$0.50
+&lt;/td&gt;&lt;td&gt;
+&lt;img src=&#34;../img/gifts/img4.jpg&#34;/&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;tr class=&#34;gift&#34; id=&#34;gift5&#34;&gt;&lt;td&gt;
+Mystery Box
+&lt;/td&gt;&lt;td&gt;
+If you love surprises, this mystery box is for you! Do not place on light-colored surfaces. May cause oil staining. &lt;span class=&#34;excitingNote&#34;&gt;Keep your friends guessing!&lt;/span&gt;
+&lt;/td&gt;&lt;td&gt;
+$1.50
+&lt;/td&gt;&lt;td&gt;
+&lt;img src=&#34;../img/gifts/img6.jpg&#34;/&gt;
+&lt;/td&gt;&lt;/tr&gt;
+Find all the image and find it&amp;rsquo;s parent (td in this case)&lt;/p&gt;
+
+&lt;h1 id=&#34;navigate-in-dom-tree&#34;&gt;navigate in dom tree&lt;/h1&gt;
+
+&lt;p&gt;html = urlopen(&amp;lsquo;&lt;a href=&#34;http://www.pythonscraping.com/pages/page3.html&#39;&#34;&gt;http://www.pythonscraping.com/pages/page3.html&#39;&lt;/a&gt;)
+bs = BeautifulSoup(html, &amp;lsquo;html.parser&amp;rsquo;)
+print(bs.find(&amp;lsquo;img&amp;rsquo;,
+              {&amp;lsquo;src&amp;rsquo;:&amp;lsquo;../img/gifts/img1.jpg&amp;rsquo;})
+      .parent.previous_sibling.get_text())
+$15.00
+Use regular expressions to find all the images in the websites
+import re&lt;/p&gt;
+
+&lt;p&gt;html = urlopen(&amp;lsquo;&lt;a href=&#34;http://www.pythonscraping.com/pages/page3.html&#39;&#34;&gt;http://www.pythonscraping.com/pages/page3.html&#39;&lt;/a&gt;)
+bs = BeautifulSoup(html, &amp;lsquo;html.parser&amp;rsquo;)&lt;/p&gt;
+
+&lt;h1 id=&#34;using-regular-expressions&#34;&gt;using regular expressions&lt;/h1&gt;
+
+&lt;p&gt;images = bs.find_all(&amp;lsquo;img&amp;rsquo;, {&amp;lsquo;src&amp;rsquo;:re.compile(&amp;rsquo;..\/img\/gifts/img.*.jpg&amp;rsquo;)})
+for image in images:
+    print(image[&amp;lsquo;src&amp;rsquo;])&lt;/p&gt;
+
+&lt;h1 id=&#34;note-that-images-is-an-object-of-beautiful-soup&#34;&gt;note that images is an object of beautiful soup&lt;/h1&gt;
+
+&lt;p&gt;type(images)
+../img/gifts/img1.jpg
+../img/gifts/img2.jpg
+../img/gifts/img3.jpg
+../img/gifts/img4.jpg
+../img/gifts/img6.jpg&lt;/p&gt;
+
+&lt;p&gt;bs4.element.ResultSet
+Use lambda function to implement some nice functions&lt;/p&gt;
+
+&lt;h1 id=&#34;using-anonymous-functions&#34;&gt;using anonymous functions&lt;/h1&gt;
+
+&lt;h1 id=&#34;it-will-find-tags-with-two-attributes-such-as-the-following&#34;&gt;it will find tags with two attributes, such as the following:&lt;/h1&gt;
+
+&lt;p&gt;bs.find_all(lambda tag: len(tag.attrs) == 2)
+[&lt;img src=&#34;../img/gifts/logo.jpg&#34; style=&#34;float:left;&#34;/&gt;,
+ &lt;tr class=&#34;gift&#34; id=&#34;gift1&#34;&gt;&lt;td&gt;
+ Vegetable Basket
+ &lt;/td&gt;&lt;td&gt;
+ This vegetable basket is the perfect gift for your health conscious (or overweight) friends!
+ &lt;span class=&#34;excitingNote&#34;&gt;Now with super-colorful bell peppers!&lt;/span&gt;
+ &lt;/td&gt;&lt;td&gt;
+ $15.00
+ &lt;/td&gt;&lt;td&gt;
+ &lt;img src=&#34;../img/gifts/img1.jpg&#34;/&gt;
+ &lt;/td&gt;&lt;/tr&gt;,
+ &lt;tr class=&#34;gift&#34; id=&#34;gift2&#34;&gt;&lt;td&gt;
+ Russian Nesting Dolls
+ &lt;/td&gt;&lt;td&gt;
+ Hand-painted by trained monkeys, these exquisite dolls are priceless! And by &amp;ldquo;priceless,&amp;rdquo; we mean &amp;ldquo;extremely expensive&amp;rdquo;! &lt;span class=&#34;excitingNote&#34;&gt;8 entire dolls per set! Octuple the presents!&lt;/span&gt;
+ &lt;/td&gt;&lt;td&gt;
+ $10,000.52
+ &lt;/td&gt;&lt;td&gt;
+ &lt;img src=&#34;../img/gifts/img2.jpg&#34;/&gt;
+ &lt;/td&gt;&lt;/tr&gt;,
+ &lt;tr class=&#34;gift&#34; id=&#34;gift3&#34;&gt;&lt;td&gt;
+ Fish Painting
+ &lt;/td&gt;&lt;td&gt;
+ If something seems fishy about this painting, it&amp;rsquo;s because it&amp;rsquo;s a fish! &lt;span class=&#34;excitingNote&#34;&gt;Also hand-painted by trained monkeys!&lt;/span&gt;
+ &lt;/td&gt;&lt;td&gt;
+ $10,005.00
+ &lt;/td&gt;&lt;td&gt;
+ &lt;img src=&#34;../img/gifts/img3.jpg&#34;/&gt;
+ &lt;/td&gt;&lt;/tr&gt;,
+ &lt;tr class=&#34;gift&#34; id=&#34;gift4&#34;&gt;&lt;td&gt;
+ Dead Parrot
+ &lt;/td&gt;&lt;td&gt;
+ This is an ex-parrot! &lt;span class=&#34;excitingNote&#34;&gt;Or maybe he&amp;rsquo;s only resting?&lt;/span&gt;
+ &lt;/td&gt;&lt;td&gt;
+ $0.50
+ &lt;/td&gt;&lt;td&gt;
+ &lt;img src=&#34;../img/gifts/img4.jpg&#34;/&gt;
+ &lt;/td&gt;&lt;/tr&gt;,
+ &lt;tr class=&#34;gift&#34; id=&#34;gift5&#34;&gt;&lt;td&gt;
+ Mystery Box
+ &lt;/td&gt;&lt;td&gt;
+ If you love suprises, this mystery box is for you! Do not place on light-colored surfaces. May cause oil staining. &lt;span class=&#34;excitingNote&#34;&gt;Keep your friends guessing!&lt;/span&gt;
+ &lt;/td&gt;&lt;td&gt;
+ $1.50
+ &lt;/td&gt;&lt;td&gt;
+ &lt;img src=&#34;../img/gifts/img6.jpg&#34;/&gt;
+ &lt;/td&gt;&lt;/tr&gt;]&lt;/p&gt;
+
+&lt;h1 id=&#34;use-of-lambda-functions-to-replace-some-built-in-bs-functions&#34;&gt;use of lambda functions to replace some built-in bs functions&lt;/h1&gt;
+
+&lt;p&gt;bs.find_all(lambda tag: tag.get_text() == &amp;lsquo;Or maybe he\&amp;rsquo;s only resting?&amp;lsquo;)
+bs.find_all(&amp;ldquo;, text=&amp;lsquo;Or maybe he\&amp;rsquo;s only resting?&amp;lsquo;)
+[&amp;ldquo;Or maybe he&amp;rsquo;s only resting?&amp;rdquo;]
+bs.find_all(lambda tag: tag.get_text() == &amp;lsquo;Or maybe he\&amp;rsquo;s only resting?&amp;lsquo;)
+[&lt;span class=&#34;excitingNote&#34;&gt;Or maybe he&amp;rsquo;s only resting?&lt;/span&gt;]&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Web scraping sous Python (1/10) | Rudiments</title>
+      <link>/post/webscraping1/</link>
+      <pubDate>Sun, 23 Feb 2020 00:00:00 +0000</pubDate>
+      <guid>/post/webscraping1/</guid>
+      <description>
+
+&lt;h2 id=&#34;urlopen&#34;&gt;Urlopen&lt;/h2&gt;
+
+&lt;p&gt;Approche basique en utilisant la classe &lt;code&gt;urlopen&lt;/code&gt; du module &lt;code&gt;request&lt;/code&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;from urllib.request import urlopen
+html = urlopen(&#39;http://pythonscraping.com/pages/page1.html&#39;)
+print(html.read())
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;html&amp;gt;
+  \n&amp;lt;head&amp;gt;
+    \n
+    &amp;lt;title&amp;gt;A Useful Page&amp;lt;/title&amp;gt;
+    \n&amp;lt;/head
+  &amp;gt;\n
+  &amp;lt;body&amp;gt;
+    \n
+    &amp;lt;h1&amp;gt;An Interesting Title&amp;lt;/h1&amp;gt;
+    \n
+    &amp;lt;div&amp;gt;
+      \nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+      est laborum.\n
+    &amp;lt;/div&amp;gt;
+    \n
+  &amp;lt;/body&amp;gt;
+  \n
+&amp;lt;/html&amp;gt;
+\n
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;beautifulsoup&#34;&gt;BeautifulSoup&lt;/h2&gt;
+
+&lt;p&gt;Par rapport à urlopen, on n&amp;rsquo;a pas besoin d&amp;rsquo;appeler &lt;code&gt;read&lt;/code&gt; pour accéder au contenu de page web.&lt;/p&gt;
+
+&lt;p&gt;Il est à noter que la deuxième option lors de la création d&amp;rsquo;un objet BeautifulSoup précise le parseur qui est &lt;code&gt;&#39;html.parser&#39;&lt;/code&gt; dans notre cas.&lt;/p&gt;
+
+&lt;p&gt;A sa place, le parseur &lt;code&gt;lxml&lt;/code&gt; montre plus d&amp;rsquo;avantage que &lt;code&gt;html.parser&lt;/code&gt; dans le sens où il fonctionne mieux face aux HTML codes mal formés tels que des balises non fermées, mal imbriquées ou oublées. De plus, il est plus rapide que l&amp;rsquo;autre même si la vitesse n&amp;rsquo;est pas forcément un avantage dans web scraping car le plus important goulet serait souvent la vitesse du réseau elle-même.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;from bs4 import BeautifulSoup
+
+html = urlopen(&#39;http://www.pythonscraping.com/pages/page1.html&#39;)
+bs = BeautifulSoup(html.read(), &#39;html.parser&#39;)
+print(bs.h1)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;h1&amp;gt;An Interesting Title&amp;lt;/h1&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;même-output-avec-différentes-expressions&#34;&gt;Même output avec différentes expressions&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;html = urlopen(&#39;http://www.pythonscraping.com/pages/page1.html&#39;)
+bs = BeautifulSoup(html, &#39;html.parser&#39;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Expression 1&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;print(bs.h1)
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Expression 2&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;print(bs.html.h1)
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Expression 3&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;print(bs.html.body.h1)
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Expression 4&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;print(bs.body.h1)
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;gérer-l-erreur-d-adresse-de-page-web&#34;&gt;Gérer l&amp;rsquo;erreur d&amp;rsquo;adresse de page Web&lt;/h2&gt;
+
+&lt;p&gt;L&amp;rsquo;erreur HTTP peut être &amp;ldquo;404 Page Not Found&amp;rdquo;, &amp;ldquo;500 Internal Server Error&amp;rdquo;, etc.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;from urllib.error import HTTPError
+from urllib.error import URLError
+
+try:
+    html = urlopen(&amp;quot;http://www.pythonscraping.com/pages/page1.html22&amp;quot;)
+except HTTPError as e:  # this is actually a more layman understanding of URLError. HTTPError is a predefined name so that you can&#39;t replace it with other names
+    print(e)
+except URLError as e:
+    print(&amp;quot;The server could not be found!&amp;quot;)
+    # the server error means there is no such website as This HTTP error may be “404 Page Not Found,” “500 Internal Server Error,” and so forth
+else:
+    print(html.read())
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;HTTP Error 404: Not Found
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;ecrire-une-fonction-pour-l-erreur-url&#34;&gt;Ecrire une fonction pour l&amp;rsquo;erreur url&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;def getTitle(url):
+    try:
+        html = urlopen(url)
+    except HTTPError as e:
+        return None
+    try:
+        bsObj = BeautifulSoup(html.read(), &amp;quot;lxml&amp;quot;)
+        title = bsObj.body.h1
+    except AttributeError as e:
+        return None
+    return title
+
+# check if an element is none
+
+title = getTitle(&amp;quot;http://www.pythonscraping.com/pages/page1.html&amp;quot;)
+if title == None:
+    print(&amp;quot;Title could not be found&amp;quot;)
+else:
+    print(title)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;h1&amp;gt;An Interesting Title&amp;lt;/h1&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

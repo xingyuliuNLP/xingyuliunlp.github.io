@@ -1,0 +1,1611 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>N Liu P</title>
+    <link>/</link>
+      <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <description>N Liu P</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>Xingyu LIU©2020</copyright><lastBuildDate>Sat, 01 Jun 2030 13:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/icon-192.png</url>
+      <title>N Liu P</title>
+      <link>/</link>
+    </image>
+    
+    <item>
+      <title>Academic</title>
+      <link>/backup/hero/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/backup/hero/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;The Best Way to Create the Website You Want from Markdown (or Jupyter/RStudio)&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Build &lt;strong&gt;Anything&lt;/strong&gt; with Widgets&lt;/p&gt;
+
+&lt;!-- &lt;span style=&#34;text-shadow: none;&#34;&gt;&lt;a class=&#34;github-button&#34; href=&#34;https://github.com/gcushen/hugo-academic&#34; data-icon=&#34;octicon-star&#34; data-size=&#34;large&#34; data-show-count=&#34;true&#34; aria-label=&#34;Star this on GitHub&#34;&gt;Star&lt;/a&gt;&lt;script async defer src=&#34;https://buttons.github.io/buttons.js&#34;&gt;&lt;/script&gt;&lt;/span&gt; --&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Demos</title>
+      <link>/backup/demo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/backup/demo/</guid>
+      <description>&lt;p&gt;Welcome to the &lt;strong&gt;personal demo&lt;/strong&gt; of Academic. Other demos available include:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://sourcethemes.com/academic/&#34;&gt;&lt;strong&gt;Project Demo&lt;/strong&gt; (Academic&amp;rsquo;s actual site)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Over 100,000 &lt;a href=&#34;https://sourcethemes.com/academic/#expo&#34;&gt;Amazing Websites&lt;/a&gt; have Already Been Built with Academic&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://sourcethemes.com/academic/docs/install/&#34;&gt;Join&lt;/a&gt; the Most Empowered Hugo Community&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;This homepage section is an example of adding &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34;&gt;elements&lt;/a&gt; to the &lt;a href=&#34;https://sourcethemes.com/academic/docs/widgets/&#34;&gt;&lt;em&gt;Blank&lt;/em&gt; widget&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Backgrounds can be applied to any section. Here, the &lt;em&gt;background&lt;/em&gt; option is set give an &lt;em&gt;image parallax&lt;/em&gt; effect.&lt;/p&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Experience</title>
+      <link>/backup/experience/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/backup/experience/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Accomplish&amp;shy;ments</title>
+      <link>/backup/accomplishments/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/backup/accomplishments/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Meet the Team</title>
+      <link>/backup/people/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/backup/people/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Recent &amp; Upcoming Talks</title>
+      <link>/backup/talks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/backup/talks/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Featured Publications</title>
+      <link>/backup/featured/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/backup/featured/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Recent Publications</title>
+      <link>/backup/publications/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/backup/publications/</guid>
+      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Quickly discover relevant content by &lt;a href=&#34;/publication/&#34;&gt;filtering publications&lt;/a&gt;.
+  &lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Example Talk</title>
+      <link>/talk/example/</link>
+      <pubDate>Sat, 01 Jun 2030 13:00:00 +0000</pubDate>
+      <guid>/talk/example/</guid>
+      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click on the &lt;strong&gt;Slides&lt;/strong&gt; button above to view the built-in slides feature.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Slides can be added in a few ways:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Create&lt;/strong&gt; slides using Academic&amp;rsquo;s &lt;a href=&#34;https://sourcethemes.com/academic/docs/managing-content/#create-slides&#34;&gt;&lt;em&gt;Slides&lt;/em&gt;&lt;/a&gt; feature and link using &lt;code&gt;slides&lt;/code&gt; parameter in the front matter of the talk file&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Upload&lt;/strong&gt; an existing slide deck to &lt;code&gt;static/&lt;/code&gt; and link using &lt;code&gt;url_slides&lt;/code&gt; parameter in the front matter of the talk file&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Embed&lt;/strong&gt; your slides (e.g. Google Slides) or presentation video on this page using &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34;&gt;shortcodes&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Further talk details can easily be added to this page using &lt;em&gt;Markdown&lt;/em&gt; and $\rm \LaTeX$ math code.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Web scraping sous Python (1/10) | Parsing avancé</title>
+      <link>/post/webscraping2/</link>
+      <pubDate>Wed, 04 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>/post/webscraping2/</guid>
+      <description>
+
+&lt;p&gt;Find all the span tags with the following attributes (class equal to green) = person names
+from urllib.request import urlopen
+from bs4 import BeautifulSoup&lt;/p&gt;
+
+&lt;p&gt;html = urlopen(&amp;lsquo;&lt;a href=&#34;http://www.pythonscraping.com/pages/warandpeace.html&#39;&#34;&gt;http://www.pythonscraping.com/pages/warandpeace.html&#39;&lt;/a&gt;)
+bs = BeautifulSoup(html, &amp;ldquo;html.parser&amp;rdquo;)&lt;/p&gt;
+
+&lt;h1 id=&#34;all-the-names-are-in-span-tag-of-class-green-in-order-of-appearance-in-the-text&#34;&gt;all the names are in span tag of class green, in order of appearance in the text&lt;/h1&gt;
+
+&lt;h1 id=&#34;bs-find-all-tagname-tagattributes&#34;&gt;bs.find_all(tagName, tagAttributes)&lt;/h1&gt;
+
+&lt;h1 id=&#34;attributes-are-dictionary&#34;&gt;attributes are dictionary&lt;/h1&gt;
+
+&lt;p&gt;nameList = bs.findAll(&amp;lsquo;span&amp;rsquo;, {&amp;lsquo;class&amp;rsquo;: &amp;lsquo;green&amp;rsquo;})
+for name in nameList:
+    print(name.get_text())
+Anna
+Pavlovna Scherer
+Empress Marya
+Fedorovna
+Prince Vasili Kuragin
+Anna Pavlovna
+St. Petersburg
+the prince
+Anna Pavlovna
+Anna Pavlovna
+the prince
+the prince
+the prince
+Prince Vasili
+Anna Pavlovna
+Anna Pavlovna
+the prince
+Wintzingerode
+King of Prussia
+le Vicomte de Mortemart
+Montmorencys
+Rohans
+Abbe Morio
+the Emperor
+the prince
+Prince Vasili
+Dowager Empress Marya Fedorovna
+the baron
+Anna Pavlovna
+the Empress
+the Empress
+Anna Pavlovna&amp;rsquo;s
+Her Majesty
+Baron
+Funke
+The prince
+Anna
+Pavlovna
+the Empress
+The prince
+Anatole
+the prince
+The prince
+Anna
+Pavlovna
+Anna Pavlovna&lt;/p&gt;
+
+&lt;h1 id=&#34;find-tags-in-a-list-war-and-peace-is-h1&#34;&gt;find tags in a list War and Peace is h1&lt;/h1&gt;
+
+&lt;p&gt;titles = bs.find_all([&amp;lsquo;h1&amp;rsquo;, &amp;lsquo;h2&amp;rsquo;,&amp;lsquo;h3&amp;rsquo;,&amp;lsquo;h4&amp;rsquo;,&amp;lsquo;h5&amp;rsquo;,&amp;lsquo;h6&amp;rsquo;])
+print([title.get_text() for title in titles])
+[&amp;lsquo;War and Peace&amp;rsquo;, &amp;lsquo;Chapter 1&amp;rsquo;]&lt;/p&gt;
+
+&lt;h1 id=&#34;red-texts-are-dialogues&#34;&gt;red texts are dialogues&lt;/h1&gt;
+
+&lt;p&gt;allText = bs.find_all(&amp;lsquo;span&amp;rsquo;, {&amp;lsquo;class&amp;rsquo;:{&amp;lsquo;green&amp;rsquo;, &amp;lsquo;red&amp;rsquo;}})
+print([text for text in allText])
+[&lt;span class=&#34;red&#34;&gt;Well, Prince, so Genoa and Lucca are now just family estates of the
+Buonapartes. But I warn you, if you don&amp;rsquo;t tell me that this means war,
+if you still try to defend the infamies and horrors perpetrated by
+that Antichrist- I really believe he is Antichrist- I will have
+nothing more to do with you and you are no longer my friend, no longer
+my &amp;lsquo;faithful slave,&amp;rsquo; as you call yourself! But how do you do? I see
+I have frightened you- sit down and tell me all the news.&lt;/span&gt;, &lt;span class=&#34;green&#34;&gt;Anna
+Pavlovna Scherer&lt;/span&gt;, &lt;span class=&#34;green&#34;&gt;Empress Marya
+Fedorovna&lt;/span&gt;, &lt;span class=&#34;green&#34;&gt;Prince Vasili Kuragin&lt;/span&gt;, &lt;span class=&#34;green&#34;&gt;Anna Pavlovna&lt;/span&gt;, &lt;span class=&#34;green&#34;&gt;St. Petersburg&lt;/span&gt;, &lt;span class=&#34;red&#34;&gt;If you have nothing better to do, Count [or Prince], and if the
+prospect of spending an evening with a poor invalid is not too
+terrible, I shall be very charmed to see you tonight between 7 and 10-
+Annette Scherer.&lt;/span&gt;, &lt;span class=&#34;red&#34;&gt;Heavens! what a virulent attack!&lt;/span&gt;, &lt;span class=&#34;green&#34;&gt;the prince&lt;/span&gt;, &lt;span class=&#34;green&#34;&gt;Anna Pavlovna&lt;/span&gt;, &lt;span class=&#34;red&#34;&gt;First of all, dear friend, tell me how you are. Set your friend&amp;rsquo;s
+mind at rest,&lt;/span&gt;, &lt;span class=&#34;red&#34;&gt;Can one be well while suffering morally? Can one be calm in times
+like these if one has any feeling?&lt;/span&gt;, &lt;span class=&#34;green&#34;&gt;Anna Pavlovna&lt;/span&gt;, &lt;span class=&#34;red&#34;&gt;You are
+staying the whole evening, I hope?&lt;/span&gt;, &lt;span class=&#34;red&#34;&gt;And the fete at the English ambassador&amp;rsquo;s? Today is Wednesday. I
+must put in an appearance there,&lt;/span&gt;, &lt;span class=&#34;green&#34;&gt;the prince&lt;/span&gt;, &lt;span class=&#34;red&#34;&gt;My daughter is
+coming for me to take me there.&lt;/span&gt;, &lt;span class=&#34;red&#34;&gt;I thought today&amp;rsquo;s fete had been canceled. I confess all these
+festivities and fireworks are becoming wearisome.&lt;/span&gt;, &lt;span class=&#34;red&#34;&gt;If they had known that you wished it, the entertainment would
+have been put off,&lt;/span&gt;, &lt;span class=&#34;green&#34;&gt;the prince&lt;/span&gt;, &lt;span class=&#34;red&#34;&gt;Don&amp;rsquo;t tease! Well, and what has been decided about Novosiltsev&amp;rsquo;s
+dispatch? You know everything.&lt;/span&gt;, &lt;span class=&#34;red&#34;&gt;What can one say about it?&lt;/span&gt;, &lt;span class=&#34;green&#34;&gt;the prince&lt;/span&gt;, &lt;span class=&#34;red&#34;&gt;What has been decided? They have decided that
+Buonaparte has burnt his boats, and I believe that we are ready to
+burn ours.&lt;/span&gt;, &lt;span class=&#34;green&#34;&gt;Prince Vasili&lt;/span&gt;, &lt;span class=&#34;green&#34;&gt;Anna Pavlovna&lt;/span&gt;, &lt;span class=&#34;green&#34;&gt;Anna Pavlovna&lt;/span&gt;, &lt;span class=&#34;red&#34;&gt;Oh, don&amp;rsquo;t speak to me of Austria. Perhaps I don&amp;rsquo;t understand
+things, but Austria never has wished, and does not wish, for war.
+She is betraying us! Russia alone must save Europe. Our gracious
+sovereign recognizes his high vocation and will be true to it. That is
+the one thing I have faith in! Our good and wonderful sovereign has to
+perform the noblest role on earth, and he is so virtuous and noble
+that God will not forsake him. He will fulfill his vocation and
+crush the hydra of revolution, which has become more terrible than
+ever in the person of this murderer and villain! We alone must
+avenge the blood of the just one&amp;hellip;. Whom, I ask you, can we rely
+on?&amp;hellip; England with her commercial spirit will not and cannot
+understand the Emperor Alexander&amp;rsquo;s loftiness of soul. She has
+refused to evacuate Malta. She wanted to find, and still seeks, some
+secret motive in our actions. What answer did Novosiltsev get? None.
+The English have not understood and cannot understand the
+self-abnegation of our Emperor who wants nothing for himself, but only
+desires the good of mankind. And what have they promised? Nothing! And
+what little they have promised they will not perform! Prussia has
+always declared that Buonaparte is invincible, and that all Europe
+is powerless before him&amp;hellip;. And I don&amp;rsquo;t believe a word that Hardenburg
+says, or Haugwitz either. This famous Prussian neutrality is just a
+trap. I have faith only in God and the lofty destiny of our adored
+monarch. He will save Europe!&lt;/span&gt;, &lt;span class=&#34;red&#34;&gt;I think,&lt;/span&gt;, &lt;span class=&#34;green&#34;&gt;the prince&lt;/span&gt;, &lt;span class=&#34;red&#34;&gt;that if you had been
+sent instead of our dear &lt;span class=&#34;green&#34;&gt;Wintzingerode&lt;/span&gt; you would have captured the
+&lt;span class=&#34;green&#34;&gt;King of Prussia&lt;/span&gt;&amp;rsquo;s consent by assault. You are so eloquent. Will you
+give me a cup of tea?&lt;/span&gt;, &lt;span class=&#34;green&#34;&gt;Wintzingerode&lt;/span&gt;, &lt;span class=&#34;green&#34;&gt;King of Prussia&lt;/span&gt;, &lt;span class=&#34;red&#34;&gt;In a moment. A propos,&lt;/span&gt;, &lt;span class=&#34;red&#34;&gt;I am
+expecting two very interesting men tonight, &lt;span class=&#34;green&#34;&gt;le Vicomte de Mortemart&lt;/span&gt;,
+who is connected with the &lt;span class=&#34;green&#34;&gt;Montmorencys&lt;/span&gt; through the &lt;span class=&#34;green&#34;&gt;Rohans&lt;/span&gt;, one of
+the best French families. He is one of the genuine emigres, the good
+ones. And also the &lt;span class=&#34;green&#34;&gt;Abbe Morio&lt;/span&gt;. Do you know that profound thinker? He
+has been received by &lt;span class=&#34;green&#34;&gt;the Emperor&lt;/span&gt;. Had you heard?&lt;/span&gt;, &lt;span class=&#34;green&#34;&gt;le Vicomte de Mortemart&lt;/span&gt;, &lt;span class=&#34;green&#34;&gt;Montmorencys&lt;/span&gt;, &lt;span class=&#34;green&#34;&gt;Rohans&lt;/span&gt;, &lt;span class=&#34;green&#34;&gt;Abbe Morio&lt;/span&gt;, &lt;span class=&#34;green&#34;&gt;the Emperor&lt;/span&gt;, &lt;span class=&#34;red&#34;&gt;I shall be delighted to meet them,&lt;/span&gt;, &lt;span class=&#34;green&#34;&gt;the prince&lt;/span&gt;, &lt;span class=&#34;red&#34;&gt;But tell me,&lt;/span&gt;, &lt;span class=&#34;red&#34;&gt;is it true that the Dowager Empress wants Baron Funke
+to be appointed first secretary at Vienna? The baron by all accounts
+is a poor creature.&lt;/span&gt;, &lt;span class=&#34;green&#34;&gt;Prince Vasili&lt;/span&gt;, &lt;span class=&#34;green&#34;&gt;Dowager Empress Marya Fedorovna&lt;/span&gt;, &lt;span class=&#34;green&#34;&gt;the baron&lt;/span&gt;, &lt;span class=&#34;green&#34;&gt;Anna Pavlovna&lt;/span&gt;, &lt;span class=&#34;green&#34;&gt;the Empress&lt;/span&gt;, &lt;span class=&#34;red&#34;&gt;Baron Funke has been recommended to the Dowager Empress by her
+sister,&lt;/span&gt;, &lt;span class=&#34;green&#34;&gt;the Empress&lt;/span&gt;, &lt;span class=&#34;green&#34;&gt;Anna Pavlovna&amp;rsquo;s&lt;/span&gt;, &lt;span class=&#34;green&#34;&gt;Her Majesty&lt;/span&gt;, &lt;span class=&#34;green&#34;&gt;Baron
+Funke&lt;/span&gt;, &lt;span class=&#34;green&#34;&gt;The prince&lt;/span&gt;, &lt;span class=&#34;green&#34;&gt;Anna
+Pavlovna&lt;/span&gt;, &lt;span class=&#34;green&#34;&gt;the Empress&lt;/span&gt;, &lt;span class=&#34;red&#34;&gt;Now about your family. Do you know that since your daughter came
+out everyone has been enraptured by her? They say she is amazingly
+beautiful.&lt;/span&gt;, &lt;span class=&#34;green&#34;&gt;The prince&lt;/span&gt;, &lt;span class=&#34;red&#34;&gt;I often think,&lt;/span&gt;, &lt;span class=&#34;red&#34;&gt;I often think how unfairly sometimes the
+joys of life are distributed. Why has fate given you two such splendid
+children? I don&amp;rsquo;t speak of &lt;span class=&#34;green&#34;&gt;Anatole&lt;/span&gt;, your youngest. I don&amp;rsquo;t like
+him,&lt;/span&gt;, &lt;span class=&#34;green&#34;&gt;Anatole&lt;/span&gt;, &lt;span class=&#34;red&#34;&gt;Two such charming children. And really you appreciate
+them less than anyone, and so you don&amp;rsquo;t deserve to have them.&lt;/span&gt;, &lt;span class=&#34;red&#34;&gt;I can&amp;rsquo;t help it,&lt;/span&gt;, &lt;span class=&#34;green&#34;&gt;the prince&lt;/span&gt;, &lt;span class=&#34;red&#34;&gt;Lavater would have said I
+lack the bump of paternity.&lt;/span&gt;, &lt;span class=&#34;red&#34;&gt;Don&amp;rsquo;t joke; I mean to have a serious talk with you. Do you know I
+am dissatisfied with your younger son? Between ourselves&lt;/span&gt;, &lt;span class=&#34;red&#34;&gt;he was mentioned at Her
+Majesty&amp;rsquo;s and you were pitied&amp;hellip;.&lt;/span&gt;, &lt;span class=&#34;green&#34;&gt;The prince&lt;/span&gt;, &lt;span class=&#34;red&#34;&gt;What would you have me do?&lt;/span&gt;, &lt;span class=&#34;red&#34;&gt;You know I did all
+a father could for their education, and they have both turned out
+fools. Hippolyte is at least a quiet fool, but Anatole is an active
+one. That is the only difference between them.&lt;/span&gt;, &lt;span class=&#34;red&#34;&gt;And why are children born to such men as you? If you were not a
+father there would be nothing I could reproach you with,&lt;/span&gt;, &lt;span class=&#34;green&#34;&gt;Anna
+Pavlovna&lt;/span&gt;, &lt;span class=&#34;red&#34;&gt;I am your faithful slave and to you alone I can confess that my
+children are the bane of my life. It is the cross I have to bear. That
+is how I explain it to myself. It can&amp;rsquo;t be helped!&lt;/span&gt;, &lt;span class=&#34;green&#34;&gt;Anna Pavlovna&lt;/span&gt;]&lt;/p&gt;
+
+&lt;h1 id=&#34;if-you-want-to-find-the-number-of-times-the-prince-is-surrounded-by-tags-on-the-example-page-textcontet-the-prince&#34;&gt;if you want to find the number of times “the prince” is surrounded by tags on the example page, textcontet= the prince&lt;/h1&gt;
+
+&lt;p&gt;nameList = bs.find_all(text=&amp;lsquo;the prince&amp;rsquo;)
+print(len(nameList))
+7&lt;/p&gt;
+
+&lt;h1 id=&#34;this-returns-the-first-tag-with-the-word-text-in-the-class-attribute-and-title-in-the-id-attribute&#34;&gt;This returns the first tag with the word “text” in the class_ attribute and “title” in the id attribute&lt;/h1&gt;
+
+&lt;p&gt;title = bs.find&lt;em&gt;all(id=&amp;lsquo;title&amp;rsquo;, class&lt;/em&gt;=&amp;lsquo;text&amp;rsquo;)
+print([text for text in title])&lt;/p&gt;
+
+&lt;h1 id=&#34;these-two-lines-are-identical&#34;&gt;these two lines are identical&lt;/h1&gt;
+
+&lt;p&gt;bs.find_all(id=&amp;lsquo;text&amp;rsquo;)
+bs.find_all(&amp;ldquo;, {&amp;lsquo;id&amp;rsquo;:&amp;lsquo;text&amp;rsquo;})
+[]&lt;/p&gt;
+
+&lt;p&gt;[&lt;div id=&#34;text&#34;&gt;
+ &amp;ldquo;&lt;span class=&#34;red&#34;&gt;Well, Prince, so Genoa and Lucca are now just family estates of the
+ Buonapartes. But I warn you, if you don&amp;rsquo;t tell me that this means war,
+ if you still try to defend the infamies and horrors perpetrated by
+ that Antichrist- I really believe he is Antichrist- I will have
+ nothing more to do with you and you are no longer my friend, no longer
+ my &amp;lsquo;faithful slave,&amp;rsquo; as you call yourself! But how do you do? I see
+ I have frightened you- sit down and tell me all the news.&lt;/span&gt;&amp;ldquo;
+ &lt;p&gt;&lt;/p&gt;
+ It was in July, 1805, and the speaker was the well-known &lt;span class=&#34;green&#34;&gt;Anna
+ Pavlovna Scherer&lt;/span&gt;, maid of honor and favorite of the &lt;span class=&#34;green&#34;&gt;Empress Marya
+ Fedorovna&lt;/span&gt;. With these words she greeted &lt;span class=&#34;green&#34;&gt;Prince Vasili Kuragin&lt;/span&gt;, a man
+ of high rank and importance, who was the first to arrive at her
+ reception. &lt;span class=&#34;green&#34;&gt;Anna Pavlovna&lt;/span&gt; had had a cough for some days. She was, as
+ she said, suffering from la grippe; grippe being then a new word in
+ &lt;span class=&#34;green&#34;&gt;St. Petersburg&lt;/span&gt;, used only by the elite.
+ &lt;p&gt;&lt;/p&gt;
+ All her invitations without exception, written in French, and
+ delivered by a scarlet-liveried footman that morning, ran as follows:
+ &lt;p&gt;&lt;/p&gt;
+ &amp;ldquo;&lt;span class=&#34;red&#34;&gt;If you have nothing better to do, Count [or Prince], and if the
+ prospect of spending an evening with a poor invalid is not too
+ terrible, I shall be very charmed to see you tonight between 7 and 10-
+ Annette Scherer.&lt;/span&gt;&amp;ldquo;
+ &lt;p&gt;&lt;/p&gt;
+ &amp;ldquo;&lt;span class=&#34;red&#34;&gt;Heavens! what a virulent attack!&lt;/span&gt;&amp;rdquo; replied &lt;span class=&#34;green&#34;&gt;the prince&lt;/span&gt;, not in the
+ least disconcerted by this reception. He had just entered, wearing
+ an embroidered court uniform, knee breeches, and shoes, and had
+ stars on his breast and a serene expression on his flat face. He spoke
+ in that refined French in which our grandfathers not only spoke but
+ thought, and with the gentle, patronizing intonation natural to a
+ man of importance who had grown old in society and at court. He went
+ up to &lt;span class=&#34;green&#34;&gt;Anna Pavlovna&lt;/span&gt;, kissed her hand, presenting to her his bald,
+ scented, and shining head, and complacently seated himself on the
+ sofa.
+ &lt;p&gt;&lt;/p&gt;
+ &amp;ldquo;&lt;span class=&#34;red&#34;&gt;First of all, dear friend, tell me how you are. Set your friend&amp;rsquo;s
+ mind at rest,&lt;/span&gt;&amp;rdquo; said he without altering his tone, beneath the
+ politeness and affected sympathy of which indifference and even
+ irony could be discerned.
+ &lt;p&gt;&lt;/p&gt;
+ &amp;ldquo;&lt;span class=&#34;red&#34;&gt;Can one be well while suffering morally? Can one be calm in times
+ like these if one has any feeling?&lt;/span&gt;&amp;rdquo; said &lt;span class=&#34;green&#34;&gt;Anna Pavlovna&lt;/span&gt;. &amp;ldquo;&lt;span class=&#34;red&#34;&gt;You are
+ staying the whole evening, I hope?&lt;/span&gt;&amp;ldquo;
+ &lt;p&gt;&lt;/p&gt;
+ &amp;ldquo;&lt;span class=&#34;red&#34;&gt;And the fete at the English ambassador&amp;rsquo;s? Today is Wednesday. I
+ must put in an appearance there,&lt;/span&gt;&amp;rdquo; said &lt;span class=&#34;green&#34;&gt;the prince&lt;/span&gt;. &amp;ldquo;&lt;span class=&#34;red&#34;&gt;My daughter is
+ coming for me to take me there.&lt;/span&gt;&amp;ldquo;
+ &lt;p&gt;&lt;/p&gt;
+ &amp;ldquo;&lt;span class=&#34;red&#34;&gt;I thought today&amp;rsquo;s fete had been canceled. I confess all these
+ festivities and fireworks are becoming wearisome.&lt;/span&gt;&amp;ldquo;
+ &lt;p&gt;&lt;/p&gt;
+ &amp;ldquo;&lt;span class=&#34;red&#34;&gt;If they had known that you wished it, the entertainment would
+ have been put off,&lt;/span&gt;&amp;rdquo; said &lt;span class=&#34;green&#34;&gt;the prince&lt;/span&gt;, who, like a wound-up clock, by
+ force of habit said things he did not even wish to be believed.
+ &lt;p&gt;&lt;/p&gt;
+ &amp;ldquo;&lt;span class=&#34;red&#34;&gt;Don&amp;rsquo;t tease! Well, and what has been decided about Novosiltsev&amp;rsquo;s
+ dispatch? You know everything.&lt;/span&gt;&amp;ldquo;
+ &lt;p&gt;&lt;/p&gt;
+ &amp;ldquo;&lt;span class=&#34;red&#34;&gt;What can one say about it?&lt;/span&gt;&amp;rdquo; replied &lt;span class=&#34;green&#34;&gt;the prince&lt;/span&gt; in a cold,
+ listless tone. &amp;ldquo;&lt;span class=&#34;red&#34;&gt;What has been decided? They have decided that
+ Buonaparte has burnt his boats, and I believe that we are ready to
+ burn ours.&lt;/span&gt;&amp;ldquo;
+ &lt;p&gt;&lt;/p&gt;
+ &lt;span class=&#34;green&#34;&gt;Prince Vasili&lt;/span&gt; always spoke languidly, like an actor repeating a
+ stale part. &lt;span class=&#34;green&#34;&gt;Anna Pavlovna&lt;/span&gt; Scherer on the contrary, despite her forty
+ years, overflowed with animation and impulsiveness. To be an
+ enthusiast had become her social vocation and, sometimes even when she
+ did not feel like it, she became enthusiastic in order not to
+ disappoint the expectations of those who knew her. The subdued smile
+ which, though it did not suit her faded features, always played
+ round her lips expressed, as in a spoiled child, a continual
+ consciousness of her charming defect, which she neither wished, nor
+ could, nor considered it necessary, to correct.
+ &lt;p&gt;&lt;/p&gt;
+ In the midst of a conversation on political matters &lt;span class=&#34;green&#34;&gt;Anna Pavlovna&lt;/span&gt;
+ burst out:
+ &lt;p&gt;&lt;/p&gt;
+ &amp;ldquo;&lt;span class=&#34;red&#34;&gt;Oh, don&amp;rsquo;t speak to me of Austria. Perhaps I don&amp;rsquo;t understand
+ things, but Austria never has wished, and does not wish, for war.
+ She is betraying us! Russia alone must save Europe. Our gracious
+ sovereign recognizes his high vocation and will be true to it. That is
+ the one thing I have faith in! Our good and wonderful sovereign has to
+ perform the noblest role on earth, and he is so virtuous and noble
+ that God will not forsake him. He will fulfill his vocation and
+ crush the hydra of revolution, which has become more terrible than
+ ever in the person of this murderer and villain! We alone must
+ avenge the blood of the just one&amp;hellip;. Whom, I ask you, can we rely
+ on?&amp;hellip; England with her commercial spirit will not and cannot
+ understand the Emperor Alexander&amp;rsquo;s loftiness of soul. She has
+ refused to evacuate Malta. She wanted to find, and still seeks, some
+ secret motive in our actions. What answer did Novosiltsev get? None.
+ The English have not understood and cannot understand the
+ self-abnegation of our Emperor who wants nothing for himself, but only
+ desires the good of mankind. And what have they promised? Nothing! And
+ what little they have promised they will not perform! Prussia has
+ always declared that Buonaparte is invincible, and that all Europe
+ is powerless before him&amp;hellip;. And I don&amp;rsquo;t believe a word that Hardenburg
+ says, or Haugwitz either. This famous Prussian neutrality is just a
+ trap. I have faith only in God and the lofty destiny of our adored
+ monarch. He will save Europe!&lt;/span&gt;&amp;ldquo;
+ &lt;p&gt;&lt;/p&gt;
+ She suddenly paused, smiling at her own impetuosity.
+ &lt;p&gt;&lt;/p&gt;
+ &amp;ldquo;&lt;span class=&#34;red&#34;&gt;I think,&lt;/span&gt;&amp;rdquo; said &lt;span class=&#34;green&#34;&gt;the prince&lt;/span&gt; with a smile, &amp;ldquo;&lt;span class=&#34;red&#34;&gt;that if you had been
+ sent instead of our dear &lt;span class=&#34;green&#34;&gt;Wintzingerode&lt;/span&gt; you would have captured the
+ &lt;span class=&#34;green&#34;&gt;King of Prussia&lt;/span&gt;&amp;rsquo;s consent by assault. You are so eloquent. Will you
+ give me a cup of tea?&lt;/span&gt;&amp;ldquo;
+ &lt;p&gt;&lt;/p&gt;
+ &amp;ldquo;&lt;span class=&#34;red&#34;&gt;In a moment. A propos,&lt;/span&gt;&amp;rdquo; she added, becoming calm again, &amp;ldquo;&lt;span class=&#34;red&#34;&gt;I am
+ expecting two very interesting men tonight, &lt;span class=&#34;green&#34;&gt;le Vicomte de Mortemart&lt;/span&gt;,
+ who is connected with the &lt;span class=&#34;green&#34;&gt;Montmorencys&lt;/span&gt; through the &lt;span class=&#34;green&#34;&gt;Rohans&lt;/span&gt;, one of
+ the best French families. He is one of the genuine emigres, the good
+ ones. And also the &lt;span class=&#34;green&#34;&gt;Abbe Morio&lt;/span&gt;. Do you know that profound thinker? He
+ has been received by &lt;span class=&#34;green&#34;&gt;the Emperor&lt;/span&gt;. Had you heard?&lt;/span&gt;&amp;ldquo;
+ &lt;p&gt;&lt;/p&gt;
+ &amp;ldquo;&lt;span class=&#34;red&#34;&gt;I shall be delighted to meet them,&lt;/span&gt;&amp;rdquo; said &lt;span class=&#34;green&#34;&gt;the prince&lt;/span&gt;. &amp;ldquo;&lt;span class=&#34;red&#34;&gt;But tell me,&lt;/span&gt;&amp;ldquo;
+ he added with studied carelessness as if it had only just occurred
+ to him, though the question he was about to ask was the chief motive
+ of his visit, &amp;ldquo;&lt;span class=&#34;red&#34;&gt;is it true that the Dowager Empress wants Baron Funke
+ to be appointed first secretary at Vienna? The baron by all accounts
+ is a poor creature.&lt;/span&gt;&amp;ldquo;
+ &lt;p&gt;&lt;/p&gt;
+ &lt;span class=&#34;green&#34;&gt;Prince Vasili&lt;/span&gt; wished to obtain this post for his son, but others
+ were trying through the &lt;span class=&#34;green&#34;&gt;Dowager Empress Marya Fedorovna&lt;/span&gt; to secure it
+ for &lt;span class=&#34;green&#34;&gt;the baron&lt;/span&gt;.
+ &lt;p&gt;&lt;/p&gt;
+ &lt;span class=&#34;green&#34;&gt;Anna Pavlovna&lt;/span&gt; almost closed her eyes to indicate that neither she
+ nor anyone else had a right to criticize what &lt;span class=&#34;green&#34;&gt;the Empress&lt;/span&gt; desired or
+ was pleased with.
+ &lt;p&gt;&lt;/p&gt;
+ &amp;ldquo;&lt;span class=&#34;red&#34;&gt;Baron Funke has been recommended to the Dowager Empress by her
+ sister,&lt;/span&gt;&amp;rdquo; was all she said, in a dry and mournful tone.
+ &lt;p&gt;&lt;/p&gt;
+ As she named &lt;span class=&#34;green&#34;&gt;the Empress&lt;/span&gt;, &lt;span class=&#34;green&#34;&gt;Anna Pavlovna&amp;rsquo;s&lt;/span&gt; face suddenly assumed an
+ expression of profound and sincere devotion and respect mingled with
+ sadness, and this occurred every time she mentioned her illustrious
+ patroness. She added that &lt;span class=&#34;green&#34;&gt;Her Majesty&lt;/span&gt; had deigned to show &lt;span class=&#34;green&#34;&gt;Baron
+ Funke&lt;/span&gt;, and again her face clouded over with sadness.
+ &lt;p&gt;&lt;/p&gt;
+ &lt;span class=&#34;green&#34;&gt;The prince&lt;/span&gt; was silent and looked indifferent. But, with the
+ womanly and courtierlike quickness and tact habitual to her, &lt;span class=&#34;green&#34;&gt;Anna
+ Pavlovna&lt;/span&gt; wished both to rebuke him (for daring to speak he had done of
+ a man recommended to &lt;span class=&#34;green&#34;&gt;the Empress&lt;/span&gt;) and at the same time to console him,
+ so she said:
+ &lt;p&gt;&lt;/p&gt;
+ &amp;ldquo;&lt;span class=&#34;red&#34;&gt;Now about your family. Do you know that since your daughter came
+ out everyone has been enraptured by her? They say she is amazingly
+ beautiful.&lt;/span&gt;&amp;ldquo;
+ &lt;p&gt;&lt;/p&gt;
+ &lt;span class=&#34;green&#34;&gt;The prince&lt;/span&gt; bowed to signify his respect and gratitude.
+ &lt;p&gt;&lt;/p&gt;
+ &amp;ldquo;&lt;span class=&#34;red&#34;&gt;I often think,&lt;/span&gt;&amp;rdquo; she continued after a short pause, drawing nearer
+ to the prince and smiling amiably at him as if to show that
+ political and social topics were ended and the time had come for
+ intimate conversation- &amp;ldquo;&lt;span class=&#34;red&#34;&gt;I often think how unfairly sometimes the
+ joys of life are distributed. Why has fate given you two such splendid
+ children? I don&amp;rsquo;t speak of &lt;span class=&#34;green&#34;&gt;Anatole&lt;/span&gt;, your youngest. I don&amp;rsquo;t like
+ him,&lt;/span&gt;&amp;rdquo; she added in a tone admitting of no rejoinder and raising her
+ eyebrows. &amp;ldquo;&lt;span class=&#34;red&#34;&gt;Two such charming children. And really you appreciate
+ them less than anyone, and so you don&amp;rsquo;t deserve to have them.&lt;/span&gt;&amp;ldquo;
+ &lt;p&gt;&lt;/p&gt;
+ And she smiled her ecstatic smile.
+ &lt;p&gt;&lt;/p&gt;
+ &amp;ldquo;&lt;span class=&#34;red&#34;&gt;I can&amp;rsquo;t help it,&lt;/span&gt;&amp;rdquo; said &lt;span class=&#34;green&#34;&gt;the prince&lt;/span&gt;. &amp;ldquo;&lt;span class=&#34;red&#34;&gt;Lavater would have said I
+ lack the bump of paternity.&lt;/span&gt;&amp;ldquo;
+ &lt;p&gt;&lt;/p&gt;
+ &amp;ldquo;&lt;span class=&#34;red&#34;&gt;Don&amp;rsquo;t joke; I mean to have a serious talk with you. Do you know I
+ am dissatisfied with your younger son? Between ourselves&lt;/span&gt;&amp;rdquo; (and her
+ face assumed its melancholy expression), &amp;ldquo;&lt;span class=&#34;red&#34;&gt;he was mentioned at Her
+ Majesty&amp;rsquo;s and you were pitied&amp;hellip;.&lt;/span&gt;&amp;ldquo;
+ &lt;p&gt;&lt;/p&gt;
+ &lt;span class=&#34;green&#34;&gt;The prince&lt;/span&gt; answered nothing, but she looked at him significantly,
+ awaiting a reply. He frowned.
+ &lt;p&gt;&lt;/p&gt;
+ &amp;ldquo;&lt;span class=&#34;red&#34;&gt;What would you have me do?&lt;/span&gt;&amp;rdquo; he said at last. &amp;ldquo;&lt;span class=&#34;red&#34;&gt;You know I did all
+ a father could for their education, and they have both turned out
+ fools. Hippolyte is at least a quiet fool, but Anatole is an active
+ one. That is the only difference between them.&lt;/span&gt;&amp;rdquo; He said this smiling
+ in a way more natural and animated than usual, so that the wrinkles
+ round his mouth very clearly revealed something unexpectedly coarse
+ and unpleasant.
+ &lt;p&gt;&lt;/p&gt;
+ &amp;ldquo;&lt;span class=&#34;red&#34;&gt;And why are children born to such men as you? If you were not a
+ father there would be nothing I could reproach you with,&lt;/span&gt;&amp;rdquo; said &lt;span class=&#34;green&#34;&gt;Anna
+ Pavlovna&lt;/span&gt;, looking up pensively.
+ &lt;p&gt;&lt;/p&gt;
+ &amp;ldquo;&lt;span class=&#34;red&#34;&gt;I am your faithful slave and to you alone I can confess that my
+ children are the bane of my life. It is the cross I have to bear. That
+ is how I explain it to myself. It can&amp;rsquo;t be helped!&lt;/span&gt;&amp;ldquo;
+ &lt;p&gt;&lt;/p&gt;
+ He said no more, but expressed his resignation to cruel fate by a
+ gesture. &lt;span class=&#34;green&#34;&gt;Anna Pavlovna&lt;/span&gt; meditated.
+ &lt;/div&gt;]
+Difference between children and descendants&lt;/p&gt;
+
+&lt;h1 id=&#34;see-the-source-code-of-the-website-to-understand-the-structure&#34;&gt;see the source code of the website to understand the structure&lt;/h1&gt;
+
+&lt;p&gt;html = urlopen(&amp;lsquo;&lt;a href=&#34;http://www.pythonscraping.com/pages/page3.html&#39;&#34;&gt;http://www.pythonscraping.com/pages/page3.html&#39;&lt;/a&gt;)
+bs = BeautifulSoup(html, &amp;lsquo;html.parser&amp;rsquo;)&lt;/p&gt;
+
+&lt;h1 id=&#34;this-code-prints-the-list-of-product-rows-in-the-giftlist-table-including-the-initial-row-of-column-labels&#34;&gt;This code prints the list of product rows in the giftList table, including the initial row of column labels.&lt;/h1&gt;
+
+&lt;h1 id=&#34;children-are-always-exactly-one-tag-below-a-parent-whereas-descendants-can-be-at-any-level-in-the-tree-below-a-parent&#34;&gt;children are always exactly one tag below a parent, whereas descendants can be at any level in the tree below a parent.&lt;/h1&gt;
+
+&lt;p&gt;for child in bs.find(&amp;lsquo;table&amp;rsquo;,{&amp;lsquo;id&amp;rsquo;:&amp;lsquo;giftList&amp;rsquo;}).children:
+    print(child)
+&lt;tr&gt;&lt;th&gt;
+Item Title
+&lt;/th&gt;&lt;th&gt;
+Description
+&lt;/th&gt;&lt;th&gt;
+Cost
+&lt;/th&gt;&lt;th&gt;
+Image
+&lt;/th&gt;&lt;/tr&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;tr class=&#34;gift&#34; id=&#34;gift1&#34;&gt;&lt;td&gt;
+Vegetable Basket
+&lt;/td&gt;&lt;td&gt;
+This vegetable basket is the perfect gift for your health conscious (or overweight) friends!
+&lt;span class=&#34;excitingNote&#34;&gt;Now with super-colorful bell peppers!&lt;/span&gt;
+&lt;/td&gt;&lt;td&gt;
+$15.00
+&lt;/td&gt;&lt;td&gt;
+&lt;img src=&#34;../img/gifts/img1.jpg&#34;/&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;tr class=&#34;gift&#34; id=&#34;gift2&#34;&gt;&lt;td&gt;
+Russian Nesting Dolls
+&lt;/td&gt;&lt;td&gt;
+Hand-painted by trained monkeys, these exquisite dolls are priceless! And by &amp;ldquo;priceless,&amp;rdquo; we mean &amp;ldquo;extremely expensive&amp;rdquo;! &lt;span class=&#34;excitingNote&#34;&gt;8 entire dolls per set! Octuple the presents!&lt;/span&gt;
+&lt;/td&gt;&lt;td&gt;
+$10,000.52
+&lt;/td&gt;&lt;td&gt;
+&lt;img src=&#34;../img/gifts/img2.jpg&#34;/&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;tr class=&#34;gift&#34; id=&#34;gift3&#34;&gt;&lt;td&gt;
+Fish Painting
+&lt;/td&gt;&lt;td&gt;
+If something seems fishy about this painting, it&amp;rsquo;s because it&amp;rsquo;s a fish! &lt;span class=&#34;excitingNote&#34;&gt;Also hand-painted by trained monkeys!&lt;/span&gt;
+&lt;/td&gt;&lt;td&gt;
+$10,005.00
+&lt;/td&gt;&lt;td&gt;
+&lt;img src=&#34;../img/gifts/img3.jpg&#34;/&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;tr class=&#34;gift&#34; id=&#34;gift4&#34;&gt;&lt;td&gt;
+Dead Parrot
+&lt;/td&gt;&lt;td&gt;
+This is an ex-parrot! &lt;span class=&#34;excitingNote&#34;&gt;Or maybe he&amp;rsquo;s only resting?&lt;/span&gt;
+&lt;/td&gt;&lt;td&gt;
+$0.50
+&lt;/td&gt;&lt;td&gt;
+&lt;img src=&#34;../img/gifts/img4.jpg&#34;/&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;tr class=&#34;gift&#34; id=&#34;gift5&#34;&gt;&lt;td&gt;
+Mystery Box
+&lt;/td&gt;&lt;td&gt;
+If you love surprises, this mystery box is for you! Do not place on light-colored surfaces. May cause oil staining. &lt;span class=&#34;excitingNote&#34;&gt;Keep your friends guessing!&lt;/span&gt;
+&lt;/td&gt;&lt;td&gt;
+$1.50
+&lt;/td&gt;&lt;td&gt;
+&lt;img src=&#34;../img/gifts/img6.jpg&#34;/&gt;
+&lt;/td&gt;&lt;/tr&gt;
+Pay attention to NEXT siblings
+html = urlopen(&amp;lsquo;&lt;a href=&#34;http://www.pythonscraping.com/pages/page3.html&#39;&#34;&gt;http://www.pythonscraping.com/pages/page3.html&#39;&lt;/a&gt;)
+bs = BeautifulSoup(html, &amp;lsquo;html.parser&amp;rsquo;)&lt;/p&gt;
+
+&lt;p&gt;for sibling in bs.find(&amp;lsquo;table&amp;rsquo;, {&amp;lsquo;id&amp;rsquo;:&amp;lsquo;giftList&amp;rsquo;}).tr.next_siblings:
+    print(sibling)
+&lt;tr class=&#34;gift&#34; id=&#34;gift1&#34;&gt;&lt;td&gt;
+Vegetable Basket
+&lt;/td&gt;&lt;td&gt;
+This vegetable basket is the perfect gift for your health conscious (or overweight) friends!
+&lt;span class=&#34;excitingNote&#34;&gt;Now with super-colorful bell peppers!&lt;/span&gt;
+&lt;/td&gt;&lt;td&gt;
+$15.00
+&lt;/td&gt;&lt;td&gt;
+&lt;img src=&#34;../img/gifts/img1.jpg&#34;/&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;tr class=&#34;gift&#34; id=&#34;gift2&#34;&gt;&lt;td&gt;
+Russian Nesting Dolls
+&lt;/td&gt;&lt;td&gt;
+Hand-painted by trained monkeys, these exquisite dolls are priceless! And by &amp;ldquo;priceless,&amp;rdquo; we mean &amp;ldquo;extremely expensive&amp;rdquo;! &lt;span class=&#34;excitingNote&#34;&gt;8 entire dolls per set! Octuple the presents!&lt;/span&gt;
+&lt;/td&gt;&lt;td&gt;
+$10,000.52
+&lt;/td&gt;&lt;td&gt;
+&lt;img src=&#34;../img/gifts/img2.jpg&#34;/&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;tr class=&#34;gift&#34; id=&#34;gift3&#34;&gt;&lt;td&gt;
+Fish Painting
+&lt;/td&gt;&lt;td&gt;
+If something seems fishy about this painting, it&amp;rsquo;s because it&amp;rsquo;s a fish! &lt;span class=&#34;excitingNote&#34;&gt;Also hand-painted by trained monkeys!&lt;/span&gt;
+&lt;/td&gt;&lt;td&gt;
+$10,005.00
+&lt;/td&gt;&lt;td&gt;
+&lt;img src=&#34;../img/gifts/img3.jpg&#34;/&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;tr class=&#34;gift&#34; id=&#34;gift4&#34;&gt;&lt;td&gt;
+Dead Parrot
+&lt;/td&gt;&lt;td&gt;
+This is an ex-parrot! &lt;span class=&#34;excitingNote&#34;&gt;Or maybe he&amp;rsquo;s only resting?&lt;/span&gt;
+&lt;/td&gt;&lt;td&gt;
+$0.50
+&lt;/td&gt;&lt;td&gt;
+&lt;img src=&#34;../img/gifts/img4.jpg&#34;/&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;tr class=&#34;gift&#34; id=&#34;gift5&#34;&gt;&lt;td&gt;
+Mystery Box
+&lt;/td&gt;&lt;td&gt;
+If you love surprises, this mystery box is for you! Do not place on light-colored surfaces. May cause oil staining. &lt;span class=&#34;excitingNote&#34;&gt;Keep your friends guessing!&lt;/span&gt;
+&lt;/td&gt;&lt;td&gt;
+$1.50
+&lt;/td&gt;&lt;td&gt;
+&lt;img src=&#34;../img/gifts/img6.jpg&#34;/&gt;
+&lt;/td&gt;&lt;/tr&gt;
+Find all the image and find it&amp;rsquo;s parent (td in this case)&lt;/p&gt;
+
+&lt;h1 id=&#34;navigate-in-dom-tree&#34;&gt;navigate in dom tree&lt;/h1&gt;
+
+&lt;p&gt;html = urlopen(&amp;lsquo;&lt;a href=&#34;http://www.pythonscraping.com/pages/page3.html&#39;&#34;&gt;http://www.pythonscraping.com/pages/page3.html&#39;&lt;/a&gt;)
+bs = BeautifulSoup(html, &amp;lsquo;html.parser&amp;rsquo;)
+print(bs.find(&amp;lsquo;img&amp;rsquo;,
+              {&amp;lsquo;src&amp;rsquo;:&amp;lsquo;../img/gifts/img1.jpg&amp;rsquo;})
+      .parent.previous_sibling.get_text())
+$15.00
+Use regular expressions to find all the images in the websites
+import re&lt;/p&gt;
+
+&lt;p&gt;html = urlopen(&amp;lsquo;&lt;a href=&#34;http://www.pythonscraping.com/pages/page3.html&#39;&#34;&gt;http://www.pythonscraping.com/pages/page3.html&#39;&lt;/a&gt;)
+bs = BeautifulSoup(html, &amp;lsquo;html.parser&amp;rsquo;)&lt;/p&gt;
+
+&lt;h1 id=&#34;using-regular-expressions&#34;&gt;using regular expressions&lt;/h1&gt;
+
+&lt;p&gt;images = bs.find_all(&amp;lsquo;img&amp;rsquo;, {&amp;lsquo;src&amp;rsquo;:re.compile(&amp;rsquo;..\/img\/gifts/img.*.jpg&amp;rsquo;)})
+for image in images:
+    print(image[&amp;lsquo;src&amp;rsquo;])&lt;/p&gt;
+
+&lt;h1 id=&#34;note-that-images-is-an-object-of-beautiful-soup&#34;&gt;note that images is an object of beautiful soup&lt;/h1&gt;
+
+&lt;p&gt;type(images)
+../img/gifts/img1.jpg
+../img/gifts/img2.jpg
+../img/gifts/img3.jpg
+../img/gifts/img4.jpg
+../img/gifts/img6.jpg&lt;/p&gt;
+
+&lt;p&gt;bs4.element.ResultSet
+Use lambda function to implement some nice functions&lt;/p&gt;
+
+&lt;h1 id=&#34;using-anonymous-functions&#34;&gt;using anonymous functions&lt;/h1&gt;
+
+&lt;h1 id=&#34;it-will-find-tags-with-two-attributes-such-as-the-following&#34;&gt;it will find tags with two attributes, such as the following:&lt;/h1&gt;
+
+&lt;p&gt;bs.find_all(lambda tag: len(tag.attrs) == 2)
+[&lt;img src=&#34;../img/gifts/logo.jpg&#34; style=&#34;float:left;&#34;/&gt;,
+ &lt;tr class=&#34;gift&#34; id=&#34;gift1&#34;&gt;&lt;td&gt;
+ Vegetable Basket
+ &lt;/td&gt;&lt;td&gt;
+ This vegetable basket is the perfect gift for your health conscious (or overweight) friends!
+ &lt;span class=&#34;excitingNote&#34;&gt;Now with super-colorful bell peppers!&lt;/span&gt;
+ &lt;/td&gt;&lt;td&gt;
+ $15.00
+ &lt;/td&gt;&lt;td&gt;
+ &lt;img src=&#34;../img/gifts/img1.jpg&#34;/&gt;
+ &lt;/td&gt;&lt;/tr&gt;,
+ &lt;tr class=&#34;gift&#34; id=&#34;gift2&#34;&gt;&lt;td&gt;
+ Russian Nesting Dolls
+ &lt;/td&gt;&lt;td&gt;
+ Hand-painted by trained monkeys, these exquisite dolls are priceless! And by &amp;ldquo;priceless,&amp;rdquo; we mean &amp;ldquo;extremely expensive&amp;rdquo;! &lt;span class=&#34;excitingNote&#34;&gt;8 entire dolls per set! Octuple the presents!&lt;/span&gt;
+ &lt;/td&gt;&lt;td&gt;
+ $10,000.52
+ &lt;/td&gt;&lt;td&gt;
+ &lt;img src=&#34;../img/gifts/img2.jpg&#34;/&gt;
+ &lt;/td&gt;&lt;/tr&gt;,
+ &lt;tr class=&#34;gift&#34; id=&#34;gift3&#34;&gt;&lt;td&gt;
+ Fish Painting
+ &lt;/td&gt;&lt;td&gt;
+ If something seems fishy about this painting, it&amp;rsquo;s because it&amp;rsquo;s a fish! &lt;span class=&#34;excitingNote&#34;&gt;Also hand-painted by trained monkeys!&lt;/span&gt;
+ &lt;/td&gt;&lt;td&gt;
+ $10,005.00
+ &lt;/td&gt;&lt;td&gt;
+ &lt;img src=&#34;../img/gifts/img3.jpg&#34;/&gt;
+ &lt;/td&gt;&lt;/tr&gt;,
+ &lt;tr class=&#34;gift&#34; id=&#34;gift4&#34;&gt;&lt;td&gt;
+ Dead Parrot
+ &lt;/td&gt;&lt;td&gt;
+ This is an ex-parrot! &lt;span class=&#34;excitingNote&#34;&gt;Or maybe he&amp;rsquo;s only resting?&lt;/span&gt;
+ &lt;/td&gt;&lt;td&gt;
+ $0.50
+ &lt;/td&gt;&lt;td&gt;
+ &lt;img src=&#34;../img/gifts/img4.jpg&#34;/&gt;
+ &lt;/td&gt;&lt;/tr&gt;,
+ &lt;tr class=&#34;gift&#34; id=&#34;gift5&#34;&gt;&lt;td&gt;
+ Mystery Box
+ &lt;/td&gt;&lt;td&gt;
+ If you love suprises, this mystery box is for you! Do not place on light-colored surfaces. May cause oil staining. &lt;span class=&#34;excitingNote&#34;&gt;Keep your friends guessing!&lt;/span&gt;
+ &lt;/td&gt;&lt;td&gt;
+ $1.50
+ &lt;/td&gt;&lt;td&gt;
+ &lt;img src=&#34;../img/gifts/img6.jpg&#34;/&gt;
+ &lt;/td&gt;&lt;/tr&gt;]&lt;/p&gt;
+
+&lt;h1 id=&#34;use-of-lambda-functions-to-replace-some-built-in-bs-functions&#34;&gt;use of lambda functions to replace some built-in bs functions&lt;/h1&gt;
+
+&lt;p&gt;bs.find_all(lambda tag: tag.get_text() == &amp;lsquo;Or maybe he\&amp;rsquo;s only resting?&amp;lsquo;)
+bs.find_all(&amp;ldquo;, text=&amp;lsquo;Or maybe he\&amp;rsquo;s only resting?&amp;lsquo;)
+[&amp;ldquo;Or maybe he&amp;rsquo;s only resting?&amp;rdquo;]
+bs.find_all(lambda tag: tag.get_text() == &amp;lsquo;Or maybe he\&amp;rsquo;s only resting?&amp;lsquo;)
+[&lt;span class=&#34;excitingNote&#34;&gt;Or maybe he&amp;rsquo;s only resting?&lt;/span&gt;]&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Web scraping sous Python (1/10) | Rudiments</title>
+      <link>/post/webscraping1/</link>
+      <pubDate>Sun, 23 Feb 2020 00:00:00 +0000</pubDate>
+      <guid>/post/webscraping1/</guid>
+      <description>
+
+&lt;h2 id=&#34;urlopen&#34;&gt;Urlopen&lt;/h2&gt;
+
+&lt;p&gt;Approche basique en utilisant la classe &lt;code&gt;urlopen&lt;/code&gt; du module &lt;code&gt;request&lt;/code&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;from urllib.request import urlopen
+html = urlopen(&#39;http://pythonscraping.com/pages/page1.html&#39;)
+print(html.read())
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;html&amp;gt;
+  \n&amp;lt;head&amp;gt;
+    \n
+    &amp;lt;title&amp;gt;A Useful Page&amp;lt;/title&amp;gt;
+    \n&amp;lt;/head
+  &amp;gt;\n
+  &amp;lt;body&amp;gt;
+    \n
+    &amp;lt;h1&amp;gt;An Interesting Title&amp;lt;/h1&amp;gt;
+    \n
+    &amp;lt;div&amp;gt;
+      \nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+      est laborum.\n
+    &amp;lt;/div&amp;gt;
+    \n
+  &amp;lt;/body&amp;gt;
+  \n
+&amp;lt;/html&amp;gt;
+\n
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;beautifulsoup&#34;&gt;BeautifulSoup&lt;/h2&gt;
+
+&lt;p&gt;Par rapport à urlopen, on n&amp;rsquo;a pas besoin d&amp;rsquo;appeler &lt;code&gt;read&lt;/code&gt; pour accéder au contenu de page web.&lt;/p&gt;
+
+&lt;p&gt;Il est à noter que la deuxième option lors de la création d&amp;rsquo;un objet BeautifulSoup précise le parseur qui est &lt;code&gt;&#39;html.parser&#39;&lt;/code&gt; dans notre cas.&lt;/p&gt;
+
+&lt;p&gt;A sa place, le parseur &lt;code&gt;lxml&lt;/code&gt; montre plus d&amp;rsquo;avantage que &lt;code&gt;html.parser&lt;/code&gt; dans le sens où il fonctionne mieux face aux HTML codes mal formés tels que des balises non fermées, mal imbriquées ou oublées. De plus, il est plus rapide que l&amp;rsquo;autre même si la vitesse n&amp;rsquo;est pas forcément un avantage dans web scraping car le plus important goulet serait souvent la vitesse du réseau elle-même.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;from bs4 import BeautifulSoup
+
+html = urlopen(&#39;http://www.pythonscraping.com/pages/page1.html&#39;)
+bs = BeautifulSoup(html.read(), &#39;html.parser&#39;)
+print(bs.h1)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;h1&amp;gt;An Interesting Title&amp;lt;/h1&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;même-output-avec-différentes-expressions&#34;&gt;Même output avec différentes expressions&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;html = urlopen(&#39;http://www.pythonscraping.com/pages/page1.html&#39;)
+bs = BeautifulSoup(html, &#39;html.parser&#39;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Expression 1&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;print(bs.h1)
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Expression 2&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;print(bs.html.h1)
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Expression 3&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;print(bs.html.body.h1)
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Expression 4&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;print(bs.body.h1)
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;gérer-l-erreur-d-adresse-de-page-web&#34;&gt;Gérer l&amp;rsquo;erreur d&amp;rsquo;adresse de page Web&lt;/h2&gt;
+
+&lt;p&gt;L&amp;rsquo;erreur HTTP peut être &amp;ldquo;404 Page Not Found&amp;rdquo;, &amp;ldquo;500 Internal Server Error&amp;rdquo;, etc.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;from urllib.error import HTTPError
+from urllib.error import URLError
+
+try:
+    html = urlopen(&amp;quot;http://www.pythonscraping.com/pages/page1.html22&amp;quot;)
+except HTTPError as e:  # this is actually a more layman understanding of URLError. HTTPError is a predefined name so that you can&#39;t replace it with other names
+    print(e)
+except URLError as e:
+    print(&amp;quot;The server could not be found!&amp;quot;)
+    # the server error means there is no such website as This HTTP error may be “404 Page Not Found,” “500 Internal Server Error,” and so forth
+else:
+    print(html.read())
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;HTTP Error 404: Not Found
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;ecrire-une-fonction-pour-l-erreur-url&#34;&gt;Ecrire une fonction pour l&amp;rsquo;erreur url&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;def getTitle(url):
+    try:
+        html = urlopen(url)
+    except HTTPError as e:
+        return None
+    try:
+        bsObj = BeautifulSoup(html.read(), &amp;quot;lxml&amp;quot;)
+        title = bsObj.body.h1
+    except AttributeError as e:
+        return None
+    return title
+
+# check if an element is none
+
+title = getTitle(&amp;quot;http://www.pythonscraping.com/pages/page1.html&amp;quot;)
+if title == None:
+    print(&amp;quot;Title could not be found&amp;quot;)
+else:
+    print(title)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;h1&amp;gt;An Interesting Title&amp;lt;/h1&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Writing technical content in Academic</title>
+      <link>/post/writing-technical-content/</link>
+      <pubDate>Sat, 22 Feb 2020 00:00:00 +0000</pubDate>
+      <guid>/post/writing-technical-content/</guid>
+      <description>
+
+&lt;p&gt;Academic is designed to give technical content creators a seamless experience. You can focus on the content and Academic handles the rest.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Highlight your code snippets, take notes on math classes, and draw diagrams from textual representation.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;On this page, you&amp;rsquo;ll find some examples of the types of technical content that can be rendered with Academic.&lt;/p&gt;
+
+&lt;h2 id=&#34;examples&#34;&gt;Examples&lt;/h2&gt;
+
+&lt;h3 id=&#34;code&#34;&gt;Code&lt;/h3&gt;
+
+&lt;p&gt;Academic supports a Markdown extension for highlighting code syntax. You can enable this feature by toggling the &lt;code&gt;highlight&lt;/code&gt; option in your &lt;code&gt;config/_default/params.toml&lt;/code&gt; file.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;```python
+import pandas as pd
+data = pd.read_csv(&amp;quot;data.csv&amp;quot;)
+data.head()
+```
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;renders as&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;import pandas as pd
+data = pd.read_csv(&amp;quot;data.csv&amp;quot;)
+data.head()
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;math&#34;&gt;Math&lt;/h3&gt;
+
+&lt;p&gt;Academic supports a Markdown extension for $\LaTeX$ math. You can enable this feature by toggling the &lt;code&gt;math&lt;/code&gt; option in your &lt;code&gt;config/_default/params.toml&lt;/code&gt; file.&lt;/p&gt;
+
+&lt;p&gt;To render &lt;em&gt;inline&lt;/em&gt; or &lt;em&gt;block&lt;/em&gt; math, wrap your LaTeX math with &lt;code&gt;$...$&lt;/code&gt; or &lt;code&gt;$$...$$&lt;/code&gt;, respectively.&lt;/p&gt;
+
+&lt;p&gt;Example &lt;strong&gt;math block&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-tex&#34;&gt;$$\gamma_{n} = \frac{ 
+\left | \left (\mathbf x_{n} - \mathbf x_{n-1} \right )^T 
+\left [\nabla F (\mathbf x_{n}) - \nabla F (\mathbf x_{n-1}) \right ] \right |}
+{\left \|\nabla F(\mathbf{x}_{n}) - \nabla F(\mathbf{x}_{n-1}) \right \|^2}$$
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;renders as&lt;/p&gt;
+
+&lt;p&gt;$$\gamma&lt;em&gt;{n} = \frac{ \left | \left (\mathbf x&lt;/em&gt;{n} - \mathbf x&lt;em&gt;{n-1} \right )^T \left [\nabla F (\mathbf x&lt;/em&gt;{n}) - \nabla F (\mathbf x&lt;em&gt;{n-1}) \right ] \right |}{\left |\nabla F(\mathbf{x}&lt;/em&gt;{n}) - \nabla F(\mathbf{x}_{n-1}) \right |^2}$$&lt;/p&gt;
+
+&lt;p&gt;Example &lt;strong&gt;inline math&lt;/strong&gt; &lt;code&gt;$\nabla F(\mathbf{x}_{n})$&lt;/code&gt; renders as $\nabla F(\mathbf{x}_{n})$.&lt;/p&gt;
+
+&lt;p&gt;Example &lt;strong&gt;multi-line math&lt;/strong&gt; using the &lt;code&gt;\\&lt;/code&gt; math linebreak:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-tex&#34;&gt;$$f(k;p_0^*) = \begin{cases} p_0^* &amp;amp; \text{if }k=1, \\
+1-p_0^* &amp;amp; \text {if }k=0.\end{cases}$$
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;renders as&lt;/p&gt;
+
+&lt;p&gt;$$f(k;p_0^&lt;em&gt;) = \begin{cases} p_0^&lt;/em&gt; &amp;amp; \text{if }k=1, &lt;br /&gt;
+1-p_0^* &amp;amp; \text {if }k=0.\end{cases}$$&lt;/p&gt;
+
+&lt;h3 id=&#34;diagrams&#34;&gt;Diagrams&lt;/h3&gt;
+
+&lt;p&gt;Academic supports a Markdown extension for diagrams. You can enable this feature by toggling the &lt;code&gt;diagram&lt;/code&gt; option in your &lt;code&gt;config/_default/params.toml&lt;/code&gt; file or by adding &lt;code&gt;diagram: true&lt;/code&gt; to your page front matter.&lt;/p&gt;
+
+&lt;p&gt;An example &lt;strong&gt;flowchart&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;```mermaid
+graph TD
+A[Hard] --&amp;gt;|Text| B(Round)
+B --&amp;gt; C{Decision}
+C --&amp;gt;|One| D[Result 1]
+C --&amp;gt;|Two| E[Result 2]
+```
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;renders as&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-mermaid&#34;&gt;graph TD
+A[Hard] --&amp;gt;|Text| B(Round)
+B --&amp;gt; C{Decision}
+C --&amp;gt;|One| D[Result 1]
+C --&amp;gt;|Two| E[Result 2]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;An example &lt;strong&gt;sequence diagram&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;```mermaid
+sequenceDiagram
+Alice-&amp;gt;&amp;gt;John: Hello John, how are you?
+loop Healthcheck
+    John-&amp;gt;&amp;gt;John: Fight against hypochondria
+end
+Note right of John: Rational thoughts!
+John--&amp;gt;&amp;gt;Alice: Great!
+John-&amp;gt;&amp;gt;Bob: How about you?
+Bob--&amp;gt;&amp;gt;John: Jolly good!
+```
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;renders as&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-mermaid&#34;&gt;sequenceDiagram
+Alice-&amp;gt;&amp;gt;John: Hello John, how are you?
+loop Healthcheck
+    John-&amp;gt;&amp;gt;John: Fight against hypochondria
+end
+Note right of John: Rational thoughts!
+John--&amp;gt;&amp;gt;Alice: Great!
+John-&amp;gt;&amp;gt;Bob: How about you?
+Bob--&amp;gt;&amp;gt;John: Jolly good!
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;An example &lt;strong&gt;Gantt diagram&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;```mermaid
+gantt
+section Section
+Completed :done,    des1, 2014-01-06,2014-01-08
+Active        :active,  des2, 2014-01-07, 3d
+Parallel 1   :         des3, after des1, 1d
+Parallel 2   :         des4, after des1, 1d
+Parallel 3   :         des5, after des3, 1d
+Parallel 4   :         des6, after des4, 1d
+```
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;renders as&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-mermaid&#34;&gt;gantt
+section Section
+Completed :done,    des1, 2014-01-06,2014-01-08
+Active        :active,  des2, 2014-01-07, 3d
+Parallel 1   :         des3, after des1, 1d
+Parallel 2   :         des4, after des1, 1d
+Parallel 3   :         des5, after des3, 1d
+Parallel 4   :         des6, after des4, 1d
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;An example &lt;strong&gt;class diagram&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;```mermaid
+classDiagram
+Class01 &amp;lt;|-- AveryLongClass : Cool
+&amp;lt;&amp;lt;interface&amp;gt;&amp;gt; Class01
+Class09 --&amp;gt; C2 : Where am i?
+Class09 --* C3
+Class09 --|&amp;gt; Class07
+Class07 : equals()
+Class07 : Object[] elementData
+Class01 : size()
+Class01 : int chimp
+Class01 : int gorilla
+class Class10 {
+  &amp;lt;&amp;lt;service&amp;gt;&amp;gt;
+  int id
+  size()
+}
+```
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;renders as&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-mermaid&#34;&gt;classDiagram
+Class01 &amp;lt;|-- AveryLongClass : Cool
+&amp;lt;&amp;lt;interface&amp;gt;&amp;gt; Class01
+Class09 --&amp;gt; C2 : Where am i?
+Class09 --* C3
+Class09 --|&amp;gt; Class07
+Class07 : equals()
+Class07 : Object[] elementData
+Class01 : size()
+Class01 : int chimp
+Class01 : int gorilla
+class Class10 {
+  &amp;lt;&amp;lt;service&amp;gt;&amp;gt;
+  int id
+  size()
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;An example &lt;strong&gt;state diagram&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;```mermaid
+stateDiagram
+[*] --&amp;gt; Still
+Still --&amp;gt; [*]
+Still --&amp;gt; Moving
+Moving --&amp;gt; Still
+Moving --&amp;gt; Crash
+Crash --&amp;gt; [*]
+```
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;renders as&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-mermaid&#34;&gt;stateDiagram
+[*] --&amp;gt; Still
+Still --&amp;gt; [*]
+Still --&amp;gt; Moving
+Moving --&amp;gt; Still
+Moving --&amp;gt; Crash
+Crash --&amp;gt; [*]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;todo-lists&#34;&gt;Todo lists&lt;/h3&gt;
+
+&lt;p&gt;You can even write your todo lists in Academic too:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;- [x] Write math example
+- [x] Write diagram example
+- [ ] Do something else
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;renders as&lt;/p&gt;
+
+&lt;ul class=&#34;task-list&#34;&gt;
+&lt;li&gt;&lt;label&gt;&lt;input type=&#34;checkbox&#34; checked disabled class=&#34;task-list-item&#34;&gt; Write math example&lt;/label&gt;&lt;/li&gt;
+&lt;li&gt;&lt;label&gt;&lt;input type=&#34;checkbox&#34; checked disabled class=&#34;task-list-item&#34;&gt; Write diagram example&lt;/label&gt;&lt;/li&gt;
+&lt;li&gt;&lt;label&gt;&lt;input type=&#34;checkbox&#34; disabled class=&#34;task-list-item&#34;&gt; Do something else&lt;/label&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;tables&#34;&gt;Tables&lt;/h3&gt;
+
+&lt;p&gt;Represent your data in tables:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;| First Header  | Second Header |
+| ------------- | ------------- |
+| Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  |
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;renders as&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;First Header&lt;/th&gt;
+&lt;th&gt;Second Header&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Content Cell&lt;/td&gt;
+&lt;td&gt;Content Cell&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Content Cell&lt;/td&gt;
+&lt;td&gt;Content Cell&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&#34;asides&#34;&gt;Asides&lt;/h3&gt;
+
+&lt;p&gt;Academic supports a &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/#alerts&#34;&gt;shortcode for asides&lt;/a&gt;, also referred to as &lt;em&gt;notices&lt;/em&gt;, &lt;em&gt;hints&lt;/em&gt;, or &lt;em&gt;alerts&lt;/em&gt;. By wrapping a paragraph in &lt;code&gt;{{% alert note %}} ... {{% /alert %}}&lt;/code&gt;, it will render as an aside.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;{{% alert note %}}
+A Markdown aside is useful for displaying notices, hints, or definitions to your readers.
+{{% /alert %}}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;renders as&lt;/p&gt;
+
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    A Markdown aside is useful for displaying notices, hints, or definitions to your readers.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&#34;did-you-find-this-page-helpful-consider-sharing-it&#34;&gt;Did you find this page helpful? Consider sharing it 🙌&lt;/h3&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>3 variable R graphs</title>
+      <link>/python/2-3variablergraphs/</link>
+      <pubDate>Sat, 21 Dec 2019 00:00:00 +0100</pubDate>
+      <guid>/python/2-3variablergraphs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Common file manipulations in R</title>
+      <link>/python/1-filemanipulation/</link>
+      <pubDate>Sat, 21 Dec 2019 00:00:00 +0100</pubDate>
+      <guid>/python/1-filemanipulation/</guid>
+      <description>
+
+&lt;h2 id=&#34;motivation&#34;&gt;Motivation&lt;/h2&gt;
+
+&lt;p&gt;Parfois il n&amp;rsquo;est pas pratique de switcher a Terminal pour faire quelques manipulations de base, R nous fournit quelques fonctions pratiques pour faire ce type d&amp;rsquo;operations sans deranger le workflow.&lt;/p&gt;
+
+&lt;h2 id=&#34;répertoire-info-directory&#34;&gt;répertoire info/directory&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;# get current working directory
+getwd()
+
+# set working directory
+setwd(&amp;quot;&amp;quot;)
+
+# new directory
+dir.create(&amp;quot;new_folder&amp;quot;)
+
+# delete a directory -- must add recursive = TRUE
+unlink(&amp;quot;some_directory&amp;quot;, recursive = TRUE)
+sapply(paste0(&amp;quot;file&amp;quot;, 1:100, &amp;quot;.txt&amp;quot;), unlink)
+
+# get dir info
+dirname(&amp;quot;C:/path/to/file.txt&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;fichiers-files&#34;&gt;fichiers/files&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;# run R code
+sys.source(&amp;quot;&amp;quot;)
+# create file
+file.create(&amp;quot;&amp;quot;)
+# create and open in the edit window
+file.edit(&amp;quot;&amp;quot;)
+# create 100 files on a fly
+sapply(paste0(&amp;quot;file&amp;quot;, 1:100, &amp;quot;.txt&amp;quot;), file.create)
+# copy or move a file
+file.copy(&amp;quot;source_file.txt&amp;quot;, &amp;quot;destination_folder&amp;quot;)
+library(filesstrings)
+file.move(&amp;quot;C:/path/to/file/some_file.txt&amp;quot;, &amp;quot;C:/some/other/path&amp;quot;)
+# delete a file
+unlink(&amp;quot;some_file.csv&amp;quot;)
+# delete file
+file.remove(&amp;quot;some_other_file.csv&amp;quot;)
+# list files
+list.files()
+list.files(&amp;quot;another directory&amp;quot;)
+# all files
+list.files(&amp;quot;&amp;quot;, recursive = TRUE)
+list.files(pattern = &amp;quot;.csv&amp;quot;)
+# get file info
+basename(&amp;quot;C:/path/to/file.txt&amp;quot;)
+library(tools)
+file_ext(&amp;quot;C:/path/to/file.txt&amp;quot;) # returns &amp;quot;txt&amp;quot;
+file_ext(&amp;quot;C:/path/to/file.csv&amp;quot;) # returns &amp;quot;csv&amp;quot;
+
+# use shell.exec to open file in extern window...
+shell.exec(&amp;quot;C:/path/to/file/some_file.txt&amp;quot;)
+# or file.show to launch a file
+file.show(&amp;quot;C:/path/to/file/some_file.txt&amp;quot;)
+
+# check if a file exists
+file.exists(&amp;quot;C:/path/to/file/some_file.txt&amp;quot;)
+
+# check if a folder exists
+file.exists(&amp;quot;C:/path/to/file/some_folder&amp;quot;)
+
+# alternatively, check if a folder exists with dir.exists
+dir.exists(&amp;quot;C:/path/to/file/some_folder&amp;quot;)
+# open a window to chosse file
+file.choose()
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;variables-batch-processing&#34;&gt;variables, batch processing&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;# read in all the CSV files
+all_data_frames &amp;lt;- lapply(list.files(pattern = &amp;quot;.csv&amp;quot;), read.csv)
+# stack all data frames together
+single_data_frame &amp;lt;- Reduce(rbind, all_data_frames)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;références-references&#34;&gt;références/references&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://theautomatic.net/2018/07/11/manipulate-files-r/&#34;&gt;http://theautomatic.net/2018/07/11/manipulate-files-r/&lt;/a&gt;
+&lt;a href=&#34;https://www.datanovia.com/en/blog/how-to-easily-manipulate-files-and-directories-in-r/&#34;&gt;https://www.datanovia.com/en/blog/how-to-easily-manipulate-files-and-directories-in-r/&lt;/a&gt; for some advanced manipulations
+&lt;a href=&#34;https://www.rdocumentation.org/packages/base/versions/3.6.2/topics/files&#34;&gt;https://www.rdocumentation.org/packages/base/versions/3.6.2/topics/files&lt;/a&gt; for symbolic link etc.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Hugo related</title>
+      <link>/miscellaneous/1-hugo/</link>
+      <pubDate>Sat, 21 Dec 2019 00:00:00 +0100</pubDate>
+      <guid>/miscellaneous/1-hugo/</guid>
+      <description>
+
+&lt;h2 id=&#34;ignore-hugo-folder&#34;&gt;ignore hugo folder&lt;/h2&gt;
+
+&lt;p&gt;use &lt;em&gt;.&lt;/em&gt; regex
+&lt;img src=&#34;img/1-hugo/2020-01-19-22-06-35.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;ignoreFiles = [&amp;quot;content/templateDirectory/*.*&amp;quot;]
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Mac related</title>
+      <link>/miscellaneous/1-mac/</link>
+      <pubDate>Sat, 21 Dec 2019 00:00:00 +0100</pubDate>
+      <guid>/miscellaneous/1-mac/</guid>
+      <description>&lt;p&gt;&lt;code&gt;stop office autoupdate&lt;/code&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>R books</title>
+      <link>/python/0-rbooks/</link>
+      <pubDate>Sat, 21 Dec 2019 00:00:00 +0100</pubDate>
+      <guid>/python/0-rbooks/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>An example preprint / working paper</title>
+      <link>/publication/preprint/</link>
+      <pubDate>Sun, 07 Apr 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/preprint/</guid>
+      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Slides&lt;/em&gt; button above to demo Academic&amp;rsquo;s Markdown slides feature.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Supplementary notes can be added here, including &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34;&gt;code and math&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Display Jupyter Notebooks with Academic</title>
+      <link>/post/jupyter/</link>
+      <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
+      <guid>/post/jupyter/</guid>
+      <description>
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;from IPython.core.display import Image
+Image(&#39;https://www.python.org/static/community_logos/python-logo-master-v3-TM-flattened.png&#39;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;img src=&#34;./index_1_0.png&#34; alt=&#34;png&#34; /&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;print(&amp;quot;Welcome to Academic!&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;Welcome to Academic!
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;install-python-and-jupyterlab&#34;&gt;Install Python and JupyterLab&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.anaconda.com/distribution/#download-section&#34;&gt;Install Anaconda&lt;/a&gt; which includes Python 3 and JupyterLab.&lt;/p&gt;
+
+&lt;p&gt;Alternatively, install JupyterLab with &lt;code&gt;pip3 install jupyterlab&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;create-or-upload-a-jupyter-notebook&#34;&gt;Create or upload a Jupyter notebook&lt;/h2&gt;
+
+&lt;p&gt;Run the following commands in your Terminal, substituting &lt;code&gt;&amp;lt;MY-WEBSITE-FOLDER&amp;gt;&lt;/code&gt; and &lt;code&gt;&amp;lt;SHORT-POST-TITLE&amp;gt;&lt;/code&gt; with the file path to your Academic website folder and a short title for your blog post (use hyphens instead of spaces), respectively:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;mkdir -p &amp;lt;MY-WEBSITE-FOLDER&amp;gt;/content/post/&amp;lt;SHORT-POST-TITLE&amp;gt;/
+cd &amp;lt;MY-WEBSITE-FOLDER&amp;gt;/content/post/&amp;lt;SHORT-POST-TITLE&amp;gt;/
+jupyter lab index.ipynb
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The &lt;code&gt;jupyter&lt;/code&gt; command above will launch the JupyterLab editor, allowing us to add Academic metadata and write the content.&lt;/p&gt;
+
+&lt;h2 id=&#34;edit-your-post-metadata&#34;&gt;Edit your post metadata&lt;/h2&gt;
+
+&lt;p&gt;The first cell of your Jupter notebook will contain your post metadata (&lt;a href=&#34;https://sourcethemes.com/academic/docs/front-matter/&#34;&gt;front matter&lt;/a&gt;).&lt;/p&gt;
+
+&lt;p&gt;In Jupter, choose &lt;em&gt;Markdown&lt;/em&gt; as the type of the first cell and wrap your Academic metadata in three dashes, indicating that it is YAML front matter:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;---
+title: My post&#39;s title
+date: 2019-09-01
+
+# Put any other Academic metadata here...
+---
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Edit the metadata of your post, using the &lt;a href=&#34;https://sourcethemes.com/academic/docs/managing-content&#34;&gt;documentation&lt;/a&gt; as a guide to the available options.&lt;/p&gt;
+
+&lt;p&gt;To set a &lt;a href=&#34;https://sourcethemes.com/academic/docs/managing-content/#featured-image&#34;&gt;featured image&lt;/a&gt;, place an image named &lt;code&gt;featured&lt;/code&gt; into your post&amp;rsquo;s folder.&lt;/p&gt;
+
+&lt;p&gt;For other tips, such as using math, see the guide on &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34;&gt;writing content with Academic&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;convert-notebook-to-markdown&#34;&gt;Convert notebook to Markdown&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;jupyter nbconvert index.ipynb --to markdown --NbConvertApp.output_files_dir=.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;example&#34;&gt;Example&lt;/h2&gt;
+
+&lt;p&gt;This post was created with Jupyter. The orginal files can be found at &lt;a href=&#34;https://github.com/gcushen/hugo-academic/tree/master/exampleSite/content/post/jupyter&#34;&gt;https://github.com/gcushen/hugo-academic/tree/master/exampleSite/content/post/jupyter&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Slides</title>
+      <link>/slides/example/</link>
+      <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
+      <guid>/slides/example/</guid>
+      <description>
+
+&lt;h1 id=&#34;create-slides-in-markdown-with-academic&#34;&gt;Create slides in Markdown with Academic&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://sourcethemes.com/academic/&#34;&gt;Academic&lt;/a&gt; | &lt;a href=&#34;https://sourcethemes.com/academic/docs/managing-content/#create-slides&#34;&gt;Documentation&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;features&#34;&gt;Features&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Efficiently write slides in Markdown&lt;/li&gt;
+&lt;li&gt;3-in-1: Create, Present, and Publish your slides&lt;/li&gt;
+&lt;li&gt;Supports speaker notes&lt;/li&gt;
+&lt;li&gt;Mobile friendly slides&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;controls&#34;&gt;Controls&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Next: &lt;code&gt;Right Arrow&lt;/code&gt; or &lt;code&gt;Space&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Previous: &lt;code&gt;Left Arrow&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Start: &lt;code&gt;Home&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Finish: &lt;code&gt;End&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Overview: &lt;code&gt;Esc&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Speaker notes: &lt;code&gt;S&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Fullscreen: &lt;code&gt;F&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Zoom: &lt;code&gt;Alt + Click&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/hakimel/reveal.js#pdf-export&#34;&gt;PDF Export&lt;/a&gt;: &lt;code&gt;E&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;code-highlighting&#34;&gt;Code Highlighting&lt;/h2&gt;
+
+&lt;p&gt;Inline code: &lt;code&gt;variable&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Code block:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;porridge = &amp;quot;blueberry&amp;quot;
+if porridge == &amp;quot;blueberry&amp;quot;:
+    print(&amp;quot;Eating...&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;math&#34;&gt;Math&lt;/h2&gt;
+
+&lt;p&gt;In-line math: $x + y = z$&lt;/p&gt;
+
+&lt;p&gt;Block math:&lt;/p&gt;
+
+&lt;p&gt;$$
+f\left( x \right) = \;\frac{{2\left( {x + 4} \right)\left( {x - 4} \right)}}{{\left( {x + 4} \right)\left( {x + 1} \right)}}
+$$&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;fragments&#34;&gt;Fragments&lt;/h2&gt;
+
+&lt;p&gt;Make content appear incrementally&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;{{% fragment %}} One {{% /fragment %}}
+{{% fragment %}} **Two** {{% /fragment %}}
+{{% fragment %}} Three {{% /fragment %}}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Press &lt;code&gt;Space&lt;/code&gt; to play!&lt;/p&gt;
+
+&lt;p&gt;&lt;span class=&#34;fragment &#34; &gt;
+   One
+&lt;/span&gt;
+&lt;span class=&#34;fragment &#34; &gt;
+   &lt;strong&gt;Two&lt;/strong&gt;
+&lt;/span&gt;
+&lt;span class=&#34;fragment &#34; &gt;
+   Three
+&lt;/span&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;A fragment can accept two optional parameters:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;class&lt;/code&gt;: use a custom style (requires definition in custom CSS)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;weight&lt;/code&gt;: sets the order in which a fragment appears&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;speaker-notes&#34;&gt;Speaker Notes&lt;/h2&gt;
+
+&lt;p&gt;Add speaker notes to your presentation&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;{{% speaker_note %}}
+- Only the speaker can read these notes
+- Press `S` key to view
+{{% /speaker_note %}}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Press the &lt;code&gt;S&lt;/code&gt; key to view the speaker notes!&lt;/p&gt;
+
+&lt;aside class=&#34;notes&#34;&gt;
+  &lt;ul&gt;
+&lt;li&gt;Only the speaker can read these notes&lt;/li&gt;
+&lt;li&gt;Press &lt;code&gt;S&lt;/code&gt; key to view&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/aside&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;themes&#34;&gt;Themes&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;black: Black background, white text, blue links (default)&lt;/li&gt;
+&lt;li&gt;white: White background, black text, blue links&lt;/li&gt;
+&lt;li&gt;league: Gray background, white text, blue links&lt;/li&gt;
+&lt;li&gt;beige: Beige background, dark text, brown links&lt;/li&gt;
+&lt;li&gt;sky: Blue background, thin dark text, blue links&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;ul&gt;
+&lt;li&gt;night: Black background, thick white text, orange links&lt;/li&gt;
+&lt;li&gt;serif: Cappuccino background, gray text, brown links&lt;/li&gt;
+&lt;li&gt;simple: White background, black text, blue links&lt;/li&gt;
+&lt;li&gt;solarized: Cream-colored background, dark green text, blue links&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+
+&lt;section data-noprocess data-shortcode-slide
+  
+      
+      data-background-image=&#34;/img/boards.jpg&#34;
+  &gt;
+
+
+&lt;h2 id=&#34;custom-slide&#34;&gt;Custom Slide&lt;/h2&gt;
+
+&lt;p&gt;Customize the slide style and background&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;{{&amp;lt; slide background-image=&amp;quot;/img/boards.jpg&amp;quot; &amp;gt;}}
+{{&amp;lt; slide background-color=&amp;quot;#0000FF&amp;quot; &amp;gt;}}
+{{&amp;lt; slide class=&amp;quot;my-style&amp;quot; &amp;gt;}}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;custom-css-example&#34;&gt;Custom CSS Example&lt;/h2&gt;
+
+&lt;p&gt;Let&amp;rsquo;s make headers navy colored.&lt;/p&gt;
+
+&lt;p&gt;Create &lt;code&gt;assets/css/reveal_custom.css&lt;/code&gt; with:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;.reveal section h1,
+.reveal section h2,
+.reveal section h3 {
+  color: navy;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&#34;questions&#34;&gt;Questions?&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://spectrum.chat/academic&#34;&gt;Ask&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://sourcethemes.com/academic/docs/managing-content/#create-slides&#34;&gt;Documentation&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>document structuré</title>
+      <link>/project/projetxml/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>/project/projetxml/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Internal Project</title>
+      <link>/project/internal-project/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>/project/internal-project/</guid>
+      <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.&lt;/p&gt;
+
+&lt;p&gt;Nullam vel molestie justo. Curabitur vitae efficitur leo. In hac habitasse platea dictumst. Sed pulvinar mauris dui, eget varius purus congue ac. Nulla euismod, lorem vel elementum dapibus, nunc justo porta mi, sed tempus est est vel tellus. Nam et enim eleifend, laoreet sem sit amet, elementum sem. Morbi ut leo congue, maximus velit ut, finibus arcu. In et libero cursus, rutrum risus non, molestie leo. Nullam congue quam et volutpat malesuada. Sed risus tortor, pulvinar et dictum nec, sodales non mi. Phasellus lacinia commodo laoreet. Nam mollis, erat in feugiat consectetur, purus eros egestas tellus, in auctor urna odio at nibh. Mauris imperdiet nisi ac magna convallis, at rhoncus ligula cursus.&lt;/p&gt;
+
+&lt;p&gt;Cras aliquam rhoncus ipsum, in hendrerit nunc mattis vitae. Duis vitae efficitur metus, ac tempus leo. Cras nec fringilla lacus. Quisque sit amet risus at ipsum pharetra commodo. Sed aliquam mauris at consequat eleifend. Praesent porta, augue sed viverra bibendum, neque ante euismod ante, in vehicula justo lorem ac eros. Suspendisse augue libero, venenatis eget tincidunt ut, malesuada at lorem. Donec vitae bibendum arcu. Aenean maximus nulla non pretium iaculis. Quisque imperdiet, nulla in pulvinar aliquet, velit quam ultrices quam, sit amet fringilla leo sem vel nunc. Mauris in lacinia lacus.&lt;/p&gt;
+
+&lt;p&gt;Suspendisse a tincidunt lacus. Curabitur at urna sagittis, dictum ante sit amet, euismod magna. Sed rutrum massa id tortor commodo, vitae elementum turpis tempus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean purus turpis, venenatis a ullamcorper nec, tincidunt et massa. Integer posuere quam rutrum arcu vehicula imperdiet. Mauris ullamcorper quam vitae purus congue, quis euismod magna eleifend. Vestibulum semper vel augue eget tincidunt. Fusce eget justo sodales, dapibus odio eu, ultrices lorem. Duis condimentum lorem id eros commodo, in facilisis mauris scelerisque. Morbi sed auctor leo. Nullam volutpat a lacus quis pharetra. Nulla congue rutrum magna a ornare.&lt;/p&gt;
+
+&lt;p&gt;Aliquam in turpis accumsan, malesuada nibh ut, hendrerit justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque sed erat nec justo posuere suscipit. Donec ut efficitur arcu, in malesuada neque. Nunc dignissim nisl massa, id vulputate nunc pretium nec. Quisque eget urna in risus suscipit ultricies. Pellentesque odio odio, tincidunt in eleifend sed, posuere a diam. Nam gravida nisl convallis semper elementum. Morbi vitae felis faucibus, vulputate orci placerat, aliquet nisi. Aliquam erat volutpat. Maecenas sagittis pulvinar purus, sed porta quam laoreet at.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Projet - Guerre Commerciale</title>
+      <link>/project/projetguerre/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>/project/projetguerre/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>An example journal article</title>
+      <link>/publication/journal-article/</link>
+      <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
+      <guid>/publication/journal-article/</guid>
+      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Slides&lt;/em&gt; button above to demo Academic&amp;rsquo;s Markdown slides feature.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Supplementary notes can be added here, including &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34;&gt;code and math&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>An example conference paper</title>
+      <link>/publication/conference-paper/</link>
+      <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
+      <guid>/publication/conference-paper/</guid>
+      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Slides&lt;/em&gt; button above to demo Academic&amp;rsquo;s Markdown slides feature.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Supplementary notes can be added here, including &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34;&gt;code and math&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

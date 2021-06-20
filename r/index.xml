@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Overview | N Liu P</title>
+    <link>/r/</link>
+      <atom:link href="/r/index.xml" rel="self" type="application/rss+xml" />
+    <description>Overview</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>Xingyu LIU©2019</copyright><lastBuildDate>Sat, 21 Dec 2019 00:00:00 +0100</lastBuildDate>
+    <image>
+      <url>/img/icon-192.png</url>
+      <title>Overview</title>
+      <link>/r/</link>
+    </image>
+    
+    <item>
+      <title>3 variable R graphs</title>
+      <link>/r/2-3variablergraphs/</link>
+      <pubDate>Sat, 21 Dec 2019 00:00:00 +0100</pubDate>
+      <guid>/r/2-3variablergraphs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Common file manipulations in R</title>
+      <link>/r/1-filemanipulation/</link>
+      <pubDate>Sat, 21 Dec 2019 00:00:00 +0100</pubDate>
+      <guid>/r/1-filemanipulation/</guid>
+      <description>
+
+&lt;h2 id=&#34;motivation&#34;&gt;Motivation&lt;/h2&gt;
+
+&lt;p&gt;Parfois il n&amp;rsquo;est pas pratique de switcher a Terminal pour faire quelques manipulations de base, R nous fournit quelques fonctions pratiques pour faire ce type d&amp;rsquo;operations sans deranger le workflow.&lt;/p&gt;
+
+&lt;h2 id=&#34;répertoire-info-directory&#34;&gt;répertoire info/directory&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;# get current working directory
+getwd()
+
+# set working directory
+setwd(&amp;quot;&amp;quot;)
+
+# new directory
+dir.create(&amp;quot;new_folder&amp;quot;)
+
+# delete a directory -- must add recursive = TRUE
+unlink(&amp;quot;some_directory&amp;quot;, recursive = TRUE)
+sapply(paste0(&amp;quot;file&amp;quot;, 1:100, &amp;quot;.txt&amp;quot;), unlink)
+
+# get dir info
+dirname(&amp;quot;C:/path/to/file.txt&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;fichiers-files&#34;&gt;fichiers/files&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;# run R code
+sys.source(&amp;quot;&amp;quot;)
+# create file
+file.create(&amp;quot;&amp;quot;)
+# create and open in the edit window
+file.edit(&amp;quot;&amp;quot;)
+# create 100 files on a fly
+sapply(paste0(&amp;quot;file&amp;quot;, 1:100, &amp;quot;.txt&amp;quot;), file.create)
+# copy or move a file
+file.copy(&amp;quot;source_file.txt&amp;quot;, &amp;quot;destination_folder&amp;quot;)
+library(filesstrings)
+file.move(&amp;quot;C:/path/to/file/some_file.txt&amp;quot;, &amp;quot;C:/some/other/path&amp;quot;)
+# delete a file
+unlink(&amp;quot;some_file.csv&amp;quot;)
+# delete file
+file.remove(&amp;quot;some_other_file.csv&amp;quot;)
+# list files
+list.files()
+list.files(&amp;quot;another directory&amp;quot;)
+# all files
+list.files(&amp;quot;&amp;quot;, recursive = TRUE)
+list.files(pattern = &amp;quot;.csv&amp;quot;)
+# get file info
+basename(&amp;quot;C:/path/to/file.txt&amp;quot;)
+library(tools)
+file_ext(&amp;quot;C:/path/to/file.txt&amp;quot;) # returns &amp;quot;txt&amp;quot;
+file_ext(&amp;quot;C:/path/to/file.csv&amp;quot;) # returns &amp;quot;csv&amp;quot;
+
+# use shell.exec to open file in extern window...
+shell.exec(&amp;quot;C:/path/to/file/some_file.txt&amp;quot;)
+# or file.show to launch a file
+file.show(&amp;quot;C:/path/to/file/some_file.txt&amp;quot;)
+
+# check if a file exists
+file.exists(&amp;quot;C:/path/to/file/some_file.txt&amp;quot;)
+
+# check if a folder exists
+file.exists(&amp;quot;C:/path/to/file/some_folder&amp;quot;)
+
+# alternatively, check if a folder exists with dir.exists
+dir.exists(&amp;quot;C:/path/to/file/some_folder&amp;quot;)
+# open a window to chosse file
+file.choose()
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;variables-batch-processing&#34;&gt;variables, batch processing&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;# read in all the CSV files
+all_data_frames &amp;lt;- lapply(list.files(pattern = &amp;quot;.csv&amp;quot;), read.csv)
+# stack all data frames together
+single_data_frame &amp;lt;- Reduce(rbind, all_data_frames)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;références-references&#34;&gt;références/references&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://theautomatic.net/2018/07/11/manipulate-files-r/&#34;&gt;http://theautomatic.net/2018/07/11/manipulate-files-r/&lt;/a&gt;
+&lt;a href=&#34;https://www.datanovia.com/en/blog/how-to-easily-manipulate-files-and-directories-in-r/&#34;&gt;https://www.datanovia.com/en/blog/how-to-easily-manipulate-files-and-directories-in-r/&lt;/a&gt; for some advanced manipulations
+&lt;a href=&#34;https://www.rdocumentation.org/packages/base/versions/3.6.2/topics/files&#34;&gt;https://www.rdocumentation.org/packages/base/versions/3.6.2/topics/files&lt;/a&gt; for symbolic link etc.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>R books</title>
+      <link>/r/0-rbooks/</link>
+      <pubDate>Sat, 21 Dec 2019 00:00:00 +0100</pubDate>
+      <guid>/r/0-rbooks/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

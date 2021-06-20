@@ -1,0 +1,2077 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.6.3">
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Xing-yu LIU 星语 刘">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Parsing avancé">
+
+  
+  <link rel="alternate" hreflang="en-us" href="/post/webscraping2/">
+
+  
+
+
+  
+  
+  
+  <meta name="theme-color" content="rgb(0, 136, 204)">
+  
+
+  
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/github.min.css" crossorigin="anonymous" title="hl-light" disabled>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark">
+        
+      
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.css" integrity="sha256-SHMGCYmST46SoyGgo4YR/9AlK1vf3ff84Aq9yK4hdqM=" crossorigin="anonymous">
+    
+
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js" integrity="sha256-Md1qLToewPeKjfAHU1zyPwOutccPAm5tahnaw7Osw0A=" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+        
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cutive+Mono%7CLora:400,700%7CRoboto:400,700&display=swap">
+  
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.css">
+
+  
+
+
+
+
+  
+
+
+  
+
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon-32.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="/post/webscraping2/">
+
+  
+  
+  
+  
+    
+  
+  
+  <meta property="twitter:card" content="summary_large_image">
+  
+  <meta property="og:site_name" content="N Liu P">
+  <meta property="og:url" content="/post/webscraping2/">
+  <meta property="og:title" content="Web scraping sous Python (1/10) | Parsing avancé | N Liu P">
+  <meta property="og:description" content="Parsing avancé"><meta property="og:image" content="/post/webscraping2/featured.png">
+  <meta property="twitter:image" content="/post/webscraping2/featured.png"><meta property="og:locale" content="en-us">
+  
+    
+      <meta property="article:published_time" content="2020-03-04T00:00:00&#43;00:00">
+    
+    <meta property="article:modified_time" content="2020-02-23T00:00:00&#43;00:00">
+  
+
+  
+
+
+    
+
+
+
+
+
+
+  
+
+
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "/post/webscraping2/"
+  },
+  "headline": "Web scraping sous Python (1/10) | Parsing avancé",
+  
+  "image": [
+    "/post/webscraping2/featured.png"
+  ],
+  
+  "datePublished": "2020-03-04T00:00:00Z",
+  "dateModified": "2020-02-23T00:00:00Z",
+  
+  "author": {
+    "@type": "Person",
+    "name": "Xing-yu LIU 星语 刘"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "N Liu P",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "/img/icon-512.png"
+    }
+  },
+  "description": "Parsing avancé"
+}
+</script>
+
+  
+
+  
+
+
+  
+
+
+  
+
+
+
+
+
+  <title>Web scraping sous Python (1/10) | Parsing avancé | N Liu P</title>
+
+</head>
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="dark">
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/">N Liu P</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/">N Liu P</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#about"><span>AboutMe</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/python"><span>Python</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/miscellaneous"><span>Miscellaneous</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link  active" href="/post"><span>Blog</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#projects"><span>Projects</span></a>
+        </li>
+
+        
+        
+
+      
+      </ul>
+      <ul class="navbar-nav ml-md-auto">
+      
+
+        
+
+        
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/xingyuliunlp" target="_blank" rel="noopener"><span><i class="fab fa-github-alt" style="color: rgb(123, 22, 255); font-size: 1rem; line-height: 1.25"></i></span></a>
+        </li>
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      <li class="nav-item">
+        <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+<div class="article-container pt-3">
+  <h1>Web scraping sous Python (1/10) | Parsing avancé</h1>
+
+  
+  <p class="page-subtitle">Parsing avancé</p>
+  
+
+  
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+
+
+  
+  <span><a href="/authors/xingyu/">Xing-yu LIU 星语 刘</a></span>
+
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+          Last updated on
+      
+    
+    Feb 23, 2020
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    17 min read
+  </span>
+  
+
+  
+  
+  
+  <span class="middot-divider"></span>
+  <a href="/post/webscraping2/#disqus_thread"></a>
+  
+
+  
+  
+
+</div>
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+<div class="article-header article-container featured-image-wrapper mt-4 mb-4" style="max-width: 340px; max-height: 331px;">
+  <div style="position: relative">
+    <img src="/post/webscraping2/featured.png" alt="" class="featured-image">
+    
+  </div>
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      
+
+<p>Find all the span tags with the following attributes (class equal to green) = person names
+from urllib.request import urlopen
+from bs4 import BeautifulSoup</p>
+
+<p>html = urlopen(&lsquo;<a href="http://www.pythonscraping.com/pages/warandpeace.html'">http://www.pythonscraping.com/pages/warandpeace.html'</a>)
+bs = BeautifulSoup(html, &ldquo;html.parser&rdquo;)</p>
+
+<h1 id="all-the-names-are-in-span-tag-of-class-green-in-order-of-appearance-in-the-text">all the names are in span tag of class green, in order of appearance in the text</h1>
+
+<h1 id="bs-find-all-tagname-tagattributes">bs.find_all(tagName, tagAttributes)</h1>
+
+<h1 id="attributes-are-dictionary">attributes are dictionary</h1>
+
+<p>nameList = bs.findAll(&lsquo;span&rsquo;, {&lsquo;class&rsquo;: &lsquo;green&rsquo;})
+for name in nameList:
+    print(name.get_text())
+Anna
+Pavlovna Scherer
+Empress Marya
+Fedorovna
+Prince Vasili Kuragin
+Anna Pavlovna
+St. Petersburg
+the prince
+Anna Pavlovna
+Anna Pavlovna
+the prince
+the prince
+the prince
+Prince Vasili
+Anna Pavlovna
+Anna Pavlovna
+the prince
+Wintzingerode
+King of Prussia
+le Vicomte de Mortemart
+Montmorencys
+Rohans
+Abbe Morio
+the Emperor
+the prince
+Prince Vasili
+Dowager Empress Marya Fedorovna
+the baron
+Anna Pavlovna
+the Empress
+the Empress
+Anna Pavlovna&rsquo;s
+Her Majesty
+Baron
+Funke
+The prince
+Anna
+Pavlovna
+the Empress
+The prince
+Anatole
+the prince
+The prince
+Anna
+Pavlovna
+Anna Pavlovna</p>
+
+<h1 id="find-tags-in-a-list-war-and-peace-is-h1">find tags in a list War and Peace is h1</h1>
+
+<p>titles = bs.find_all([&lsquo;h1&rsquo;, &lsquo;h2&rsquo;,&lsquo;h3&rsquo;,&lsquo;h4&rsquo;,&lsquo;h5&rsquo;,&lsquo;h6&rsquo;])
+print([title.get_text() for title in titles])
+[&lsquo;War and Peace&rsquo;, &lsquo;Chapter 1&rsquo;]</p>
+
+<h1 id="red-texts-are-dialogues">red texts are dialogues</h1>
+
+<p>allText = bs.find_all(&lsquo;span&rsquo;, {&lsquo;class&rsquo;:{&lsquo;green&rsquo;, &lsquo;red&rsquo;}})
+print([text for text in allText])
+[<span class="red">Well, Prince, so Genoa and Lucca are now just family estates of the
+Buonapartes. But I warn you, if you don&rsquo;t tell me that this means war,
+if you still try to defend the infamies and horrors perpetrated by
+that Antichrist- I really believe he is Antichrist- I will have
+nothing more to do with you and you are no longer my friend, no longer
+my &lsquo;faithful slave,&rsquo; as you call yourself! But how do you do? I see
+I have frightened you- sit down and tell me all the news.</span>, <span class="green">Anna
+Pavlovna Scherer</span>, <span class="green">Empress Marya
+Fedorovna</span>, <span class="green">Prince Vasili Kuragin</span>, <span class="green">Anna Pavlovna</span>, <span class="green">St. Petersburg</span>, <span class="red">If you have nothing better to do, Count [or Prince], and if the
+prospect of spending an evening with a poor invalid is not too
+terrible, I shall be very charmed to see you tonight between 7 and 10-
+Annette Scherer.</span>, <span class="red">Heavens! what a virulent attack!</span>, <span class="green">the prince</span>, <span class="green">Anna Pavlovna</span>, <span class="red">First of all, dear friend, tell me how you are. Set your friend&rsquo;s
+mind at rest,</span>, <span class="red">Can one be well while suffering morally? Can one be calm in times
+like these if one has any feeling?</span>, <span class="green">Anna Pavlovna</span>, <span class="red">You are
+staying the whole evening, I hope?</span>, <span class="red">And the fete at the English ambassador&rsquo;s? Today is Wednesday. I
+must put in an appearance there,</span>, <span class="green">the prince</span>, <span class="red">My daughter is
+coming for me to take me there.</span>, <span class="red">I thought today&rsquo;s fete had been canceled. I confess all these
+festivities and fireworks are becoming wearisome.</span>, <span class="red">If they had known that you wished it, the entertainment would
+have been put off,</span>, <span class="green">the prince</span>, <span class="red">Don&rsquo;t tease! Well, and what has been decided about Novosiltsev&rsquo;s
+dispatch? You know everything.</span>, <span class="red">What can one say about it?</span>, <span class="green">the prince</span>, <span class="red">What has been decided? They have decided that
+Buonaparte has burnt his boats, and I believe that we are ready to
+burn ours.</span>, <span class="green">Prince Vasili</span>, <span class="green">Anna Pavlovna</span>, <span class="green">Anna Pavlovna</span>, <span class="red">Oh, don&rsquo;t speak to me of Austria. Perhaps I don&rsquo;t understand
+things, but Austria never has wished, and does not wish, for war.
+She is betraying us! Russia alone must save Europe. Our gracious
+sovereign recognizes his high vocation and will be true to it. That is
+the one thing I have faith in! Our good and wonderful sovereign has to
+perform the noblest role on earth, and he is so virtuous and noble
+that God will not forsake him. He will fulfill his vocation and
+crush the hydra of revolution, which has become more terrible than
+ever in the person of this murderer and villain! We alone must
+avenge the blood of the just one&hellip;. Whom, I ask you, can we rely
+on?&hellip; England with her commercial spirit will not and cannot
+understand the Emperor Alexander&rsquo;s loftiness of soul. She has
+refused to evacuate Malta. She wanted to find, and still seeks, some
+secret motive in our actions. What answer did Novosiltsev get? None.
+The English have not understood and cannot understand the
+self-abnegation of our Emperor who wants nothing for himself, but only
+desires the good of mankind. And what have they promised? Nothing! And
+what little they have promised they will not perform! Prussia has
+always declared that Buonaparte is invincible, and that all Europe
+is powerless before him&hellip;. And I don&rsquo;t believe a word that Hardenburg
+says, or Haugwitz either. This famous Prussian neutrality is just a
+trap. I have faith only in God and the lofty destiny of our adored
+monarch. He will save Europe!</span>, <span class="red">I think,</span>, <span class="green">the prince</span>, <span class="red">that if you had been
+sent instead of our dear <span class="green">Wintzingerode</span> you would have captured the
+<span class="green">King of Prussia</span>&rsquo;s consent by assault. You are so eloquent. Will you
+give me a cup of tea?</span>, <span class="green">Wintzingerode</span>, <span class="green">King of Prussia</span>, <span class="red">In a moment. A propos,</span>, <span class="red">I am
+expecting two very interesting men tonight, <span class="green">le Vicomte de Mortemart</span>,
+who is connected with the <span class="green">Montmorencys</span> through the <span class="green">Rohans</span>, one of
+the best French families. He is one of the genuine emigres, the good
+ones. And also the <span class="green">Abbe Morio</span>. Do you know that profound thinker? He
+has been received by <span class="green">the Emperor</span>. Had you heard?</span>, <span class="green">le Vicomte de Mortemart</span>, <span class="green">Montmorencys</span>, <span class="green">Rohans</span>, <span class="green">Abbe Morio</span>, <span class="green">the Emperor</span>, <span class="red">I shall be delighted to meet them,</span>, <span class="green">the prince</span>, <span class="red">But tell me,</span>, <span class="red">is it true that the Dowager Empress wants Baron Funke
+to be appointed first secretary at Vienna? The baron by all accounts
+is a poor creature.</span>, <span class="green">Prince Vasili</span>, <span class="green">Dowager Empress Marya Fedorovna</span>, <span class="green">the baron</span>, <span class="green">Anna Pavlovna</span>, <span class="green">the Empress</span>, <span class="red">Baron Funke has been recommended to the Dowager Empress by her
+sister,</span>, <span class="green">the Empress</span>, <span class="green">Anna Pavlovna&rsquo;s</span>, <span class="green">Her Majesty</span>, <span class="green">Baron
+Funke</span>, <span class="green">The prince</span>, <span class="green">Anna
+Pavlovna</span>, <span class="green">the Empress</span>, <span class="red">Now about your family. Do you know that since your daughter came
+out everyone has been enraptured by her? They say she is amazingly
+beautiful.</span>, <span class="green">The prince</span>, <span class="red">I often think,</span>, <span class="red">I often think how unfairly sometimes the
+joys of life are distributed. Why has fate given you two such splendid
+children? I don&rsquo;t speak of <span class="green">Anatole</span>, your youngest. I don&rsquo;t like
+him,</span>, <span class="green">Anatole</span>, <span class="red">Two such charming children. And really you appreciate
+them less than anyone, and so you don&rsquo;t deserve to have them.</span>, <span class="red">I can&rsquo;t help it,</span>, <span class="green">the prince</span>, <span class="red">Lavater would have said I
+lack the bump of paternity.</span>, <span class="red">Don&rsquo;t joke; I mean to have a serious talk with you. Do you know I
+am dissatisfied with your younger son? Between ourselves</span>, <span class="red">he was mentioned at Her
+Majesty&rsquo;s and you were pitied&hellip;.</span>, <span class="green">The prince</span>, <span class="red">What would you have me do?</span>, <span class="red">You know I did all
+a father could for their education, and they have both turned out
+fools. Hippolyte is at least a quiet fool, but Anatole is an active
+one. That is the only difference between them.</span>, <span class="red">And why are children born to such men as you? If you were not a
+father there would be nothing I could reproach you with,</span>, <span class="green">Anna
+Pavlovna</span>, <span class="red">I am your faithful slave and to you alone I can confess that my
+children are the bane of my life. It is the cross I have to bear. That
+is how I explain it to myself. It can&rsquo;t be helped!</span>, <span class="green">Anna Pavlovna</span>]</p>
+
+<h1 id="if-you-want-to-find-the-number-of-times-the-prince-is-surrounded-by-tags-on-the-example-page-textcontet-the-prince">if you want to find the number of times “the prince” is surrounded by tags on the example page, textcontet= the prince</h1>
+
+<p>nameList = bs.find_all(text=&lsquo;the prince&rsquo;)
+print(len(nameList))
+7</p>
+
+<h1 id="this-returns-the-first-tag-with-the-word-text-in-the-class-attribute-and-title-in-the-id-attribute">This returns the first tag with the word “text” in the class_ attribute and “title” in the id attribute</h1>
+
+<p>title = bs.find<em>all(id=&lsquo;title&rsquo;, class</em>=&lsquo;text&rsquo;)
+print([text for text in title])</p>
+
+<h1 id="these-two-lines-are-identical">these two lines are identical</h1>
+
+<p>bs.find_all(id=&lsquo;text&rsquo;)
+bs.find_all(&ldquo;, {&lsquo;id&rsquo;:&lsquo;text&rsquo;})
+[]</p>
+
+<p>[<div id="text">
+ &ldquo;<span class="red">Well, Prince, so Genoa and Lucca are now just family estates of the
+ Buonapartes. But I warn you, if you don&rsquo;t tell me that this means war,
+ if you still try to defend the infamies and horrors perpetrated by
+ that Antichrist- I really believe he is Antichrist- I will have
+ nothing more to do with you and you are no longer my friend, no longer
+ my &lsquo;faithful slave,&rsquo; as you call yourself! But how do you do? I see
+ I have frightened you- sit down and tell me all the news.</span>&ldquo;
+ <p></p>
+ It was in July, 1805, and the speaker was the well-known <span class="green">Anna
+ Pavlovna Scherer</span>, maid of honor and favorite of the <span class="green">Empress Marya
+ Fedorovna</span>. With these words she greeted <span class="green">Prince Vasili Kuragin</span>, a man
+ of high rank and importance, who was the first to arrive at her
+ reception. <span class="green">Anna Pavlovna</span> had had a cough for some days. She was, as
+ she said, suffering from la grippe; grippe being then a new word in
+ <span class="green">St. Petersburg</span>, used only by the elite.
+ <p></p>
+ All her invitations without exception, written in French, and
+ delivered by a scarlet-liveried footman that morning, ran as follows:
+ <p></p>
+ &ldquo;<span class="red">If you have nothing better to do, Count [or Prince], and if the
+ prospect of spending an evening with a poor invalid is not too
+ terrible, I shall be very charmed to see you tonight between 7 and 10-
+ Annette Scherer.</span>&ldquo;
+ <p></p>
+ &ldquo;<span class="red">Heavens! what a virulent attack!</span>&rdquo; replied <span class="green">the prince</span>, not in the
+ least disconcerted by this reception. He had just entered, wearing
+ an embroidered court uniform, knee breeches, and shoes, and had
+ stars on his breast and a serene expression on his flat face. He spoke
+ in that refined French in which our grandfathers not only spoke but
+ thought, and with the gentle, patronizing intonation natural to a
+ man of importance who had grown old in society and at court. He went
+ up to <span class="green">Anna Pavlovna</span>, kissed her hand, presenting to her his bald,
+ scented, and shining head, and complacently seated himself on the
+ sofa.
+ <p></p>
+ &ldquo;<span class="red">First of all, dear friend, tell me how you are. Set your friend&rsquo;s
+ mind at rest,</span>&rdquo; said he without altering his tone, beneath the
+ politeness and affected sympathy of which indifference and even
+ irony could be discerned.
+ <p></p>
+ &ldquo;<span class="red">Can one be well while suffering morally? Can one be calm in times
+ like these if one has any feeling?</span>&rdquo; said <span class="green">Anna Pavlovna</span>. &ldquo;<span class="red">You are
+ staying the whole evening, I hope?</span>&ldquo;
+ <p></p>
+ &ldquo;<span class="red">And the fete at the English ambassador&rsquo;s? Today is Wednesday. I
+ must put in an appearance there,</span>&rdquo; said <span class="green">the prince</span>. &ldquo;<span class="red">My daughter is
+ coming for me to take me there.</span>&ldquo;
+ <p></p>
+ &ldquo;<span class="red">I thought today&rsquo;s fete had been canceled. I confess all these
+ festivities and fireworks are becoming wearisome.</span>&ldquo;
+ <p></p>
+ &ldquo;<span class="red">If they had known that you wished it, the entertainment would
+ have been put off,</span>&rdquo; said <span class="green">the prince</span>, who, like a wound-up clock, by
+ force of habit said things he did not even wish to be believed.
+ <p></p>
+ &ldquo;<span class="red">Don&rsquo;t tease! Well, and what has been decided about Novosiltsev&rsquo;s
+ dispatch? You know everything.</span>&ldquo;
+ <p></p>
+ &ldquo;<span class="red">What can one say about it?</span>&rdquo; replied <span class="green">the prince</span> in a cold,
+ listless tone. &ldquo;<span class="red">What has been decided? They have decided that
+ Buonaparte has burnt his boats, and I believe that we are ready to
+ burn ours.</span>&ldquo;
+ <p></p>
+ <span class="green">Prince Vasili</span> always spoke languidly, like an actor repeating a
+ stale part. <span class="green">Anna Pavlovna</span> Scherer on the contrary, despite her forty
+ years, overflowed with animation and impulsiveness. To be an
+ enthusiast had become her social vocation and, sometimes even when she
+ did not feel like it, she became enthusiastic in order not to
+ disappoint the expectations of those who knew her. The subdued smile
+ which, though it did not suit her faded features, always played
+ round her lips expressed, as in a spoiled child, a continual
+ consciousness of her charming defect, which she neither wished, nor
+ could, nor considered it necessary, to correct.
+ <p></p>
+ In the midst of a conversation on political matters <span class="green">Anna Pavlovna</span>
+ burst out:
+ <p></p>
+ &ldquo;<span class="red">Oh, don&rsquo;t speak to me of Austria. Perhaps I don&rsquo;t understand
+ things, but Austria never has wished, and does not wish, for war.
+ She is betraying us! Russia alone must save Europe. Our gracious
+ sovereign recognizes his high vocation and will be true to it. That is
+ the one thing I have faith in! Our good and wonderful sovereign has to
+ perform the noblest role on earth, and he is so virtuous and noble
+ that God will not forsake him. He will fulfill his vocation and
+ crush the hydra of revolution, which has become more terrible than
+ ever in the person of this murderer and villain! We alone must
+ avenge the blood of the just one&hellip;. Whom, I ask you, can we rely
+ on?&hellip; England with her commercial spirit will not and cannot
+ understand the Emperor Alexander&rsquo;s loftiness of soul. She has
+ refused to evacuate Malta. She wanted to find, and still seeks, some
+ secret motive in our actions. What answer did Novosiltsev get? None.
+ The English have not understood and cannot understand the
+ self-abnegation of our Emperor who wants nothing for himself, but only
+ desires the good of mankind. And what have they promised? Nothing! And
+ what little they have promised they will not perform! Prussia has
+ always declared that Buonaparte is invincible, and that all Europe
+ is powerless before him&hellip;. And I don&rsquo;t believe a word that Hardenburg
+ says, or Haugwitz either. This famous Prussian neutrality is just a
+ trap. I have faith only in God and the lofty destiny of our adored
+ monarch. He will save Europe!</span>&ldquo;
+ <p></p>
+ She suddenly paused, smiling at her own impetuosity.
+ <p></p>
+ &ldquo;<span class="red">I think,</span>&rdquo; said <span class="green">the prince</span> with a smile, &ldquo;<span class="red">that if you had been
+ sent instead of our dear <span class="green">Wintzingerode</span> you would have captured the
+ <span class="green">King of Prussia</span>&rsquo;s consent by assault. You are so eloquent. Will you
+ give me a cup of tea?</span>&ldquo;
+ <p></p>
+ &ldquo;<span class="red">In a moment. A propos,</span>&rdquo; she added, becoming calm again, &ldquo;<span class="red">I am
+ expecting two very interesting men tonight, <span class="green">le Vicomte de Mortemart</span>,
+ who is connected with the <span class="green">Montmorencys</span> through the <span class="green">Rohans</span>, one of
+ the best French families. He is one of the genuine emigres, the good
+ ones. And also the <span class="green">Abbe Morio</span>. Do you know that profound thinker? He
+ has been received by <span class="green">the Emperor</span>. Had you heard?</span>&ldquo;
+ <p></p>
+ &ldquo;<span class="red">I shall be delighted to meet them,</span>&rdquo; said <span class="green">the prince</span>. &ldquo;<span class="red">But tell me,</span>&ldquo;
+ he added with studied carelessness as if it had only just occurred
+ to him, though the question he was about to ask was the chief motive
+ of his visit, &ldquo;<span class="red">is it true that the Dowager Empress wants Baron Funke
+ to be appointed first secretary at Vienna? The baron by all accounts
+ is a poor creature.</span>&ldquo;
+ <p></p>
+ <span class="green">Prince Vasili</span> wished to obtain this post for his son, but others
+ were trying through the <span class="green">Dowager Empress Marya Fedorovna</span> to secure it
+ for <span class="green">the baron</span>.
+ <p></p>
+ <span class="green">Anna Pavlovna</span> almost closed her eyes to indicate that neither she
+ nor anyone else had a right to criticize what <span class="green">the Empress</span> desired or
+ was pleased with.
+ <p></p>
+ &ldquo;<span class="red">Baron Funke has been recommended to the Dowager Empress by her
+ sister,</span>&rdquo; was all she said, in a dry and mournful tone.
+ <p></p>
+ As she named <span class="green">the Empress</span>, <span class="green">Anna Pavlovna&rsquo;s</span> face suddenly assumed an
+ expression of profound and sincere devotion and respect mingled with
+ sadness, and this occurred every time she mentioned her illustrious
+ patroness. She added that <span class="green">Her Majesty</span> had deigned to show <span class="green">Baron
+ Funke</span>, and again her face clouded over with sadness.
+ <p></p>
+ <span class="green">The prince</span> was silent and looked indifferent. But, with the
+ womanly and courtierlike quickness and tact habitual to her, <span class="green">Anna
+ Pavlovna</span> wished both to rebuke him (for daring to speak he had done of
+ a man recommended to <span class="green">the Empress</span>) and at the same time to console him,
+ so she said:
+ <p></p>
+ &ldquo;<span class="red">Now about your family. Do you know that since your daughter came
+ out everyone has been enraptured by her? They say she is amazingly
+ beautiful.</span>&ldquo;
+ <p></p>
+ <span class="green">The prince</span> bowed to signify his respect and gratitude.
+ <p></p>
+ &ldquo;<span class="red">I often think,</span>&rdquo; she continued after a short pause, drawing nearer
+ to the prince and smiling amiably at him as if to show that
+ political and social topics were ended and the time had come for
+ intimate conversation- &ldquo;<span class="red">I often think how unfairly sometimes the
+ joys of life are distributed. Why has fate given you two such splendid
+ children? I don&rsquo;t speak of <span class="green">Anatole</span>, your youngest. I don&rsquo;t like
+ him,</span>&rdquo; she added in a tone admitting of no rejoinder and raising her
+ eyebrows. &ldquo;<span class="red">Two such charming children. And really you appreciate
+ them less than anyone, and so you don&rsquo;t deserve to have them.</span>&ldquo;
+ <p></p>
+ And she smiled her ecstatic smile.
+ <p></p>
+ &ldquo;<span class="red">I can&rsquo;t help it,</span>&rdquo; said <span class="green">the prince</span>. &ldquo;<span class="red">Lavater would have said I
+ lack the bump of paternity.</span>&ldquo;
+ <p></p>
+ &ldquo;<span class="red">Don&rsquo;t joke; I mean to have a serious talk with you. Do you know I
+ am dissatisfied with your younger son? Between ourselves</span>&rdquo; (and her
+ face assumed its melancholy expression), &ldquo;<span class="red">he was mentioned at Her
+ Majesty&rsquo;s and you were pitied&hellip;.</span>&ldquo;
+ <p></p>
+ <span class="green">The prince</span> answered nothing, but she looked at him significantly,
+ awaiting a reply. He frowned.
+ <p></p>
+ &ldquo;<span class="red">What would you have me do?</span>&rdquo; he said at last. &ldquo;<span class="red">You know I did all
+ a father could for their education, and they have both turned out
+ fools. Hippolyte is at least a quiet fool, but Anatole is an active
+ one. That is the only difference between them.</span>&rdquo; He said this smiling
+ in a way more natural and animated than usual, so that the wrinkles
+ round his mouth very clearly revealed something unexpectedly coarse
+ and unpleasant.
+ <p></p>
+ &ldquo;<span class="red">And why are children born to such men as you? If you were not a
+ father there would be nothing I could reproach you with,</span>&rdquo; said <span class="green">Anna
+ Pavlovna</span>, looking up pensively.
+ <p></p>
+ &ldquo;<span class="red">I am your faithful slave and to you alone I can confess that my
+ children are the bane of my life. It is the cross I have to bear. That
+ is how I explain it to myself. It can&rsquo;t be helped!</span>&ldquo;
+ <p></p>
+ He said no more, but expressed his resignation to cruel fate by a
+ gesture. <span class="green">Anna Pavlovna</span> meditated.
+ </div>]
+Difference between children and descendants</p>
+
+<h1 id="see-the-source-code-of-the-website-to-understand-the-structure">see the source code of the website to understand the structure</h1>
+
+<p>html = urlopen(&lsquo;<a href="http://www.pythonscraping.com/pages/page3.html'">http://www.pythonscraping.com/pages/page3.html'</a>)
+bs = BeautifulSoup(html, &lsquo;html.parser&rsquo;)</p>
+
+<h1 id="this-code-prints-the-list-of-product-rows-in-the-giftlist-table-including-the-initial-row-of-column-labels">This code prints the list of product rows in the giftList table, including the initial row of column labels.</h1>
+
+<h1 id="children-are-always-exactly-one-tag-below-a-parent-whereas-descendants-can-be-at-any-level-in-the-tree-below-a-parent">children are always exactly one tag below a parent, whereas descendants can be at any level in the tree below a parent.</h1>
+
+<p>for child in bs.find(&lsquo;table&rsquo;,{&lsquo;id&rsquo;:&lsquo;giftList&rsquo;}).children:
+    print(child)
+<tr><th>
+Item Title
+</th><th>
+Description
+</th><th>
+Cost
+</th><th>
+Image
+</th></tr></p>
+
+<p><tr class="gift" id="gift1"><td>
+Vegetable Basket
+</td><td>
+This vegetable basket is the perfect gift for your health conscious (or overweight) friends!
+<span class="excitingNote">Now with super-colorful bell peppers!</span>
+</td><td>
+$15.00
+</td><td>
+<img src="../img/gifts/img1.jpg"/>
+</td></tr></p>
+
+<p><tr class="gift" id="gift2"><td>
+Russian Nesting Dolls
+</td><td>
+Hand-painted by trained monkeys, these exquisite dolls are priceless! And by &ldquo;priceless,&rdquo; we mean &ldquo;extremely expensive&rdquo;! <span class="excitingNote">8 entire dolls per set! Octuple the presents!</span>
+</td><td>
+$10,000.52
+</td><td>
+<img src="../img/gifts/img2.jpg"/>
+</td></tr></p>
+
+<p><tr class="gift" id="gift3"><td>
+Fish Painting
+</td><td>
+If something seems fishy about this painting, it&rsquo;s because it&rsquo;s a fish! <span class="excitingNote">Also hand-painted by trained monkeys!</span>
+</td><td>
+$10,005.00
+</td><td>
+<img src="../img/gifts/img3.jpg"/>
+</td></tr></p>
+
+<p><tr class="gift" id="gift4"><td>
+Dead Parrot
+</td><td>
+This is an ex-parrot! <span class="excitingNote">Or maybe he&rsquo;s only resting?</span>
+</td><td>
+$0.50
+</td><td>
+<img src="../img/gifts/img4.jpg"/>
+</td></tr></p>
+
+<p><tr class="gift" id="gift5"><td>
+Mystery Box
+</td><td>
+If you love surprises, this mystery box is for you! Do not place on light-colored surfaces. May cause oil staining. <span class="excitingNote">Keep your friends guessing!</span>
+</td><td>
+$1.50
+</td><td>
+<img src="../img/gifts/img6.jpg"/>
+</td></tr>
+Pay attention to NEXT siblings
+html = urlopen(&lsquo;<a href="http://www.pythonscraping.com/pages/page3.html'">http://www.pythonscraping.com/pages/page3.html'</a>)
+bs = BeautifulSoup(html, &lsquo;html.parser&rsquo;)</p>
+
+<p>for sibling in bs.find(&lsquo;table&rsquo;, {&lsquo;id&rsquo;:&lsquo;giftList&rsquo;}).tr.next_siblings:
+    print(sibling)
+<tr class="gift" id="gift1"><td>
+Vegetable Basket
+</td><td>
+This vegetable basket is the perfect gift for your health conscious (or overweight) friends!
+<span class="excitingNote">Now with super-colorful bell peppers!</span>
+</td><td>
+$15.00
+</td><td>
+<img src="../img/gifts/img1.jpg"/>
+</td></tr></p>
+
+<p><tr class="gift" id="gift2"><td>
+Russian Nesting Dolls
+</td><td>
+Hand-painted by trained monkeys, these exquisite dolls are priceless! And by &ldquo;priceless,&rdquo; we mean &ldquo;extremely expensive&rdquo;! <span class="excitingNote">8 entire dolls per set! Octuple the presents!</span>
+</td><td>
+$10,000.52
+</td><td>
+<img src="../img/gifts/img2.jpg"/>
+</td></tr></p>
+
+<p><tr class="gift" id="gift3"><td>
+Fish Painting
+</td><td>
+If something seems fishy about this painting, it&rsquo;s because it&rsquo;s a fish! <span class="excitingNote">Also hand-painted by trained monkeys!</span>
+</td><td>
+$10,005.00
+</td><td>
+<img src="../img/gifts/img3.jpg"/>
+</td></tr></p>
+
+<p><tr class="gift" id="gift4"><td>
+Dead Parrot
+</td><td>
+This is an ex-parrot! <span class="excitingNote">Or maybe he&rsquo;s only resting?</span>
+</td><td>
+$0.50
+</td><td>
+<img src="../img/gifts/img4.jpg"/>
+</td></tr></p>
+
+<p><tr class="gift" id="gift5"><td>
+Mystery Box
+</td><td>
+If you love surprises, this mystery box is for you! Do not place on light-colored surfaces. May cause oil staining. <span class="excitingNote">Keep your friends guessing!</span>
+</td><td>
+$1.50
+</td><td>
+<img src="../img/gifts/img6.jpg"/>
+</td></tr>
+Find all the image and find it&rsquo;s parent (td in this case)</p>
+
+<h1 id="navigate-in-dom-tree">navigate in dom tree</h1>
+
+<p>html = urlopen(&lsquo;<a href="http://www.pythonscraping.com/pages/page3.html'">http://www.pythonscraping.com/pages/page3.html'</a>)
+bs = BeautifulSoup(html, &lsquo;html.parser&rsquo;)
+print(bs.find(&lsquo;img&rsquo;,
+              {&lsquo;src&rsquo;:&lsquo;../img/gifts/img1.jpg&rsquo;})
+      .parent.previous_sibling.get_text())
+$15.00
+Use regular expressions to find all the images in the websites
+import re</p>
+
+<p>html = urlopen(&lsquo;<a href="http://www.pythonscraping.com/pages/page3.html'">http://www.pythonscraping.com/pages/page3.html'</a>)
+bs = BeautifulSoup(html, &lsquo;html.parser&rsquo;)</p>
+
+<h1 id="using-regular-expressions">using regular expressions</h1>
+
+<p>images = bs.find_all(&lsquo;img&rsquo;, {&lsquo;src&rsquo;:re.compile(&rsquo;..\/img\/gifts/img.*.jpg&rsquo;)})
+for image in images:
+    print(image[&lsquo;src&rsquo;])</p>
+
+<h1 id="note-that-images-is-an-object-of-beautiful-soup">note that images is an object of beautiful soup</h1>
+
+<p>type(images)
+../img/gifts/img1.jpg
+../img/gifts/img2.jpg
+../img/gifts/img3.jpg
+../img/gifts/img4.jpg
+../img/gifts/img6.jpg</p>
+
+<p>bs4.element.ResultSet
+Use lambda function to implement some nice functions</p>
+
+<h1 id="using-anonymous-functions">using anonymous functions</h1>
+
+<h1 id="it-will-find-tags-with-two-attributes-such-as-the-following">it will find tags with two attributes, such as the following:</h1>
+
+<p>bs.find_all(lambda tag: len(tag.attrs) == 2)
+[<img src="../img/gifts/logo.jpg" style="float:left;"/>,
+ <tr class="gift" id="gift1"><td>
+ Vegetable Basket
+ </td><td>
+ This vegetable basket is the perfect gift for your health conscious (or overweight) friends!
+ <span class="excitingNote">Now with super-colorful bell peppers!</span>
+ </td><td>
+ $15.00
+ </td><td>
+ <img src="../img/gifts/img1.jpg"/>
+ </td></tr>,
+ <tr class="gift" id="gift2"><td>
+ Russian Nesting Dolls
+ </td><td>
+ Hand-painted by trained monkeys, these exquisite dolls are priceless! And by &ldquo;priceless,&rdquo; we mean &ldquo;extremely expensive&rdquo;! <span class="excitingNote">8 entire dolls per set! Octuple the presents!</span>
+ </td><td>
+ $10,000.52
+ </td><td>
+ <img src="../img/gifts/img2.jpg"/>
+ </td></tr>,
+ <tr class="gift" id="gift3"><td>
+ Fish Painting
+ </td><td>
+ If something seems fishy about this painting, it&rsquo;s because it&rsquo;s a fish! <span class="excitingNote">Also hand-painted by trained monkeys!</span>
+ </td><td>
+ $10,005.00
+ </td><td>
+ <img src="../img/gifts/img3.jpg"/>
+ </td></tr>,
+ <tr class="gift" id="gift4"><td>
+ Dead Parrot
+ </td><td>
+ This is an ex-parrot! <span class="excitingNote">Or maybe he&rsquo;s only resting?</span>
+ </td><td>
+ $0.50
+ </td><td>
+ <img src="../img/gifts/img4.jpg"/>
+ </td></tr>,
+ <tr class="gift" id="gift5"><td>
+ Mystery Box
+ </td><td>
+ If you love suprises, this mystery box is for you! Do not place on light-colored surfaces. May cause oil staining. <span class="excitingNote">Keep your friends guessing!</span>
+ </td><td>
+ $1.50
+ </td><td>
+ <img src="../img/gifts/img6.jpg"/>
+ </td></tr>]</p>
+
+<h1 id="use-of-lambda-functions-to-replace-some-built-in-bs-functions">use of lambda functions to replace some built-in bs functions</h1>
+
+<p>bs.find_all(lambda tag: tag.get_text() == &lsquo;Or maybe he\&rsquo;s only resting?&lsquo;)
+bs.find_all(&ldquo;, text=&lsquo;Or maybe he\&rsquo;s only resting?&lsquo;)
+[&ldquo;Or maybe he&rsquo;s only resting?&rdquo;]
+bs.find_all(lambda tag: tag.get_text() == &lsquo;Or maybe he\&rsquo;s only resting?&lsquo;)
+[<span class="excitingNote">Or maybe he&rsquo;s only resting?</span>]</p>
+
+    </div>
+    
+    <style>
+   
+
+  #GoTop {
+    position: fixed;
+    right: 50px;
+    bottom: 30px;
+    background-color: #fafafa;
+    border: 1px solid rgba(0, 0, 0, .07);
+    border-radius: 1px;
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+    background-clip: padding-box;
+    z-index: 999;
+    cursor: pointer;
+    font-size: 25px;
+    padding: 5px 10px;
+    color: #B10DC9;
+  }
+
+  .toc {
+    position: fixed;
+    top: 40%;
+    right: 10%;
+    width: 10%;
+    transform: translateY(-50%);
+     
+     
+    border-radius: 5px;
+    padding-bottom: 1rem;
+  }
+
+  .nav ul li a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+    color: #B10DC9;
+  }
+
+  .toc .page-header {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .toc-nav ul {
+     
+     
+    white-space: nowrap;
+    line-height: 1rem;
+  }
+
+   
+  .toc-nav ul ul ul {
+    margin-left: 2rem;
+  }
+
+  .toc-nav .nav-link {
+    text-overflow: ellipsis;
+     
+    color: #333;
+  }
+
+
+
+   
+  @media (max-width: 1080px) {
+    main {
+      max-width: 100%;
+    }
+
+    .toc {
+      display: none;
+    }
+  }
+</style>
+
+
+
+
+
+
+
+
+
+
+<div class="toc">
+  
+
+  <a class="page-header" href="#"><strong>- GO TO TOP -</strong></a>
+  <hr>
+  <div id="page-scrollspy" class="toc-nav">
+
+    
+    
+    
+    
+    
+    
+    <ul class="nav" id="">
+      
+      
+      <li class="nav-item">
+        <a class="nav-link text-left" href="#all-the-names-are-in-span-tag-of-class-green-in-order-of-appearance-in-the-text">
+          all the names are in span tag of class green, in order of appearance in the text
+        </a>
+      </li>
+      
+      
+    </ul>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <ul class="nav" id="">
+      
+      
+      <li class="nav-item">
+        <a class="nav-link text-left" href="#bs-find-all-tagname-tagattributes">
+          bs.find_all(tagName, tagAttributes)
+        </a>
+      </li>
+      
+      
+    </ul>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <ul class="nav" id="">
+      
+      
+      <li class="nav-item">
+        <a class="nav-link text-left" href="#attributes-are-dictionary">
+          attributes are dictionary
+        </a>
+      </li>
+      
+      
+    </ul>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <ul class="nav" id="">
+      
+      
+      <li class="nav-item">
+        <a class="nav-link text-left" href="#find-tags-in-a-list-war-and-peace-is-h1">
+          find tags in a list War and Peace is h1
+        </a>
+      </li>
+      
+      
+    </ul>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <ul class="nav" id="">
+      
+      
+      <li class="nav-item">
+        <a class="nav-link text-left" href="#red-texts-are-dialogues">
+          red texts are dialogues
+        </a>
+      </li>
+      
+      
+    </ul>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <ul class="nav" id="">
+      
+      
+      <li class="nav-item">
+        <a class="nav-link text-left" href="#if-you-want-to-find-the-number-of-times-the-prince-is-surrounded-by-tags-on-the-example-page-textcontet-the-prince">
+          if you want to find the number of times “the prince” is surrounded by tags on the example page, textcontet= the prince
+        </a>
+      </li>
+      
+      
+    </ul>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <ul class="nav" id="">
+      
+      
+      <li class="nav-item">
+        <a class="nav-link text-left" href="#this-returns-the-first-tag-with-the-word-text-in-the-class-attribute-and-title-in-the-id-attribute">
+          This returns the first tag with the word “text” in the class_ attribute and “title” in the id attribute
+        </a>
+      </li>
+      
+      
+    </ul>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <ul class="nav" id="">
+      
+      
+      <li class="nav-item">
+        <a class="nav-link text-left" href="#these-two-lines-are-identical">
+          these two lines are identical
+        </a>
+      </li>
+      
+      
+    </ul>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <ul class="nav" id="">
+      
+      
+      <li class="nav-item">
+        <a class="nav-link text-left" href="#see-the-source-code-of-the-website-to-understand-the-structure">
+          see the source code of the website to understand the structure
+        </a>
+      </li>
+      
+      
+    </ul>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <ul class="nav" id="">
+      
+      
+      <li class="nav-item">
+        <a class="nav-link text-left" href="#this-code-prints-the-list-of-product-rows-in-the-giftlist-table-including-the-initial-row-of-column-labels">
+          This code prints the list of product rows in the giftList table, including the initial row of column labels.
+        </a>
+      </li>
+      
+      
+    </ul>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <ul class="nav" id="">
+      
+      
+      <li class="nav-item">
+        <a class="nav-link text-left" href="#children-are-always-exactly-one-tag-below-a-parent-whereas-descendants-can-be-at-any-level-in-the-tree-below-a-parent">
+          children are always exactly one tag below a parent, whereas descendants can be at any level in the tree below a parent.
+        </a>
+      </li>
+      
+      
+    </ul>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <ul class="nav" id="">
+      
+      
+      <li class="nav-item">
+        <a class="nav-link text-left" href="#navigate-in-dom-tree">
+          navigate in dom tree
+        </a>
+      </li>
+      
+      
+    </ul>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <ul class="nav" id="">
+      
+      
+      <li class="nav-item">
+        <a class="nav-link text-left" href="#using-regular-expressions">
+          using regular expressions
+        </a>
+      </li>
+      
+      
+    </ul>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <ul class="nav" id="">
+      
+      
+      <li class="nav-item">
+        <a class="nav-link text-left" href="#note-that-images-is-an-object-of-beautiful-soup">
+          note that images is an object of beautiful soup
+        </a>
+      </li>
+      
+      
+    </ul>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <ul class="nav" id="">
+      
+      
+      <li class="nav-item">
+        <a class="nav-link text-left" href="#using-anonymous-functions">
+          using anonymous functions
+        </a>
+      </li>
+      
+      
+    </ul>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <ul class="nav" id="">
+      
+      
+      <li class="nav-item">
+        <a class="nav-link text-left" href="#it-will-find-tags-with-two-attributes-such-as-the-following">
+          it will find tags with two attributes, such as the following:
+        </a>
+      </li>
+      
+      
+    </ul>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <ul class="nav" id="">
+      
+      
+      <li class="nav-item">
+        <a class="nav-link text-left" href="#use-of-lambda-functions-to-replace-some-built-in-bs-functions">
+          use of lambda functions to replace some built-in bs functions
+        </a>
+      </li>
+      
+      
+    </ul>
+    
+    
+    
+    
+
+  </div>
+
+</div>
+
+<aside>
+  <a href="#" id="GoTop">
+    <i class="fa fa-arrow-up"></i>
+  </a>
+</aside>
+
+    
+    
+
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tags/python/">Python</a>
+  
+  <a class="badge badge-light" href="/tags/webscraping/">webscraping</a>
+  
+</div>
+
+
+
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=/post/webscraping2/&amp;text=Web%20scraping%20sous%20Python%20%281/10%29%20%7c%20Parsing%20avanc%c3%a9" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=/post/webscraping2/&amp;t=Web%20scraping%20sous%20Python%20%281/10%29%20%7c%20Parsing%20avanc%c3%a9" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=Web%20scraping%20sous%20Python%20%281/10%29%20%7c%20Parsing%20avanc%c3%a9&amp;body=/post/webscraping2/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=/post/webscraping2/&amp;title=Web%20scraping%20sous%20Python%20%281/10%29%20%7c%20Parsing%20avanc%c3%a9" target="_blank" rel="noopener" class="share-btn-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://web.whatsapp.com/send?text=Web%20scraping%20sous%20Python%20%281/10%29%20%7c%20Parsing%20avanc%c3%a9%20/post/webscraping2/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=/post/webscraping2/&amp;title=Web%20scraping%20sous%20Python%20%281/10%29%20%7c%20Parsing%20avanc%c3%a9" target="_blank" rel="noopener" class="share-btn-weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+  
+
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <img class="portrait mr-3" src="/authors/xingyu/avatar_hu0f74ee58640607ad5a4ef0f5956dc0fe_47853_250x250_fill_q90_lanczos_center.jpg" alt="Avatar">
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="/">Xing-yu LIU 星语 刘</a></h5>
+      
+      <p class="card-text">My research interests include speech science, computation linguistics and more generally, natural language processing</p>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="/#contact" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/xingyuliunlp" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+
+
+<section id="comments">
+  
+    
+<div id="disqus_thread"></div>
+<script>
+  let disqus_config = function () {
+    
+    
+    
+  };
+  (function() {
+    if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+      document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+      return;
+    }
+    var d = document, s = d.createElement('script'); s.async = true;
+    s.src = 'https://' + "projetEncadre" + '.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+  
+</section>
+
+
+
+
+
+
+  
+  
+  <div class="article-widget content-widget-hr">
+    <h3>Related</h3>
+    <ul>
+      
+      <li><a href="/post/webscraping1/">Web scraping sous Python (1/10) | Rudiments</a></li>
+      
+    </ul>
+  </div>
+  
+
+
+
+  </div>
+</article>
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js" integrity="sha256-1zu+3BnLYV9LdiY85uXMzii3bdrkelyp37e0ZyTAQh0=" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/r.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/bash.min.js"></script>
+        
+      
+
+    
+
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.js" integrity="sha256-EErZamuLefUnbMBQbsEqu1USa+btR2oIlCpBJbyD4/g=" crossorigin="anonymous"></script>
+    
+
+    
+    
+    <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    
+    
+    
+    
+    <script>
+      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"No results found","placeholder":"Search...","results":"results found"};
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+    <script id="dsq-count-scr" src="https://projetEncadre.disqus.com/count.js" async></script>
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academic.min.600a2e440c16093e23e26e90951c4d4b.js"></script>
+
+    
+
+
+
+
+
+
+  
+  
+  <div class="container">
+    <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    Xingyu LIU©2020 &middot; 
+
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+    <span class="float-right" aria-hidden="true">
+      <a href="#" class="back-to-top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    
+  </p>
+</footer>
+
+  </div>
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
