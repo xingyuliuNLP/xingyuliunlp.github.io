@@ -54,6 +54,16 @@
   </url>
   
   <url>
+    <loc>/chatbot/1-v0/</loc>
+    <lastmod>2022-01-21T00:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/chatbot/</loc>
+    <lastmod>2022-01-21T00:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/authors/xingyu/</loc>
     <lastmod>2021-11-30T00:00:00+00:00</lastmod>
   </url>
@@ -135,21 +145,6 @@
   
   <url>
     <loc>/python/1-filemanipulation/</loc>
-    <lastmod>2019-12-21T00:00:00+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/chatbot/1-hugo/</loc>
-    <lastmod>2019-12-21T00:00:00+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/chatbot/1-mac/</loc>
-    <lastmod>2019-12-21T00:00:00+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/chatbot/</loc>
     <lastmod>2019-12-21T00:00:00+01:00</lastmod>
   </url>
   

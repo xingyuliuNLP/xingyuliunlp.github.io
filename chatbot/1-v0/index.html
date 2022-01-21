@@ -28,10 +28,11 @@
   
     
   
-  <meta name="description" content="">
+  <meta name="description" content="Fonctionnement du chatbot sous carte mentale: Dans le cadre du projet &ldquo;My S Life&rdquo;, on commence par un modèle du chatbot simple, c&rsquo;est-à-dire qu’on imagine que nos dialogues sont à un tour, ce qui n’est pas le cas réel bien sûr. Mais ça nous permet de se concentrer sur l’architecture du chatbot pour le moment.
+Modélisation de types de questions (Intent Classes) On a besoin de modéliser les intentions des utilisatrices, pourquoi elle a posé cette question, quelles sont ses attentes, etc.">
 
   
-  <link rel="alternate" hreflang="en-us" href="/chatbot/">
+  <link rel="alternate" hreflang="en-us" href="/chatbot/1-v0/">
 
   
 
@@ -203,14 +204,12 @@
 
 
   
-  <link rel="alternate" href="/chatbot/index.xml" type="application/rss+xml" title="N Liu P">
-  
 
   <link rel="manifest" href="/index.webmanifest">
   <link rel="icon" type="image/png" href="/img/icon-32.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
 
-  <link rel="canonical" href="/chatbot/">
+  <link rel="canonical" href="/chatbot/1-v0/">
 
   
   
@@ -223,29 +222,35 @@
   <meta property="twitter:card" content="summary">
   
   <meta property="og:site_name" content="N Liu P">
-  <meta property="og:url" content="/chatbot/">
-  <meta property="og:title" content="Overview | N Liu P">
-  <meta property="og:description" content=""><meta property="og:image" content="/img/icon-192.png">
+  <meta property="og:url" content="/chatbot/1-v0/">
+  <meta property="og:title" content="Chatbot - Initialisation basée sur retrieval method | N Liu P">
+  <meta property="og:description" content="Fonctionnement du chatbot sous carte mentale: Dans le cadre du projet &ldquo;My S Life&rdquo;, on commence par un modèle du chatbot simple, c&rsquo;est-à-dire qu’on imagine que nos dialogues sont à un tour, ce qui n’est pas le cas réel bien sûr. Mais ça nous permet de se concentrer sur l’architecture du chatbot pour le moment.
+Modélisation de types de questions (Intent Classes) On a besoin de modéliser les intentions des utilisatrices, pourquoi elle a posé cette question, quelles sont ses attentes, etc."><meta property="og:image" content="/img/icon-192.png">
   <meta property="twitter:image" content="/img/icon-192.png"><meta property="og:locale" content="en-us">
   
-    <meta property="og:updated_time" content="2022-01-21T00:00:00&#43;01:00">
+    
+      <meta property="article:published_time" content="2022-01-21T00:00:00&#43;01:00">
+    
+    <meta property="article:modified_time" content="2022-01-21T00:00:00&#43;01:00">
   
 
   
 
 
 
-
   
 
 
   
 
 
+  
 
 
 
-  <title>Overview | N Liu P</title>
+
+
+  <title>Chatbot - Initialisation basée sur retrieval method | N Liu P</title>
 
 </head>
 
@@ -494,6 +499,8 @@
 
 
 
+  
+
 
 
 
@@ -514,7 +521,7 @@
   
   
   
-  <div class="docs-toc-item">
+  <div class="docs-toc-item active">
     <a class="docs-toc-link" href="/chatbot/1-v0/">Chatbot - Initialisation basée sur retrieval method</a>
 
   </div>
@@ -534,8 +541,10 @@
 <ul>
 <li>
 <ul>
-<li><a href="#previous-architectures">Previous architectures</a></li>
-<li><a href="#references">References</a></li>
+<li><a href="#modélisation-de-types-de-questions-intent-classes">Modélisation de types de questions (Intent Classes)</a></li>
+<li><a href="#points-d-amélioration">Points d&rsquo;amélioration</a></li>
+<li><a href="#clarification-sur-la-source-de-données">Clarification sur la source de données</a></li>
+<li><a href="#contrainte-côté-juliette">Contrainte côté Juliette</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -549,22 +558,41 @@
       <article class="article">
 
         <div class="docs-article-container">
-          <h1>Overview</h1>
+          <h1>Chatbot - Initialisation basée sur retrieval method</h1>
 
           <div class="article-style">
             
 
-<p>A little secret space for my chatbot&rsquo;s architecture. It embraces all my immature ideas (like Jia Deqi does ❤️)</p>
+<!-- ## ignore hugo folder -->
 
-<h2 id="previous-architectures">Previous architectures</h2>
+<p>Fonctionnement du chatbot sous carte mentale:
+<img src="img/architecture/v0.jpg" alt="" />
+Dans le cadre du projet &ldquo;My S Life&rdquo;, on commence par un modèle du chatbot simple, c&rsquo;est-à-dire qu’on imagine que nos dialogues sont à <strong>un tour</strong>, ce qui n’est pas le cas réel bien sûr. Mais ça nous permet de se concentrer sur l’architecture du chatbot pour le moment.</p>
 
-<p><code>cf le menu de droite pour voir le sommaire</code></p>
+<h2 id="modélisation-de-types-de-questions-intent-classes">Modélisation de types de questions (Intent Classes)</h2>
+
+<p>On a besoin de modéliser les intentions des utilisatrices, pourquoi elle a posé cette question, quelles sont ses attentes, etc. Peut-être que pour l’humain, c’est évident. Mais là, ce genre de modélisation est plutôt pour la machine.</p>
+
+<p>Ici, j’ai pris le thème &ldquo;douleurs pendant les rapports&rdquo; comme exemple. On a deux cas, avec ou sans contexte, suivi de 4 types de questions.</p>
+
+<p>Le chatbot va renvoyer 3 types de réponses correspondantes.</p>
+
+<h2 id="points-d-amélioration">Points d&rsquo;amélioration</h2>
 
 <ul>
-<li><a href="/chatbot/1-v0/">Carte mentale - Fonctionnement du chatbot V0</a></li>
-</ul>
+<li>Mettre en avant/valeur/lumière l&rsquo;intérêt d&rsquo;IA, la partie &ldquo;réécriture&rdquo; n&rsquo;est pas claire.</li>
+<li><code>A quoi sert la typologie de questions/réponses ???? Si l'utilisatrice pose une question de type 5 (qui n'existe pas) ? S'il manque les réponses de type 3 dans notre base de données</code></li>
 
-<h2 id="references">References</h2>
+<li><p>Détails concernant le produit final: si l&rsquo;utilisatrice dit &ldquo;Bonjour, je suis Juliette (prénom de fille), j&rsquo;ai 20 ans et je suis avec mon copain depuis un mois.&rdquo; Le chatbot ne pose plus de questions sur l&rsquo;âge, la sexe et l&rsquo;orientation sexuelle par exemple.</p>
+
+<h2 id="clarification-sur-la-source-de-données">Clarification sur la source de données</h2>
+
+<p>On peut profiter des corpus scrappés depuis des forums de santé, mais que pour la recherche.</p>
+
+<h2 id="contrainte-côté-juliette">Contrainte côté Juliette</h2></li>
+
+<li><p>Evaluation du chatbot : les experts n&rsquo;ont pas le temps d&rsquo;évaluer la qualité des réponses → ce sera sûrement un processus d&rsquo;évaluation automatique</p></li>
+</ul>
 
           </div>
 
