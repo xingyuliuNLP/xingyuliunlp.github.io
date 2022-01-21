@@ -22,7 +22,7 @@
 &lt;!-- ## ignore hugo folder --&gt;
 
 &lt;p&gt;Fonctionnement du chatbot sous carte mentale:
-&lt;img src=&#34;img/architecture/v0.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;img src=&#34;img/architecture/chatbot.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Dans le cadre du projet &amp;ldquo;My S Life&amp;rdquo;, on commence par un modèle du chatbot simple, c&amp;rsquo;est-à-dire qu’on imagine que nos dialogues sont à &lt;strong&gt;un tour&lt;/strong&gt;, ce qui n’est pas le cas réel bien sûr. Mais ça nous permet de se concentrer sur l’architecture du chatbot pour le moment.&lt;/p&gt;
 
