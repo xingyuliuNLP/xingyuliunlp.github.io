@@ -22,8 +22,9 @@
 &lt;!-- ## ignore hugo folder --&gt;
 
 &lt;p&gt;Fonctionnement du chatbot sous carte mentale:
-&lt;img src=&#34;img/architecture/v0.jpg&#34; alt=&#34;&#34; /&gt;
-Dans le cadre du projet &amp;ldquo;My S Life&amp;rdquo;, on commence par un modèle du chatbot simple, c&amp;rsquo;est-à-dire qu’on imagine que nos dialogues sont à &lt;strong&gt;un tour&lt;/strong&gt;, ce qui n’est pas le cas réel bien sûr. Mais ça nous permet de se concentrer sur l’architecture du chatbot pour le moment.&lt;/p&gt;
+&lt;img src=&#34;img/architecture/v0.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Dans le cadre du projet &amp;ldquo;My S Life&amp;rdquo;, on commence par un modèle du chatbot simple, c&amp;rsquo;est-à-dire qu’on imagine que nos dialogues sont à &lt;strong&gt;un tour&lt;/strong&gt;, ce qui n’est pas le cas réel bien sûr. Mais ça nous permet de se concentrer sur l’architecture du chatbot pour le moment.&lt;/p&gt;
 
 &lt;h2 id=&#34;modélisation-de-types-de-questions-intent-classes&#34;&gt;Modélisation de types de questions (Intent Classes)&lt;/h2&gt;
 
@@ -38,16 +39,17 @@ Dans le cadre du projet &amp;ldquo;My S Life&amp;rdquo;, on commence par un mod�
 &lt;ul&gt;
 &lt;li&gt;Mettre en avant/valeur/lumière l&amp;rsquo;intérêt d&amp;rsquo;IA, la partie &amp;ldquo;réécriture&amp;rdquo; n&amp;rsquo;est pas claire.&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;A quoi sert la typologie de questions/réponses ???? Si l&#39;utilisatrice pose une question de type 5 (qui n&#39;existe pas) ? S&#39;il manque les réponses de type 3 dans notre base de données&lt;/code&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Détails concernant le produit final: si l&amp;rsquo;utilisatrice dit &amp;ldquo;Bonjour, je suis Juliette (prénom de fille), j&amp;rsquo;ai 20 ans et je suis avec mon copain depuis un mois.&amp;rdquo; Le chatbot ne pose plus de questions sur l&amp;rsquo;âge, la sexe et l&amp;rsquo;orientation sexuelle par exemple.&lt;/p&gt;
+&lt;li&gt;Détails concernant le produit final: si l&amp;rsquo;utilisatrice dit &amp;ldquo;Bonjour, je suis Juliette (prénom de fille), j&amp;rsquo;ai 20 ans et je suis avec mon copain depuis un mois.&amp;rdquo; Le chatbot ne pose plus de questions sur l&amp;rsquo;âge, la sexe et l&amp;rsquo;orientation sexuelle par exemple.&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h2 id=&#34;clarification-sur-la-source-de-données&#34;&gt;Clarification sur la source de données&lt;/h2&gt;
 
 &lt;p&gt;On peut profiter des corpus scrappés depuis des forums de santé, mais que pour la recherche.&lt;/p&gt;
 
-&lt;h2 id=&#34;contrainte-côté-juliette&#34;&gt;Contrainte côté Juliette&lt;/h2&gt;&lt;/li&gt;
+&lt;h2 id=&#34;contrainte-côté-juliette&#34;&gt;Contrainte côté Juliette&lt;/h2&gt;
 
-&lt;li&gt;&lt;p&gt;Evaluation du chatbot : les experts n&amp;rsquo;ont pas le temps d&amp;rsquo;évaluer la qualité des réponses → ce sera sûrement un processus d&amp;rsquo;évaluation automatique&lt;/p&gt;&lt;/li&gt;
+&lt;ul&gt;
+&lt;li&gt;Evaluation du chatbot : les experts n&amp;rsquo;ont pas le temps d&amp;rsquo;évaluer la qualité des réponses → ce sera sûrement un processus d&amp;rsquo;évaluation automatique&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
