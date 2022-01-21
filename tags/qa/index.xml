@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>QA | N Liu P</title>
+    <link>/tags/qa/</link>
+      <atom:link href="/tags/qa/index.xml" rel="self" type="application/rss+xml" />
+    <description>QA</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>Xingyu LIU©2021</copyright><lastBuildDate>Tue, 30 Nov 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/icon-192.png</url>
+      <title>QA</title>
+      <link>/tags/qa/</link>
+    </image>
+    
+    <item>
+      <title>Web scraping sous Python (1/10) | Rudiments</title>
+      <link>/post/refprototype/</link>
+      <pubDate>Tue, 30 Nov 2021 00:00:00 +0000</pubDate>
+      <guid>/post/refprototype/</guid>
+      <description>
+
+&lt;h2 id=&#34;urlopen&#34;&gt;Urlopen&lt;/h2&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Overview | N Liu P</title>
+    <link>/chatbot/</link>
+      <atom:link href="/chatbot/index.xml" rel="self" type="application/rss+xml" />
+    <description>Overview</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>Xingyu LIU©2021</copyright><lastBuildDate>Sat, 21 Dec 2019 00:00:00 +0100</lastBuildDate>
+    <image>
+      <url>/img/icon-192.png</url>
+      <title>Overview</title>
+      <link>/chatbot/</link>
+    </image>
+    
+    <item>
+      <title>Hugo related</title>
+      <link>/chatbot/1-hugo/</link>
+      <pubDate>Sat, 21 Dec 2019 00:00:00 +0100</pubDate>
+      <guid>/chatbot/1-hugo/</guid>
+      <description>
+
+&lt;h2 id=&#34;ignore-hugo-folder&#34;&gt;ignore hugo folder&lt;/h2&gt;
+
+&lt;p&gt;use &lt;em&gt;.&lt;/em&gt; regex
+&lt;img src=&#34;img/1-hugo/2020-01-19-22-06-35.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;ignoreFiles = [&amp;quot;content/templateDirectory/*.*&amp;quot;]
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Mac related</title>
+      <link>/chatbot/1-mac/</link>
+      <pubDate>Sat, 21 Dec 2019 00:00:00 +0100</pubDate>
+      <guid>/chatbot/1-mac/</guid>
+      <description>&lt;p&gt;&lt;code&gt;stop office autoupdate&lt;/code&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -136,6 +136,17 @@
     </item>
     
     <item>
+      <title>Web scraping sous Python (1/10) | Rudiments</title>
+      <link>/post/refprototype/</link>
+      <pubDate>Tue, 30 Nov 2021 00:00:00 +0000</pubDate>
+      <guid>/post/refprototype/</guid>
+      <description>
+
+&lt;h2 id=&#34;urlopen&#34;&gt;Urlopen&lt;/h2&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Web scraping sous Python (1/10) | Parsing avancé</title>
       <link>/post/webscraping2/</link>
       <pubDate>Wed, 04 Mar 2020 00:00:00 +0000</pubDate>
@@ -1245,9 +1256,9 @@ single_data_frame &amp;lt;- Reduce(rbind, all_data_frames)
     
     <item>
       <title>Hugo related</title>
-      <link>/miscellaneous/1-hugo/</link>
+      <link>/chatbot/1-hugo/</link>
       <pubDate>Sat, 21 Dec 2019 00:00:00 +0100</pubDate>
-      <guid>/miscellaneous/1-hugo/</guid>
+      <guid>/chatbot/1-hugo/</guid>
       <description>
 
 &lt;h2 id=&#34;ignore-hugo-folder&#34;&gt;ignore hugo folder&lt;/h2&gt;
@@ -1262,9 +1273,9 @@ single_data_frame &amp;lt;- Reduce(rbind, all_data_frames)
     
     <item>
       <title>Mac related</title>
-      <link>/miscellaneous/1-mac/</link>
+      <link>/chatbot/1-mac/</link>
       <pubDate>Sat, 21 Dec 2019 00:00:00 +0100</pubDate>
-      <guid>/miscellaneous/1-mac/</guid>
+      <guid>/chatbot/1-mac/</guid>
       <description>&lt;p&gt;&lt;code&gt;stop office autoupdate&lt;/code&gt;&lt;/p&gt;
 </description>
     </item>
